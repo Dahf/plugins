@@ -25,7 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bdb4263-e940-4969-b77b-65087ca33304" name="Default Changelist" comment="README.md changed" />
+    <list default="true" id="6bdb4263-e940-4969-b77b-65087ca33304" name="Default Changelist" comment="README.md changed">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +35,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="Dahf" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="plugins" />
   </component>
   <component name="ProjectId" id="1jxMbsnwIWnkqHHZPAdphL7tBlW" />
   <component name="ProjectViewState">
@@ -57,7 +64,7 @@
       <updated>1604741365268</updated>
       <workItem from="1604741367107" duration="10000" />
       <workItem from="1604741462451" duration="1771000" />
-      <workItem from="1604743333364" duration="300000" />
+      <workItem from="1604743333364" duration="376000" />
     </task>
     <task id="LOCAL-00001" summary="README.md changed">
       <created>1604741898098</created>
@@ -94,7 +101,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604743428584</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="README.md changed">
+      <created>1604743641105</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604743641105</updated>
+    </task>
+    <task id="LOCAL-00007" summary="README.md changed">
+      <created>1604743669134</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604743669134</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,10 +167,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="584" y="333" key="Github.ShareDialog/0.23.1440.877@0.23.1440.877" timestamp="1604743120387" />
-    <state x="320" y="169" key="Vcs.Push.Dialog.v2" timestamp="1604743645090">
+    <state x="320" y="169" key="Vcs.Push.Dialog.v2" timestamp="1604743675992">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="169" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1604743645090" />
+    <state x="320" y="169" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1604743675992" />
     <state x="518" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604743523237">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
