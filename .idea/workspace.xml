@@ -25,10 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bdb4263-e940-4969-b77b-65087ca33304" name="Default Changelist" comment=".gitignore changed">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="6bdb4263-e940-4969-b77b-65087ca33304" name="Default Changelist" comment="README.md changed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,6 +57,7 @@
       <updated>1604741365268</updated>
       <workItem from="1604741367107" duration="10000" />
       <workItem from="1604741462451" duration="1771000" />
+      <workItem from="1604743333364" duration="300000" />
     </task>
     <task id="LOCAL-00001" summary="README.md changed">
       <created>1604741898098</created>
@@ -89,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604742732774</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="README.md changed">
+      <created>1604743428584</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604743428584</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,11 +122,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="README.md changed" />
     <MESSAGE value=".gitignore changed" />
-    <option name="LAST_COMMIT_MESSAGE" value=".gitignore changed" />
+    <MESSAGE value="README.md changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="README.md changed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="208" y="23" key="#Project_Structure" timestamp="1604742701749">
