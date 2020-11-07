@@ -26,7 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6bdb4263-e940-4969-b77b-65087ca33304" name="Default Changelist" comment=".gitignore changed">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +50,19 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604741365268</updated>
       <workItem from="1604741367107" duration="10000" />
-      <workItem from="1604741462451" duration="1257000" />
+      <workItem from="1604741462451" duration="1771000" />
     </task>
     <task id="LOCAL-00001" summary="README.md changed">
       <created>1604741898098</created>
@@ -81,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604742421036</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=".gitignore changed">
+      <created>1604742732774</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604742732774</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,14 +141,14 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="208" y="23" key="#Project_Structure/0.23.1440.877@0.23.1440.877" timestamp="1604742701749" />
-    <state x="584" y="333" key="Github.ShareDialog" timestamp="1604742498705">
+    <state x="584" y="333" key="Github.ShareDialog" timestamp="1604743120387">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="584" y="333" key="Github.ShareDialog/0.23.1440.877@0.23.1440.877" timestamp="1604742498705" />
-    <state x="320" y="169" key="Vcs.Push.Dialog.v2" timestamp="1604742424987">
+    <state x="584" y="333" key="Github.ShareDialog/0.23.1440.877@0.23.1440.877" timestamp="1604743120387" />
+    <state x="320" y="169" key="Vcs.Push.Dialog.v2" timestamp="1604742888971">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="169" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1604742424987" />
+    <state x="320" y="169" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1604742888971" />
     <state x="518" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604742507813">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
