@@ -134,17 +134,25 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="208" y="23" key="#Project_Structure/0.23.1440.877@0.23.1440.877" timestamp="1604742701749" />
+    <state x="100" y="123" width="1240" height="612" key="DiffContextDialog" timestamp="1604743653985">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="100" y="123" width="1240" height="612" key="DiffContextDialog/0.23.1440.877@0.23.1440.877" timestamp="1604743653985" />
+    <state x="513" y="303" key="Github.CreatePullRequestDialog" timestamp="1604743600861">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="513" y="303" key="Github.CreatePullRequestDialog/0.23.1440.877@0.23.1440.877" timestamp="1604743600861" />
     <state x="584" y="333" key="Github.ShareDialog" timestamp="1604743120387">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="584" y="333" key="Github.ShareDialog/0.23.1440.877@0.23.1440.877" timestamp="1604743120387" />
-    <state x="320" y="169" key="Vcs.Push.Dialog.v2" timestamp="1604742888971">
+    <state x="320" y="169" key="Vcs.Push.Dialog.v2" timestamp="1604743645090">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="169" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1604742888971" />
-    <state x="518" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604742507813">
+    <state x="320" y="169" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1604743645090" />
+    <state x="518" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604743523237">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="518" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1604742507813" />
+    <state x="518" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1604743523236" />
   </component>
 </project>
