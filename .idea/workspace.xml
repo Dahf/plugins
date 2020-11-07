@@ -25,7 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bdb4263-e940-4969-b77b-65087ca33304" name="Default Changelist" comment="README.md changed">
+    <list default="true" id="6bdb4263-e940-4969-b77b-65087ca33304" name="Default Changelist" comment=".gitignore changed">
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +45,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -55,7 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604741365268</updated>
       <workItem from="1604741367107" duration="10000" />
-      <workItem from="1604741462451" duration="913000" />
+      <workItem from="1604741462451" duration="1257000" />
     </task>
     <task id="LOCAL-00001" summary="README.md changed">
       <created>1604741898098</created>
@@ -71,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604742244574</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=".gitignore changed">
+      <created>1604742421036</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604742421036</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,16 +112,25 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="README.md changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="README.md changed" />
+    <MESSAGE value=".gitignore changed" />
+    <option name="LAST_COMMIT_MESSAGE" value=".gitignore changed" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="169" key="Vcs.Push.Dialog.v2" timestamp="1604742268938">
+    <state x="208" y="23" key="#Project_Structure" timestamp="1604742701749">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="320" y="169" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1604742268938" />
-    <state x="518" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604741949813">
+    <state x="208" y="23" key="#Project_Structure/0.23.1440.877@0.23.1440.877" timestamp="1604742701749" />
+    <state x="584" y="333" key="Github.ShareDialog" timestamp="1604742498705">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="518" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1604741949813" />
+    <state x="584" y="333" key="Github.ShareDialog/0.23.1440.877@0.23.1440.877" timestamp="1604742498705" />
+    <state x="320" y="169" key="Vcs.Push.Dialog.v2" timestamp="1604742424987">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="169" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1604742424987" />
+    <state x="518" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604742507813">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="518" y="350" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.877@0.23.1440.877" timestamp="1604742507813" />
   </component>
 </project>
