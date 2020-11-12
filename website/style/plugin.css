@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran|Overpass');
+p{
+    font-family: Catamaran;
+}
+b{
+    font-family: Overpass;
+    font-weight: 100;
+    font-size: 25;
+}
+html{
+    margin-top: 20px;
+    background-color: 	#f8f7f8;
+}@import url('https://fonts.googleapis.com/css?family=Catamaran|Overpass');
+p{
+    font-family: Catamaran;
+}
+b{
+    font-family: Overpass;
+    font-weight: 100;
+    font-size: 25;
+}
+html{
+    margin-top: 20px;
+    background-color: 	#f8f7f8;
+}
+
+img{
+    height: 150px;
+    width: auto;
+    float: right;
+    margin-right: 30px;
+}
