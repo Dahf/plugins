@@ -20,6 +20,7 @@ if(isBanned($_SESSION["username"])){
   <body>
     <div class="sidebar">
     <a href="../index.php" class="pluginstore">PluginStore</a>
+    <hr>
     <h2 id="dashboard">Dashboard</h2>
     <div class="buttonlist">
     <ul>

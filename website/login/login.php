@@ -21,7 +21,7 @@
         if(password_verify($_POST["pw_login"], $row["PASSWORD"])){
           session_start();
           $_SESSION["username"] = $row["USERNAME"];
-          header("Location: ../login/dashboard.php");
+          header("Location: dashboard.php");
         } else {
           echo "Der Login ist fehlgeschlagen";
         }
@@ -37,7 +37,7 @@
   </script>
 <!---------------- HEADER ---------------->
     <div id="header">
-       <a class="headerwri"href="news.php" target="mainframe">
+       <a class="headerwri"href="../index.php">
           <div data-aos="zoom-in" aos-duration="500" id="animation">
               <b>PluginStore</b>
           </div>
@@ -49,10 +49,10 @@
                  <a class="navlink" href="spigot.html"><b>SPIGOT</b></a>
                  <a class="navlink" href="bungeecord.html"><b>BUNGEECORD</b></a>
                  <?php if (!isset($_SESSION['username'])): ?>
-                 <a class="navlink" href="login/login.php"><b>LOGIN</b></a>
+                 <a class="navlink" href="login.php"><b>LOGIN</b></a>
                  <?php endif; ?>
                  <?php if (isset($_SESSION['username'])): ?>
-                 <a class="navlink" href="login/dashboard.php"><b>ACCOUNT</b></a>
+                 <a class="navlink" href="dashboard.php"><b>ACCOUNT</b></a>
                  <?php endif; ?>
                </div>
          </div>
@@ -64,7 +64,6 @@
     <button type="submit" name="submit_login">Einloggen</button>
   </form>
   <br>
-  <a href="register.php">Noch keinen Account?</a><br>
 </div>
 <!--register-->
 <?php
@@ -103,7 +102,7 @@ if(isset($_POST["submit_register"])){
  ?>
 <div id="register">
   <h1>Account erstellen</h1>
-  <form action="register.php" method="post">
+  <form action="login.php" method="post">
     <input type="text" name="username_register" placeholder="Username" required><br>
     <input type="text" name="email_register" placeholder="Email" required><br>
     <input type="password" name="pw_register" placeholder="Passwort" required><br>
@@ -111,7 +110,6 @@ if(isset($_POST["submit_register"])){
     <button type="submit" name="submit_register">Erstellen</button>
   </form>
   <br>
-  <a href="login.php">Hast du bereits einen Account?</a>
 </div>
   </body>
 </html>
