@@ -18,9 +18,14 @@ if(isBanned($_SESSION["username"])){
     <link href="../style/dashboard.css" rel="stylesheet">
   </head>
   <body>
-    <h1 id="dashboard">Dashboard</h1>
+    <div class="sidebar">
+    <a href="../index.php" class="pluginstore">PluginStore</a>
+    <h2 id="dashboard">Dashboard</h2>
+    <div class="buttonlist">
     <a href="../plugins/addplugins.php" class="button">Plugins</a>
     <a href="../benutzer/benutzer.php" class="button">Benutzer</a>
     <a href="logout.php" class="button">Abmelden</a>
+  </div>
+  </div>
   </body>
 </html>

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&family=Roboto&family=Share+Tech+Mono&display=swap');
+
+html{
+  background-size: contain;
+  height: 1080px;
+  width: 100%;
+  background-color: #f8f7f8;
+}
+a{text-decoration: none;
+}
+.sidebar{
+  margin-left: -8px;
+  margin-top: -21px;
+ height: 1080px;
+ width: 275px;
+ background:linear-gradient(10deg, #351439, #141839);
+ }
+ .pluginstore{
+   color: white;
+   text-align: center;
+   font-family: Major Mono Display;
+   font-size: 30px;
+   margin-left: 15px;
+   margin-top: 20px;
+   position: absolute;
+   z-index: 1;
+ }
+#dashboard{
+  margin-left: 8px;
+  margin-top: 80px;
+  color: white;
+  font-family: Major Mono Display;
+  position: absolute;
+}
+.buttonlist{
+  margin-left: 8px;
+  margin-top:  150px;
+  font-family: Montserrat;
+  position: absolute;
+}
+.button{
+  color: white;
+  padding-top: 500px;
+}
