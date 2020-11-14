@@ -56,6 +56,7 @@
                  <?php endif; ?>
                </div>
          </div>
+<!---------------- LOGIN ---------------->   
 <div id="login">
   <h1>Anmelden</h1>
   <form action="login.php" method="post">
