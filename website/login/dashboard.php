@@ -22,9 +22,11 @@ if(isBanned($_SESSION["username"])){
     <a href="../index.php" class="pluginstore">PluginStore</a>
     <h2 id="dashboard">Dashboard</h2>
     <div class="buttonlist">
-    <a href="../plugins/addplugins.php" class="button">Plugins</a>
-    <a href="../benutzer/benutzer.php" class="button">Benutzer</a>
-    <a href="logout.php" class="button">Abmelden</a>
+    <ul>
+    <li><a href="../plugins/addplugins.php" class="button">Plugins</a></li>
+    <li><a href="../benutzer/benutzer.php" class="button">Benutzer</a></li>
+    <li><a href="logout.php" class="button">Abmelden</a></li>
+  </ul>
   </div>
   </div>
   </body>
