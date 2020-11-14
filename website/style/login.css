@@ -54,13 +54,19 @@ a{
 
   }
   /******************** Login ********************/
-  #login{
-    text-align: center;
-    text-align-last: center;
-    z-index: 5;
-    padding-top: 400px;
-    margin-right: 800px;
+#login{
+  text-align: center;
+  text-align-last: center;
+  z-index: 5;
+  padding-top: 400px;
+  margin-right: 400px;
+  font-size: 150%;
   }
 #register{
-
+  text-align: center;
+  text-align-last: center;
+  z-index: 5;
+  margin-left: 400px;
+  margin-top: -260px;
+  font-size: 150%;
 }
