@@ -4,6 +4,11 @@ if(!isset($_SESSION["username"])){
   header("Location: login.php");
   exit;
 }
+require("../rankmanager.php");
+if(isBanned($_SESSION["username"])){
+  header("Location: logout.php");
+  exit;
+}
  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -12,7 +17,9 @@ if(!isset($_SESSION["username"])){
     <title></title>
   </head>
   <body>
-    <h1>Top Secret</h1>
+    <h1>Dashboard</h1>
+    <a href="../plugins/addplugins.php">Plugins</a>
+    <a href="../benutzer/benutzer.php">Benutzer</a>
     <a href="logout.php">Abmelden</a>
   </body>
 </html>

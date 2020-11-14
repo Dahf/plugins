@@ -20,6 +20,9 @@
                    <b id="header"><?php echo $row["TITEL"] ?></b>
                    <p id="status"><?php echo date("d.m.Y H:i", $row["CREATED_AT"]) ?></p>
                    <p><?php echo ($row["DESCRIPTION"]) ?></p>
+                   </li>
+                </ul>
+
            <?php
        }
    }

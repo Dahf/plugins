@@ -1,4 +1,16 @@
 <!DOCTYPE html>
+<?php
+session_start();
+require("../rankmanager.php");
+if(isBanned($_SESSION["username"])){
+  header("Location: ../login/dashboard.php");
+  exit;
+}
+if(getRank($_SESSION["username"]) != ADMIN){
+  header("Location: ../login/dashboard.php");
+  exit;
+}
+ ?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">

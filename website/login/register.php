@@ -21,7 +21,7 @@
         if($count == 0){
           if($_POST["pw"] == $_POST["pw2"]){
             //User anlegen
-            $stmt = $mysql->prepare("INSERT INTO accounts (id, USERNAME, PASSWORD, EMAIL, TOKEN) VALUES (0, :user, :pw, :email, null)");
+            $stmt = $mysql->prepare("INSERT INTO accounts (id, USERNAME, PASSWORD, EMAIL, TOKEN, SERVERRANK) VALUES (0, :user, :pw, :email, null, 0)");
             $stmt->bindParam(":user", $_POST["username"]);
             $hash = password_hash($_POST["pw"], PASSWORD_BCRYPT);
             $stmt->bindParam(":pw", $hash);
