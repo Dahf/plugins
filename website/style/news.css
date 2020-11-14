@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Catamaran|Overpass');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&family=Roboto&family=Share+Tech+Mono&display=swap');
 
 li{
     list-style: none;
@@ -19,7 +19,6 @@ b{
 
 #status{
     float:right;
-    margin-top: 0px;
     font-size: 13px;
     padding-right: 15px;
     color: #022358;
@@ -27,4 +26,27 @@ b{
 
 html{
     background-color: 	#f8f7f8;
+}
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    color: #141839;
+    font-family: Montserrat;
+
+}
+.separator::before, .separator::after {
+    content: '';
+    flex: 1;
+    width: 1%;
+    border-bottom: 1px solid grey;
+
+}
+.separator::before {
+    margin-right: 25px;
+
+}
+.separator::after {
+    margin-left: 25px;
 }
