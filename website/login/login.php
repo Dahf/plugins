@@ -35,6 +35,5 @@
     </form>
     <br>
     <a href="register.php">Noch keinen Account?</a><br>
-    <a href="passwordreset.php">Hast du dein Passwor vergessen?</a>
   </body>
 </html>
