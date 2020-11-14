@@ -25,7 +25,9 @@ if(getRank($_SESSION["username"]) != ADMIN){
             if(isset($_POST["submit"])){
                 $stmt = $mysql->prepare("UPDATE accounts SET USERNAME = :user, EMAIL = :email WHERE ID = :id");
                 $stmt->execute(array(":user" => $_POST["username"], ":email" => $_POST["email"], ":id" => $_GET["id"]));
+                header("Location: benutzer.php");
                 ?>
+
                 <p>Der Benutzer wurde gespeichert.</p>
                 <?php
             }

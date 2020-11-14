@@ -14,12 +14,13 @@ if(isBanned($_SESSION["username"])){
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Dashboard</title>
+    <link href="../style/dashboard.css" rel="stylesheet">
   </head>
   <body>
-    <h1>Dashboard</h1>
-    <a href="../plugins/addplugins.php">Plugins</a>
-    <a href="../benutzer/benutzer.php">Benutzer</a>
-    <a href="logout.php">Abmelden</a>
+    <h1 id="dashboard">Dashboard</h1>
+    <a href="../plugins/addplugins.php" class="button">Plugins</a>
+    <a href="../benutzer/benutzer.php" class="button">Benutzer</a>
+    <a href="logout.php" class="button">Abmelden</a>
   </body>
 </html>
