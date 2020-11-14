@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&family=Roboto&family=Share+Tech+Mono&display=swap');
+
+p{
+  font-family: Montserrat;
+  font-size: 15px;
+  color: black;
+}
+b{
+  font-family: Montserrat;
+  font-size: 15px;
+  color: black;
+}

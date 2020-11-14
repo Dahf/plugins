@@ -19,7 +19,6 @@ if(isBanned($_SESSION["username"])){
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-<<<<<<< HEAD
     <!---------------- JAVASCRIPT ---------------->
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -47,14 +46,9 @@ if(isBanned($_SESSION["username"])){
                        </div>
                  </div>
 
-=======
-    <div class="sidebar">
-    <a href="../index.php" class="pluginstore">PluginStore</a>
-    <hr style=" color: white; ; border-width: 10px; width: 70% ">
-    <h2 id="dashboard">Dashboard</h2>
->>>>>>> 517f79eef38cdf2a18261fb8c5f06d56cd213c02
     <div class="buttonlist">
     <ul>
+    <li><a href="uebersicht.php" class="button" target="mainframe">DASHBOARD</a></li>
     <li><a href="../plugins/addplugins.php" class="button" target="mainframe">PLUGINS</a></li>
     <li><a href="../benutzer/benutzer.php" class="button" target="mainframe">BENUTZER</a></li>
     <li><a href="logout.php" class="button">ABMELDEN</a></li>
