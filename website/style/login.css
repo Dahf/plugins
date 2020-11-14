@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&family=Roboto&family=Share+Tech+Mono&display=swap');
+
+html{
+  background-size: contain;
+  height: 1080px;
+  width: 100%;
+  background-color: #f8f7f8;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+ /******************** HEADER ********************/
+#header{
+    width: 100%;
+    height: 100px;
+    background:linear-gradient(10deg, #351439, #141839);
+    margin-left:-8px;
+    margin-top:-21px;
+    position: absolute;
+}
+.headerwri{
+    color: white;
+    text-align: center;
+    font-family: Major Mono Display;
+    font-size: 30px;
+    margin-left: 300px;
+    margin-top: 35px;
+    position: absolute;
+    z-index: 1;
+  }
+  /******************** NAVBAR ********************/
+  #navbar{
+      width: 100%;
+      font-family: Montserrat;
+      margin-left:-350px;
+      margin-top: 22px;
+      position: absolute;
+      text-align: right;
+  }
+  #links{
+      margin-right: 300px;
+  }
+  .navlink{
+      padding-right:10px;
+      padding-left:10px;
+      background-color: transparent;
+      color: white;
+      font-size: 15px;
+  }
+  .navlink:hover{
+      background-color: transparent;
+      opacity: 50%;
+
+  }
+  /******************** Login ********************/
+  #login{
+    text-align: center;
+    text-align-last: center;
+    z-index: 5;
+    padding-top: 400px;
+    margin-right: 800px;
+  }
+#register{
+
+}
