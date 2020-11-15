@@ -2,7 +2,7 @@
 
 html{
   background-size: contain;
-  height: 1080px;
+  height: 640px;
   width: 100%;
   background-color: #f8f7f8;
 }
@@ -93,9 +93,9 @@ ul li:last-child {
 
 /******************** MAINBODY ********************/
 .mainbody{
-   background-color: white;
+   background-color: #f8f7f8;
    width: 1920px;
-   height: 1080px;
+   height: 950px;
    margin-left: -8px;
 }
 

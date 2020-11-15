@@ -35,6 +35,7 @@
 <script>
   AOS.init();
   </script>
+
 <!---------------- HEADER ---------------->
     <div id="header">
        <a class="headerwri"href="../index.php">
@@ -56,7 +57,7 @@
                  <?php endif; ?>
                </div>
          </div>
-<!---------------- LOGIN ---------------->   
+<!---------------- LOGIN ---------------->
 <div id="login">
   <h1>Anmelden</h1>
   <form action="login.php" method="post">
@@ -86,7 +87,7 @@ if(isset($_POST["submit_register"])){
         $stmt = $mysql->prepare("INSERT INTO accounts (id, USERNAME, PASSWORD, EMAIL, TOKEN, SERVERRANK) VALUES (0, :user, :pw, :email, null, 0)");
         $stmt->bindParam(":user", $_POST["username_register"]);
         $hash = password_hash($_POST["pw_register"], PASSWORD_BCRYPT);
-        $stmt->bindParam(":pw_register", $hash);
+        $stmt->bindParam(":pw", $hash);
         $stmt->bindParam(":email", $_POST["email_register"]);
         $stmt->execute();
         echo "Dein Account wurde angelegt";

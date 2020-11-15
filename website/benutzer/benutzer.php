@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <?php
 session_start();
-require("../rankmanager.php");
+require("../rankmanager.php"); //Rankmanager importiert
 if(isBanned($_SESSION["username"])){
-  header("Location: ../login/dashboard.php");
+  header("Location: ../login/logout.php"); //Falls er gebannt ist wird er ausgeloggt
   exit;
 }
 if(getRank($_SESSION["username"]) != ADMIN){
-  header("Location: ../login/dashboard.php");
+  header("Location: ../login/dashboard.php"); //Wenn er kein Admin ist wird er zurück geschickt
   exit;
 }
  ?>
@@ -28,26 +28,26 @@ if(getRank($_SESSION["username"]) != ADMIN){
     </tr>
 
     <?php
-    require("../mysql.php");
+    require("../mysql.php"); //MySQL wird importiert
 
-    if(isset($_GET["del"])){
-        if(!empty($_GET["del"])){
-            $stmt = $mysql->prepare("DELETE FROM accounts WHERE ID = :id");
-            $stmt->execute(array(":id" => $_GET["del"]));
+    if(isset($_GET["del"])){ //Wenn er auf Delete drückt
+        if(!empty($_GET["del"])){ //Wenn die Anfrage nicht leer ist/ Wenn es den Benutzer gibt
+            $stmt = $mysql->prepare("DELETE FROM accounts WHERE ID = :id"); //Aus MySQL wird der Benutzer mit der ID :id gesucht
+            $stmt->execute(array(":id" => $_GET["del"])); //Benutzer wird gelöscht
             ?>
             <p>Der Benutzer wurde gelöscht</p>
             <?php
         }
     }
 
-    $stmt = $mysql->prepare("SELECT * FROM accounts");
-    $stmt->execute();
-    while($row = $stmt->fetch()){
+    $stmt = $mysql->prepare("SELECT * FROM accounts"); //Jeder Account wird ausgewählt
+    $stmt->execute(); //Das obere $stmt wird ausgeführt
+    while($row = $stmt->fetch()){ //Für jeder Benutzer wird jeweils das da unten gemacht
         ?>
         <tr>
-        <td><?php echo $row["id"] ?></td>
-        <td><?php echo $row["USERNAME"] ?></td>
-        <td><?php echo $row["EMAIL"] ?></td>
+        <td><?php echo $row["id"] //Fragt die ID ab und gibt sie aus ?></td>
+        <td><?php echo $row["USERNAME"] //Fragt den Username ab und gibt sie aus?></td>
+        <td><?php echo $row["EMAIL"] //Fragt die EMAIL ab und gibt sie aus?></td>
         <td><a href="edit.php?id=<?php echo $row["id"] ?>"><i class="fas fa-edit"></i></a><a href="benutzer.php?del=<?php echo $row["id"] ?>"><i class="fas fa-user-minus"></i></a></td>
 
         </tr>
