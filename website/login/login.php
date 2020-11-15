@@ -73,9 +73,9 @@
 <div id="login">
   <h1>Anmelden</h1>
   <form action="login.php" method="post">
-    <input type="text" name="username_login" placeholder="Username" required><br>
-    <input type="password" name="pw_login" placeholder="Passwort" required><br>
-    <button type="submit" name="submit_login">Einloggen</button>
+    <input type="text" name="username_login" placeholder="Username" required class="typein"><br>
+    <input type="password" name="pw_login" placeholder="Passwort" required class="typein"><br>
+    <button type="submit" name="submit_login" class="login-btn">Einloggen</button>
   </form>
   <br>
 </div>
@@ -117,11 +117,11 @@ if(isset($_POST["submit_register"])){
 <div id="register">
   <h1>Account erstellen</h1>
   <form action="login.php" method="post">
-    <input type="text" name="username_register" placeholder="Username" required><br>
-    <input type="text" name="email_register" placeholder="Email" required><br>
-    <input type="password" name="pw_register" placeholder="Passwort" required><br>
-    <input type="password" name="pw_register2" placeholder="Passwort wiederholen" required><br>
-    <button type="submit" name="submit_register">Erstellen</button>
+    <input type="text" name="username_register" placeholder="Username" required class="typein"><br>
+    <input type="text" name="email_register" placeholder="Email" required class="typein"><br>
+    <input type="password" name="pw_register" placeholder="Passwort" required class="typein"><br>
+    <input type="password" name="pw_register2" placeholder="Passwort wiederholen" required class="typein"><br>
+    <button type="submit" name="submit_register" class="login-in">Erstellen</button>
   </form>
   <br>
 </div>
