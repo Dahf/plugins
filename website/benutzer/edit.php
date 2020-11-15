@@ -31,8 +31,8 @@ if(getRank($_SESSION["username"]) != ADMIN){
                 <p>Der Benutzer wurde gespeichert.</p>
                 <?php
             }
-            $stmt = $mysql->prepare("SELECT * FROM users WHERE ID = :id");
-            $stmt->execute(array(":id" => $_GET["id"]));
+            $stmt = $mysql->prepare("SELECT * FROM users WHERE ID = :id"); //Sucht nach den Benutzer mit der ID :id
+            $stmt->execute(array(":id" => $_GET["id"])); //Variable :id wird vom Benutzer oben gesetzt
             $row = $stmt->fetch();
             ?>
             <form action="edit.php?id=<?php echo $_GET["id"] ?>" method="post">

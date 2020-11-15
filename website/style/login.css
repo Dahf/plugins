@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&family=Roboto&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:wght@200;400&family=Roboto&family=Share+Tech+Mono&display=swap');
 
 html{
   background-size: contain;
@@ -57,6 +57,7 @@ a{
 #footer{
      width: 100%;
      font-family: Montserrat;
+     font-weight: 200;
      height: 50px;
      background:linear-gradient(10deg, #141839, #351439);
      margin-top: 908px;
@@ -85,36 +86,90 @@ a{
    background-color: transparent;
    opacity: 50%;
  }
-  /******************** Login ********************/
+}
+
+  /******************** COMMENTARY ********************/
+  .commentary{
+    margin-top: 50px;
+  }
+  #commentary{
+    color:black;
+  }
+
+    /******************** Login ********************/
 #login{
   text-align: center;
   text-align-last: center;
-  z-index: 5;
-  padding-top: 400px;
-  margin-right: 400px;
-  font-size: 150%;
+  padding-top: 250px;
+  margin-right: 700px;
   }
+.login-picture{
+  position: absolute;
+  margin-top: 40px;
+  color:#351439;
+  margin-left: 375px;
+  background: transparent;
+  border-radius: 20px;
+}
+.register-picture{
+  position: absolute;
+  margin-top: 10px;
+  color:#351439;
+  margin-left: 430px;
+  background: transparent;
+  border-radius: 20px;
+}
+.shopping-cart {
+ position: absolute;
+ margin-top: 10px;
+ left: 85%;
+ transform: translate(-0%, -100%);
+ background: transparent;
+ height: 20px;
+ border-radius: 20px;
+ padding: 10px;
+}
 #register{
   text-align: center;
   text-align-last: center;
   z-index: 5;
-  margin-left: 400px;
-  margin-top: -260px;
-  font-size: 150%;
+  margin-left: 600px;
+  margin-top: -305px;
 }
 h1{
   font-family: Montserrat;
+  font-weight: 200;
+  font-size: 50px;
+  align: left;
+}
+.h1-register{
+  margin-left: 450px;
+  width: 40%;
+  text-align-last: left;
+  padding-top: 5px;
+  margin-bottom: 25px;
 }
 .typein{
   list-style-type: none;
   padding: 0;
   border: 1px solid grey;
-  border-radius: 2px;
-  padding: 9px 50px 9px 50px;
-  margin-top: -1px;
+  border-radius: 4px;
+  padding: 9px 285px 9px 15px;
+  margin-top: 20px;
   background-color: transparent;
   max-width: 400px;
+  text-align-last: left;
 }
-.typein:last-child {
-    border-bottom: 1px solid grey;;
+.loggin-btn {
+  background:linear-gradient(10deg, #141839, #351439);
+  color: white;
+  padding: 14px 20px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+}
+
+.loggin-btn:hover {
+  opacity: 0.8;
 }

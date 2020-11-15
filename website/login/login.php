@@ -32,6 +32,7 @@
      ?>
 <!---------------- JAVASCRIPT ---------------->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
 <script>
   AOS.init();
   </script>
@@ -69,15 +70,21 @@
                  <?php endif; ?>
                </div>
          </div>
+<!---------------- COMMENTARY ---------------->
+<div class="commentary">
+  <p name="sd" id="commentary">sdf</p>
+</div>
 <!---------------- LOGIN ---------------->
 <div id="login">
-  <h1>Anmelden</h1>
+  <div class="login-picture">
+    <i class="fas fa-sign-in-alt fa-3x"></i>
+  </div>
+  <h1>ANMELDEN</h1>
   <form action="login.php" method="post">
     <input type="text" name="username_login" placeholder="Username" required class="typein"><br>
     <input type="password" name="pw_login" placeholder="Passwort" required class="typein"><br>
-    <button type="submit" name="submit_login" class="login-btn">Einloggen</button>
+    <button type="submit" name="submit_login" class="loggin-btn">Einloggen</button>
   </form>
-  <br>
 </div>
 <!--register-->
 <?php
@@ -102,28 +109,47 @@ if(isset($_POST["submit_register"])){
         $stmt->bindParam(":pw", $hash);
         $stmt->bindParam(":email", $_POST["email_register"]);
         $stmt->execute();
-        echo "Dein Account wurde angelegt";
+        ?>
+        <script>
+            document.getElementById("commentary").value = "Dein Account wurde angelegt";
+        </script>
+     <?php
       } else {
-        echo "Die Passwörter stimmen nicht überein";
+         ?>
+           <script>
+        document.getElementById("commentary").value = "Die Passwörter stimmen nicht überein";
+        </script>
+         <?php
       }
     } else {
-      echo "Email bereits vergeben";
+      ?>
+        <script>
+      document.getElementById("commentary").value = "Email bereits vergeben";
+      </script>
+       <?php
     }
   } else {
-    echo "Der Username ist bereits vergeben";
+    ?>
+    <script>
+          document.getElementById("commentary").value = "Der Username ist bereits vergeben";
+    </script>
+
+     <?php
   }
 }
  ?>
 <div id="register">
-  <h1>Account erstellen</h1>
+  <div class="register-picture">
+    <i class="fas fa-user-plus fa-3x"></i>
+  </div>
+  <h1 class="h1-register">KUNDENKONTO ANLEGEN</h1>
   <form action="login.php" method="post">
     <input type="text" name="username_register" placeholder="Username" required class="typein"><br>
     <input type="text" name="email_register" placeholder="Email" required class="typein"><br>
     <input type="password" name="pw_register" placeholder="Passwort" required class="typein"><br>
     <input type="password" name="pw_register2" placeholder="Passwort wiederholen" required class="typein"><br>
-    <button type="submit" name="submit_register" class="login-in">Erstellen</button>
+    <button type="submit" name="submit_register" class="loggin-btn">Erstellen</button>
   </form>
-  <br>
 </div>
   </body>
 </html>
