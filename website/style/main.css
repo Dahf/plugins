@@ -124,7 +124,7 @@ html{
  .search-box {
  position: absolute;
  left: 88%;
-  margin-top: 10px;
+ margin-top: 10px;
  transform: translate(-0%, -100%);
  background: transparent;
  height: 20px;
