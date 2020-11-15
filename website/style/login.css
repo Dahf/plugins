@@ -2,7 +2,7 @@
 
 html{
   background-size: contain;
-  height: 950px;
+  height: 100%;
   width: 100%;
   background-color: #f8f7f8;
 }
@@ -69,4 +69,20 @@ a{
   margin-left: 400px;
   margin-top: -260px;
   font-size: 150%;
+}
+h1{
+  font-family: Montserrat;
+}
+.typein{
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid grey;
+  border-radius: 2px;
+  padding: 9px 50px 9px 50px;
+  margin-top: -1px;
+  background-color: transparent;
+  max-width: 400px;
+}
+.typein:last-child {
+    border-bottom: 1px solid grey;;
 }

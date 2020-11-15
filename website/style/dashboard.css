@@ -94,8 +94,8 @@ ul li:last-child {
 /******************** MAINBODY ********************/
 .mainbody{
    background-color: #f8f7f8;
-   width: 1920px;
-   height: 950px;
+   width: 100%;
+   height: 100%;
    margin-left: -8px;
 }
 
