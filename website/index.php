@@ -28,10 +28,18 @@ session_start();
             </div>
          </a>
       </div>
- <!---------------- FOOTER ---------------->
-      <div id="footer">
-          <a class="footer" href="impressum.html"><b>Impressum</b></a>
-      </div>
+<!---------------- FOOTER ---------------->
+          <div id="footer">
+              <div id="links_footer">
+                <a class="footer" href="impressum.html" target="_blank"><b>Impressum</b></a>
+                <a class="footer" href="agb.html" target="_blank"><b>AGB</b></a>
+                <a class="footer" href="datenschutz.html" target="_blank"><b>Datenschutz</b></a>
+                <a class="footer" href="cookie-informationen.html" target="_blank"><b>Cookie Informationen</b></a>
+                <a class="footer" href="disclaimer.html" target="_blank"><b>Disclaimer</b></a>
+                <a class="footer" href="Kontakt.html" target="_blank"><b>Kontakt</b></a>
+                <a class="copyright"><b>© 2020 *auftraggeber</b></a>
+             </div>
+         </div>
  <!---------------- NAVBAR ---------------->
          <div id="navbar">
               <div id="links_navbar">
@@ -47,7 +55,7 @@ session_start();
               </div>
               <div class="shopping-cart">
                 <a class="shopping-btn" href="shoppingcart.php">
-                <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-shopping-cart"></i>
                 </a>
               </div>
               <div class="search-box">
