@@ -2,7 +2,7 @@
 
 html{
   background-size: contain;
-  height: 950px;
+  height: 100%;
   width: 100%;
   background-color: #f8f7f8;
 }
@@ -38,7 +38,7 @@ a{
       position: absolute;
       text-align: right;
   }
-  #links{
+  #links_navbar{
       margin-right: 300px;
   }
   .navlink{
@@ -53,6 +53,38 @@ a{
       opacity: 50%;
 
   }
+  /******************** FOOTER ********************/
+#footer{
+     width: 100%;
+     font-family: Montserrat;
+     height: 50px;
+     background:linear-gradient(10deg, #141839, #351439);
+     margin-top: 908px;
+     margin-left: -8px;
+     position: absolute;
+ }
+ #links_footer{
+   margin-left: 300px;
+   padding-top: 15px;
+ }
+ .copyright{
+     color: white;
+     font-size: 15px;
+     background-color: transparent;
+     padding-left: 100px;
+ }
+ .footer{
+     color: white;
+     font-size: 15px;
+     background-color: transparent;
+     padding-right: 10px;
+     padding-left: 10px;
+     padding-top: 1px;
+ }
+ .footer:hover{
+   background-color: transparent;
+   opacity: 50%;
+ }
   /******************** Login ********************/
 #login{
   text-align: center;

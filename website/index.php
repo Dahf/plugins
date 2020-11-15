@@ -34,7 +34,7 @@ session_start();
       </div>
  <!---------------- NAVBAR ---------------->
          <div id="navbar">
-              <div id="links">
+              <div id="links_navbar">
                   <a class="navlink" href="spigot.html"><b>SPIGOT</b></a>
                   <a class="navlink" href="bungeecord.html"><b>BUNGEECORD</b></a>
                   <?php if (!isset($_SESSION['username'])): ?>

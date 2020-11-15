@@ -44,9 +44,21 @@
           </div>
        </a>
     </div>
+<!---------------- FOOTER ---------------->
+    <div id="footer">
+        <div id="links_footer">
+          <a class="footer" href="impressum.html" target="_blank"><b>Impressum</b></a>
+          <a class="footer" href="agb.html" target="_blank"><b>AGB</b></a>
+          <a class="footer" href="datenschutz.html" target="_blank"><b>Datenschutz</b></a>
+          <a class="footer" href="cookie-informationen.html" target="_blank"><b>Cookie Informationen</b></a>
+          <a class="footer" href="disclaimer.html" target="_blank"><b>Disclaimer</b></a>
+          <a class="footer" href="Kontakt.html" target="_blank"><b>Kontakt</b></a>
+          <a class="copyright"><b>© 2020 *auftraggeber</b></a>
+       </div>
+   </div>
 <!---------------- NAVBAR ---------------->
         <div id="navbar">
-             <div id="links">
+             <div id="links_navbar">
                  <a class="navlink" href="spigot.html"><b>SPIGOT</b></a>
                  <a class="navlink" href="bungeecord.html"><b>BUNGEECORD</b></a>
                  <?php if (!isset($_SESSION['username'])): ?>
