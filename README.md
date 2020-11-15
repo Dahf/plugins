@@ -1,4 +1,4 @@
-# Introduction 
+# Introduction
 This is basically a team project by 4 students in class for computer science.
 # Getting Started
 go on http://silasbeckmann.de
@@ -6,5 +6,6 @@ go on http://silasbeckmann.de
 Liste von Bugs:
 
 Bug1: Problem erklären, Klasse und Zeile darin nennen, evtl. Lösung nennen
+Bug2: Registrier-Bug, Seite hat Schaganfall
 # TODO
 index.html
