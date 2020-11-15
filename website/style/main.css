@@ -109,6 +109,62 @@ html{
  .currentli{
     font-size: 25px;
  }
+
+ .shopping-cart {
+ position: absolute;
+ margin-top: 10px;
+ left: 85%;
+ transform: translate(-0%, -100%);
+ background: transparent;
+ height: 20px;
+ border-radius: 20px;
+ padding: 10px;
+}
+
+ .search-box {
+ position: absolute;
+ left: 88%;
+  margin-top: 10px;
+ transform: translate(-0%, -100%);
+ background: transparent;
+ height: 20px;
+ border-radius: 20px;
+ padding: 10px;
+}
+
+.search-box:hover > .search-txt {
+ width: 150px;
+}
+
+.search-btn {
+ width: 20px;
+ height: 20px;
+ border-radius: 50%;
+ background: transparent;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: 0.4s;
+ color: white;
+ cursor: pointer;
+}
+
+.search-btn > i {
+ font-size: 30px;
+}
+
+.search-txt {
+ border: none;
+ background: none;
+ outline: none;
+ float: left;
+ color: white;
+ font-size: 14px;
+ transition: 0.4s;
+ line-height: 20px;
+ width: 0px;
+ font-weight: bold;
+}
  /******************** MAINBODY ********************/
 .mainbody{
     background-color: white;

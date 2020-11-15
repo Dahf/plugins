@@ -12,6 +12,7 @@ session_start();
   <body>
   <!---------------- JAVASCRIPT ---------------->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
    <script>
      AOS.init();
     </script>
@@ -42,8 +43,20 @@ session_start();
                   <?php if (isset($_SESSION['username'])): ?>
                   <a class="navlink" href="login/dashboard.php"><b>ACCOUNT</b></a>
                   <?php endif; ?>
-                </div>
-          </div>
+
+              </div>
+              <div class="shopping-cart">
+                <a class="shopping-btn" href="shoppingcart.php">
+                <i class="fas fa-shopping-cart"></i>
+                </a>
+              </div>
+              <div class="search-box">
+                <input type="text" name="" class="search-txt" placeholder="Type..."/>
+                <a class="search-btn">
+                  <i class="fas fa-search"></i>
+                </a>
+              </div>
+        </div>
  <!---------------- MAINBODY ---------------->
         <div class="mainbody">
            <iframe name="mainframe" id="mainframe" src="news.php"></iframe>

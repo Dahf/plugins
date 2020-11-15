@@ -35,6 +35,7 @@
 <script>
   AOS.init();
   </script>
+
 <!---------------- HEADER ---------------->
     <div id="header">
        <a class="headerwri"href="../index.php">
@@ -56,7 +57,7 @@
                  <?php endif; ?>
                </div>
          </div>
-<!---------------- LOGIN ---------------->   
+<!---------------- LOGIN ---------------->
 <div id="login">
   <h1>Anmelden</h1>
   <form action="login.php" method="post">
