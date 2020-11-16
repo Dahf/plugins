@@ -155,14 +155,20 @@ a{
    background-color: transparent;
    opacity: 50%;
  }
-}
+
 
   /******************** COMMENTARY ********************/
-  .commentary{
-    margin-top: 50px;
-  }
-  #commentary{
+  #commentarylogin{
     color:black;
+    font-family: Montserrat;
+    font-weight: 200;
+    margin-top: -100px;
+  }
+  #commentaryregister{
+    color:black;
+    font-family: Montserrat;
+    font-weight: 200;
+    margin-top: 320px;
   }
 
     /******************** Login ********************/
@@ -203,7 +209,7 @@ a{
   text-align-last: center;
   z-index: 5;
   margin-left: 600px;
-  margin-top: -305px;
+  margin-top: -310px;
 }
 h1{
   font-family: Montserrat;
