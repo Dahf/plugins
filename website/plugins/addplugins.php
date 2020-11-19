@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <?php
 session_start();
 require("../rankmanager.php");
@@ -7,6 +6,7 @@ if(isBanned($_SESSION["username"])){
   exit;
 }
  ?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">

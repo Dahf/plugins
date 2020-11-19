@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <?php
 session_start();
 require("../rankmanager.php");
@@ -11,6 +10,7 @@ if(getRank($_SESSION["username"]) != ADMIN){
   exit;
 }
  ?>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
