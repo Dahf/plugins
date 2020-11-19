@@ -27,7 +27,6 @@ if(getRank($_SESSION["username"]) != ADMIN){
                 $stmt->execute(array(":user" => $_POST["username"], ":email" => $_POST["email"], ":id" => $_GET["id"])); //Führt die Aktion aus und senden es an die Datenbank
                 header("Location: benutzer.php");
                 ?>
-
                 <p>Der Benutzer wurde gespeichert.</p>
                 <?php
             }
@@ -42,13 +41,11 @@ if(getRank($_SESSION["username"]) != ADMIN){
             </form>
             <?php
         } else {
-            //edit.php?id
             ?>
             <p>Kein Benutzer wurde angefragt</p>
             <?php
         }
     } else {
-        //edit.php
         ?>
         <p>Kein Benutzer wurde angefragt</p>
         <?php
