@@ -1,29 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&family=Roboto&family=Share+Tech+Mono&display=swap');
 
-li{
+#projects {
+    width: 100%;
+    margin: 0 auto 0 auto;
+}
+
+#projects ul {
+    list-style-type: none;
+}
+
+#projects ul li {
+    height: 400px;
     list-style: none;
-    padding: 10px;
-    margin-right: 60px;
-    margin-top:50px;
-    border: solid 1px black;
-    background-color: 	#f6f7f9;
-}
-p{
-    font-family: Catamaran;
-}
-b{
-    font-family: Overpass;
-    font-weight: 100;
-    font-size: 25;
+    width: 325px;
+    float: left;
+    margin-bottom: 30px;
+    margin-right: 25px;
+    border: solid 1px #dfe5e8;
 }
 
-#status{
-    float:right;
-    font-size: 13px;
-    padding-right: 15px;
-    color: #022358;
+#projects img {
+    max-width:325px;
+    height:auto;
 }
 
+#projects li:hover {
+  color: #3c3950;
+  border-color: #f4f6f7;
+  background: #f4f6f7;
+}
+#header {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+#header a{
+  color: #5f727f;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 200px;
+  left: 50%;
+}
 html{
     background-color: 	#f8f7f8;
 }
