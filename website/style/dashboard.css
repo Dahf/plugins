@@ -188,6 +188,11 @@ line-height: 20px;
 width: 0px;
 font-weight: bold;
 }
+
+.search-txt:focus{
+  width:150px;
+}
+
 /******************** MAINBODY ********************/
 .mainbody{
    background-color: #f8f7f8;
