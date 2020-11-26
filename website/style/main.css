@@ -36,14 +36,15 @@ html{
    position: absolute;
 }
 #links_footer{
- margin-left: 300px;
+ margin-left: 10%;
  padding-top: 15px;
 }
 .copyright{
    color: white;
    font-size: 15px;
    background-color: transparent;
-   padding-left: 100px;
+   padding-left: 80%;
+   margin-top: -18px;
 }
 .footer{
    color: white;
