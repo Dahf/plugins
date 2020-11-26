@@ -36,15 +36,18 @@ if(isBanned($_SESSION["username"])){
 <!---------------- FOOTER ---------------->
   <div id="footer">
     <div id="links_footer">
-      <a class="footer" href="impressum.html" target="_blank"><b>Impressum</b></a>
-      <a class="footer" href="agb.html" target="_blank"><b>AGB</b></a>
-      <a class="footer" href="datenschutz.html" target="_blank"><b>Datenschutz</b></a>
-      <a class="footer" href="cookie-informationen.html" target="_blank"><b>Cookie Informationen</b></a>
-      <a class="footer" href="disclaimer.html" target="_blank"><b>Disclaimer</b></a>
-      <a class="footer" href="Kontakt.html" target="_blank"><b>Kontakt</b></a>
+      <a class="footer" href="impressum.html"><b>Impressum</b></a>
+      <a class="footer" href="agb.html"><b>AGB</b></a>
+      <a class="footer" href="datenschutz.html"><b>Datenschutz</b></a>
+      <a class="footer" href="cookie-informationen.html"><b>Cookie Informationen</b></a>
+      <a class="footer" href="disclaimer.html"><b>Disclaimer</b></a>
+      <a class="footer" href="Kontakt.html"><b>Kontakt</b></a>
       <a class="copyright"><b>© 2020 *auftraggeber</b></a>
     </div>
   </div>
+
+
+
 <!---------------- NAVBAR ---------------->
   <div id="navbar">
     <div id="links_navbar">
@@ -69,16 +72,23 @@ if(isBanned($_SESSION["username"])){
       </a>
     </div>
   </div>
+    <div class="mainbody">
+       <iframe name="mainframe" id="mainframe" src="uebersicht.php"></iframe>
+    </div>
   <div class="buttonlist">
     <ul>
       <li><a href="uebersicht.php" class="button" target="mainframe">DASHBOARD</a></li>
       <li><a href="../plugins/addplugins.php" class="button" target="mainframe">PLUGINS</a></li>
-      <li><a href="../benutzer/benutzer.php" class="button" target="mainframe">BENUTZER</a></li>
+      <?php
+      if(getRank($_SESSION["username"]) == ADMIN){
+        ?>
+        <li><a href="../benutzer/benutzer.php" class="button" target="mainframe">BENUTZER</a></li>
+        <?php
+        exit;
+      }
+       ?>
       <li><a href="logout.php" class="button">ABMELDEN</a></li>
     </ul>
-  </div>
-  <div class="mainbody">
-     <iframe name="mainframe" id="mainframe" src="uebersicht.php"></iframe>
   </div>
 
   </body>
