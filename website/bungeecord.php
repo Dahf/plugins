@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>test</title>                                   <!--immer abändern-->
-    <link href="style/testbereich.css" rel="stylesheet">  <!--immer abändern-->
+    <title>Bungeecord</title>                                   <!--immer abändern-->
+    <link href="style/bungeecord.css" rel="stylesheet">  <!--immer abändern-->
   </head>
   <body>
 <!---------------- JAVASCRIPT ---------------->
@@ -15,7 +15,7 @@
     </script>
 <!---------------- HEADER ---------------->
     <div id="header">
-      <a class="headerwri"href="index.php">
+      <a class="headerwri"href="../index.php">
         <div data-aos="zoom-in" aos-duration="500" id="animation">
           <b>PluginStore</b>
         </div>
@@ -36,8 +36,8 @@
 <!---------------- NAVBAR ---------------->
     <div id="navbar">
       <div id="links_navbar">
-        <a class="navlink" href="spigot.html"><b>SPIGOT</b></a>
-        <a class="navlink" href="bungeecord.html"><b>BUNGEECORD</b></a>
+        <a class="navlink" href="spigot.php"><b>SPIGOT</b></a>
+        <a class="navlink" href="bungeecord.php"><b>BUNGEECORD</b></a>
         <?php if (!isset($_SESSION['username'])): ?>
         <a class="navlink" href="login/login.php"><b>LOGIN</b></a>
         <?php endif; ?>

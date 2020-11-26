@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>test</title>                                   <!--immer abändern-->
-    <link href="style/testbereich.css" rel="stylesheet">  <!--immer abändern-->
+    <title>Spigot</title>                                   <!--immer abändern-->
+    <link href="style/spigot.css" rel="stylesheet">  <!--immer abändern-->
   </head>
   <body>
 <!---------------- JAVASCRIPT ---------------->
@@ -36,8 +36,8 @@
 <!---------------- NAVBAR ---------------->
     <div id="navbar">
       <div id="links_navbar">
-        <a class="navlink" href="spigot.html"><b>SPIGOT</b></a>
-        <a class="navlink" href="bungeecord.html"><b>BUNGEECORD</b></a>
+        <a class="navlink" href="spigot.php"><b>SPIGOT</b></a>
+        <a class="navlink" href="bungeecord.php"><b>BUNGEECORD</b></a>
         <?php if (!isset($_SESSION['username'])): ?>
         <a class="navlink" href="login/login.php"><b>LOGIN</b></a>
         <?php endif; ?>
