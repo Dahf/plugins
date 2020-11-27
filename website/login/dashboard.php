@@ -75,10 +75,11 @@ if(isBanned($_SESSION["username"])){
   <div class="buttonlist">
     <ul>
       <li><a href="uebersicht.php" class="button" target="mainframe">DASHBOARD</a></li>
-      <li><a href="../plugins/addplugins.php" class="button" target="mainframe">PLUGINS</a></li>
+
       <?php
       if(getRank($_SESSION["username"]) == ADMIN){
         ?>
+        <li><a href="../plugins/addplugins.php" class="button" target="mainframe">PLUGINS</a></li>
         <li><a href="../benutzer/benutzer.php" class="button" target="mainframe">BENUTZER</a></li>
         <?php
       }

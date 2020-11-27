@@ -1,4 +1,7 @@
-<html>
+<?php
+session_start();
+ ?>
+ <html>
     <head>
         <meta charset="utf-8">
         <link href="style/news.css" rel="stylesheet">
@@ -27,9 +30,8 @@
                   </div>
                    <p id="status"><?php echo $row["CREATED_BY"] ?></p>
                    <p><?php echo ($row["DESCRIPTION"]) ?></p>
+                   <p><?php echo ($row["PRICING"]) ?></p>
                </li>
-
-
            <?php
        }
        ?>
