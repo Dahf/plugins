@@ -24,13 +24,19 @@ session_start();
            ?>
 
                <li>
+                 	<form method="post" action="shoppingcart.php?action=add&id=<?php echo $row["id"]; ?>">
                    <img id="picture" src="upload/<?php echo $row["PICTURE"]?>">
                    <div id="header">
-                     <a href="#"><?php echo $row["TITEL"] ?></a>
+                     <a href="#" name="titel"><?php echo $row["TITEL"] ?></a>
                   </div>
-                   <p id="status"><?php echo $row["CREATED_BY"] ?></p>
+                   <p id="status" name="created_by"><?php echo $row["CREATED_BY"] ?></p>
                    <p><?php echo ($row["DESCRIPTION"]) ?></p>
-                   <p><?php echo ($row["PRICING"]) ?></p>
+                   <p name="pricing"><?php echo ($row["PRICING"]) ?></p>
+                   <input type="hidden" name="titel" value="<?php echo $row["TITEL"]; ?>" />
+                   <input type="hidden" name="pricing" value="<?php echo $row["PRICING"]; ?>" />
+                   <input type="text" name="quantity" class="form-control" value="1" />
+                   <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn btn-success" value="Add to Cart" />
+                 </form>
                </li>
            <?php
        }
