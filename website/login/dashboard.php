@@ -34,17 +34,14 @@ if(isBanned($_SESSION["username"])){
     </a>
   </div>
 <!---------------- FOOTER ---------------->
-  <div id="footer">
-    <div id="links_footer">
-      <a class="footer" href="impressum.html"><b>Impressum</b></a>
-      <a class="footer" href="agb.html"><b>AGB</b></a>
-      <a class="footer" href="datenschutz.html"><b>Datenschutz</b></a>
-      <a class="footer" href="cookie-informationen.html"><b>Cookie Informationen</b></a>
-      <a class="footer" href="disclaimer.html"><b>Disclaimer</b></a>
-      <a class="footer" href="Kontakt.html"><b>Kontakt</b></a>
-      <a class="copyright"><b>© 2020 *auftraggeber</b></a>
-    </div>
-  </div>
+<!---------------- FOOTER ---------------->
+          <div id="footer">
+              <div id="links_footer">
+                <a class="footer" href="../impressum.php">Impressum</a>
+                <a class="footer" href="../datenschutz.php">Datenschutz</a>
+                <p class="copyright">© 2020 SilasBeckmann.de</a>
+             </div>
+         </div>
 
 
 
@@ -84,7 +81,6 @@ if(isBanned($_SESSION["username"])){
         ?>
         <li><a href="../benutzer/benutzer.php" class="button" target="mainframe">BENUTZER</a></li>
         <?php
-        exit;
       }
        ?>
       <li><a href="logout.php" class="button">ABMELDEN</a></li>

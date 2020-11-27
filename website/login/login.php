@@ -25,17 +25,13 @@
     </div>
 
 <!---------------- FOOTER ---------------->
-    <div id="footer">
-      <div id="links_footer">
-        <a class="footer" href="impressum.html" target="_blank"><b>Impressum</b></a>
-        <a class="footer" href="agb.html" target="_blank"><b>AGB</b></a>
-        <a class="footer" href="datenschutz.html" target="_blank"><b>Datenschutz</b></a>
-        <a class="footer" href="cookie-informationen.html" target="_blank"><b>Cookie Informationen</b></a>
-        <a class="footer" href="disclaimer.html" target="_blank"><b>Disclaimer</b></a>
-        <a class="footer" href="Kontakt.html" target="_blank"><b>Kontakt</b></a>
-        <a class="copyright"><b>© 2020 *auftraggeber</b></a>
-      </div>
-    </div>
+          <div id="footer">
+              <div id="links_footer">
+                <a class="footer" href="../impressum.php">Impressum</a>
+                <a class="footer" href="../datenschutz.php">Datenschutz</a>
+                <p class="copyright">© 2020 SilasBeckmann.de</a>
+             </div>
+         </div>
 <!---------------- NAVBAR ---------------->
         <div id="navbar">
              <div id="links_navbar">

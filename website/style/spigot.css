@@ -126,52 +126,37 @@ a{
  .search-txt:focus{
    width:150px;
  }
- 
-  /******************** FOOTER ********************/
-#footer{
-     width: 100%;
-     font-family: Montserrat;
-     height: 50px;
-     background:linear-gradient(10deg, #141839, #351439);
-     margin-top: 911px;
-     margin-left: -8px;
-     position: absolute;
+
+ /******************** FOOTER ********************/
+ #footer{
+    width: 100%;
+    font-family: Montserrat;
+    height: 50px;
+    background:linear-gradient(10deg, #141839, #351439);
+    margin-top: 2400px;
+    margin-left: -8px;
+    position: absolute;
  }
  #links_footer{
-   margin-left: 300px;
-   padding-top: 15px;
+  margin-left: 10%;
+  padding-top: 15px;
  }
  .copyright{
-     color: white;
-     font-size: 15px;
-     background-color: transparent;
-     padding-left: 100px;
+    color: white;
+    font-size: 15px;
+    background-color: transparent;
+    padding-left: 80%;
+    margin-top: -18px;
  }
  .footer{
-     color: white;
-     font-size: 15px;
-     background-color: transparent;
-     padding-right: 10px;
-     padding-left: 10px;
-     padding-top: 1px;
+    color: white;
+    font-size: 15px;
+    background-color: transparent;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 1px;
  }
  .footer:hover{
-   background-color: transparent;
-   opacity: 50%;
- }
-h1{
-  font-family: Montserrat;
-}
-.typein{
-  list-style-type: none;
-  padding: 0;
-  border: 1px solid grey;
-  border-radius: 2px;
-  padding: 9px 50px 9px 50px;
-  margin-top: -1px;
   background-color: transparent;
-  max-width: 400px;
-}
-.typein:last-child {
-    border-bottom: 1px solid grey;;
-}
+  opacity: 50%;
+ }
