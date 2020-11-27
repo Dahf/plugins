@@ -6,6 +6,6 @@ go on http://silasbeckmann.de
 Liste von Bugs:
 
 Bug1: Problem erklären, Klasse und Zeile darin nennen, evtl. Lösung nennen
-Bug2: Registrier-Bug, Seite hat Schaganfall
+Bug2: Registrier-Bug, Seite hat Schaganfall / Fixed
 # TODO
 index.html
