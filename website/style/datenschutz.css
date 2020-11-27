@@ -122,41 +122,49 @@ a{
   width: 0px;
   font-weight: bold;
  }
-
- .search-txt:focus{
-   width:150px;
- }
-
- /******************** FOOTER ********************/
- #footer{
-    width: 100%;
-    font-family: Montserrat;
-    height: 50px;
-    background:linear-gradient(10deg, #141839, #351439);
-    margin-top: 2400px;
-    margin-left: -8px;
-    position: absolute;
- }
- #links_footer{
-  margin-left: 10%;
-  padding-top: 15px;
- }
- .copyright{
-    color: white;
-    font-size: 15px;
-    background-color: transparent;
-    padding-left: 80%;
-    margin-top: -18px;
- }
- .footer{
-    color: white;
-    font-size: 15px;
-    background-color: transparent;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 1px;
- }
- .footer:hover{
-  background-color: transparent;
-  opacity: 50%;
- }
+  /******************** NAVBAR ********************/
+#impressum{
+  padding-top: 100px;
+  text-align: left;
+}
+#impressum a{
+  color: blue;
+}
+#impressum{
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+}
+/******************** FOOTER ********************/
+#footer{
+   width: 100%;
+   font-family: Montserrat;
+   height: 50px;
+   background:linear-gradient(10deg, #141839, #351439);
+   margin-top: 2400px;
+   margin-left: -8px;
+   position: absolute;
+}
+#links_footer{
+ margin-left: 10%;
+ padding-top: 15px;
+}
+.copyright{
+   color: white;
+   font-size: 15px;
+   background-color: transparent;
+   padding-left: 80%;
+   margin-top: -18px;
+}
+.footer{
+   color: white;
+   font-size: 15px;
+   background-color: transparent;
+   padding-right: 10px;
+   padding-left: 10px;
+   padding-top: 1px;
+}
+.footer:hover{
+ background-color: transparent;
+ opacity: 50%;
+}

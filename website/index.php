@@ -1,7 +1,7 @@
-<!DOCTYPE html>
 <?php
 session_start();
  ?>
+ <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -28,14 +28,18 @@ session_start();
             </div>
          </a>
       </div>
- <!---------------- FOOTER ---------------->
-      <div id="footer">
-          <a class="footer" href="impressum.html"><b>Impressum</b></a>
-      </div>
+<!---------------- FOOTER ---------------->
+          <div id="footer">
+              <div id="links_footer">
+                <a class="footer" href="impressum.php">Impressum</a>
+                <a class="footer" href="datenschutz.php">Datenschutz</a>
+                <p class="copyright">© 2020 SilasBeckmann.de</a>
+             </div>
+         </div>
  <!---------------- NAVBAR ---------------->
          <div id="navbar">
-              <div id="links">
-                  <a class="navlink" href="spigot.html"><b>SPIGOT</b></a>
+              <div id="links_navbar">
+                  <a class="navlink" href="spigot.php"><b>SPIGOT</b></a>
                   <a class="navlink" href="bungeecord.html"><b>BUNGEECORD</b></a>
                   <?php if (!isset($_SESSION['username'])): ?>
                   <a class="navlink" href="login/login.php"><b>LOGIN</b></a>
@@ -47,7 +51,7 @@ session_start();
               </div>
               <div class="shopping-cart">
                 <a class="shopping-btn" href="shoppingcart.php">
-                <i class="fas fa-shopping-cart"></i>
+                  <i class="fas fa-shopping-cart"></i>
                 </a>
               </div>
               <div class="search-box">
