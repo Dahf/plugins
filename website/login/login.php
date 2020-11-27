@@ -33,18 +33,30 @@
              </div>
          </div>
 <!---------------- NAVBAR ---------------->
-        <div id="navbar">
-             <div id="links_navbar">
-                 <a class="navlink" href="spigot.html"><b>SPIGOT</b></a>
-                 <a class="navlink" href="bungeecord.html"><b>BUNGEECORD</b></a>
-                 <?php if (!isset($_SESSION['username'])): ?>
-                 <a class="navlink" href="login.php"><b>LOGIN</b></a>
-                 <?php endif; ?>
-                 <?php if (isset($_SESSION['username'])): ?>
-                 <a class="navlink" href="dashboard.php"><b>ACCOUNT</b></a>
-                 <?php endif; ?>
-               </div>
-         </div>
+<div id="navbar">
+     <div id="links_navbar">
+         <a class="navlink" href="../spigot.php"><b>SPIGOT</b></a>
+         <a class="navlink" href="../bungeecord.html"><b>BUNGEECORD</b></a>
+         <?php if (!isset($_SESSION['username'])): ?>
+         <a class="navlink" href="login.php"><b>LOGIN</b></a>
+         <?php endif; ?>
+         <?php if (isset($_SESSION['username'])): ?>
+         <a class="navlink" href="login/dashboard.php"><b>ACCOUNT</b></a>
+         <?php endif; ?>
+
+     </div>
+     <div class="shopping-cart">
+       <a class="shopping-btn" href="shoppingcart.php">
+         <i class="fas fa-shopping-cart"></i>
+       </a>
+     </div>
+     <div class="search-box">
+       <input type="text" name="" class="search-txt" placeholder="Type..."/>
+       <a class="search-btn">
+         <i class="fas fa-search"></i>
+       </a>
+     </div>
+</div>
 
 <!---------------- LOGIN ---------------->
 
