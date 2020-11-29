@@ -6,8 +6,8 @@ session_start();
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Bungeecord</title>                                   <!--immer abändern-->
-    <link href="style/bungeecord.css" rel="stylesheet">  <!--immer abändern-->
+    <title>Bungeecord</title>                                 
+    <link href="style/bungeecord.css" rel="stylesheet">
   </head>
   <body>
 <!---------------- JAVASCRIPT ---------------->

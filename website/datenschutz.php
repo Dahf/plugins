@@ -6,8 +6,8 @@ session_start();
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>test</title>                                   <!--immer abändern-->
-    <link href="style/datenschutz.css" rel="stylesheet">  <!--immer abändern-->
+    <title>Datenschutz</title>
+    <link href="style/datenschutz.css" rel="stylesheet">  
   </head>
   <body>
 <!---------------- JAVASCRIPT ---------------->
@@ -27,8 +27,8 @@ session_start();
 <!---------------- NAVBAR ---------------->
     <div id="navbar">
       <div id="links_navbar">
-        <a class="navlink" href="spigot.html"><b>SPIGOT</b></a>
-        <a class="navlink" href="bungeecord.html"><b>BUNGEECORD</b></a>
+        <a class="navlink" href="spigot.php"><b>SPIGOT</b></a>
+        <a class="navlink" href="bungeecord.php"><b>BUNGEECORD</b></a>
         <?php if (!isset($_SESSION['username'])): ?>
         <a class="navlink" href="login/login.php"><b>LOGIN</b></a>
         <?php endif; ?>

@@ -6,8 +6,8 @@ session_start();
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Spigot</title>                                   <!--immer abändern-->
-    <link href="style/spigot.css" rel="stylesheet">  <!--immer abändern-->
+    <title>Spigot</title>
+    <link href="style/spigot.css" rel="stylesheet"> 
   </head>
   <body>
 <!---------------- JAVASCRIPT ---------------->
