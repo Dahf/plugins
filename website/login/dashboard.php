@@ -77,7 +77,7 @@ if(isBanned($_SESSION["username"])){
       <li><a href="uebersicht.php" class="button" target="mainframe">DASHBOARD</a></li>
 
       <?php
-      if(getRank($_SESSION["username"]) == ADMIN){
+      if(getRank($_SESSION["username"]) != USER){
         ?>
         <li><a href="../plugins/addplugins.php" class="button" target="mainframe">PLUGINS</a></li>
         <li><a href="../benutzer/benutzer.php" class="button" target="mainframe">BENUTZER</a></li>
