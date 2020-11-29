@@ -5,7 +5,7 @@ if(isBanned($_SESSION["username"])){
   header("Location: logout.php");
   exit;
 }
-if(getRank($_SESSION["username"]) != ADMIN){
+if(getRank($_SESSION["username"]) == USER){
   header("Location: logout.php");
   exit;
 }

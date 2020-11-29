@@ -1,13 +1,13 @@
 <?php
 session_start();
  ?>
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Spigot</title>
-    <link href="style/spigot.css" rel="stylesheet"> 
+    <title>Impressum</title>                                 
+    <link href="style/impressum.css" rel="stylesheet">
   </head>
   <body>
 <!---------------- JAVASCRIPT ---------------->
@@ -24,7 +24,6 @@ session_start();
         </div>
       </a>
     </div>
-<!---------------- FOOTER ---------------->
 <!---------------- FOOTER ---------------->
           <div id="footer">
               <div id="links_footer">

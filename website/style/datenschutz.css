@@ -122,18 +122,22 @@ a{
   width: 0px;
   font-weight: bold;
  }
-  /******************** NAVBAR ********************/
-#impressum{
+  /******************** TEXT ********************/
+#datenschutz{
   padding-top: 100px;
   text-align: left;
 }
-#impressum a{
-  color: blue;
-}
-#impressum{
+#datenschutz{
   width: 60%;
   margin-left: 20%;
   text-align: center;
+}
+/******************** LINKS ********************/
+.link{
+  color: blue;
+}
+.link:hover {
+  text-decoration:underline;
 }
 /******************** FOOTER ********************/
 #footer{
@@ -141,7 +145,7 @@ a{
    font-family: Montserrat;
    height: 50px;
    background:linear-gradient(10deg, #141839, #351439);
-   margin-top: 2400px;
+   margin-top: 10px;
    margin-left: -8px;
    position: absolute;
 }

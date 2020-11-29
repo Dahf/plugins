@@ -5,8 +5,8 @@ if(isBanned($_SESSION["username"])){
   header("Location: ../login/logout.php"); //Falls er gebannt ist wird er ausgeloggt
   exit;
 }
-if(getRank($_SESSION["username"]) != ADMIN){
-  header("Location: ../login/dashboard.php"); //Wenn er kein Admin ist wird er zurück geschickt
+if(getRank($_SESSION["username"]) == USER){
+  header("Location: ../login/dashboard.php"); //Wenn man USER ist wird man zurück geschickt
   exit;
 }
  ?>
@@ -34,13 +34,17 @@ if(getRank($_SESSION["username"]) != ADMIN){
         if(!empty($_GET["del"])){ //Wenn die Anfrage nicht leer ist/ Wenn es den Benutzer gibt
             $stmt = $mysql->prepare("DELETE FROM accounts WHERE ID = :id"); //Aus MySQL wird der Benutzer mit der ID :id gesucht
             $stmt->execute(array(":id" => $_GET["del"])); //Benutzer wird gelöscht
+            }
             ?>
             <p>Der Benutzer wurde gelöscht</p>
             <?php
-        }
     }
-
-    $stmt = $mysql->prepare("SELECT * FROM accounts"); //Jeder Account wird ausgewählt
+    if(getRank($_SESSION["username"]) == ADMIN){
+    $stmt = $mysql->prepare("SELECT * FROM accounts WHERE SERVERRANK != 2"); //Jeder Account wird ausgewählt der keine Admin-Rechte hat
+    }
+    if(getRank($_SESSION["username"]) == MOD){
+    $stmt = $mysql->prepare("SELECT * FROM accounts WHERE SERVERRANK = 0"); //Jeder Account wird ausgewählt der User-Rechte
+    }
     $stmt->execute(); //Das obere $stmt wird ausgeführt
     while($row = $stmt->fetch()){ //Für jeder Benutzer wird jeweils das da unten gemacht
         ?>
