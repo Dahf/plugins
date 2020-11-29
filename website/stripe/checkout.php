@@ -1,6 +1,6 @@
 <?php
 session_start();
-require("mysql.php");
+require("../mysql.php");
 if(isset($_POST["add_to_cart"]))
 {
 	 if(isset($_SESSION["shopping_cart"]))
@@ -19,7 +19,7 @@ if(isset($_POST["add_to_cart"]))
 				}
 				else
 				{
-						 header("Location: shoppingcart.php");
+						 header("Location: checkout.php");
 						 exit;
 				}
 	 }
@@ -57,6 +57,8 @@ if(isset($_GET["action"]))
 				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     		<link href="style/shoppingcart.css" rel="stylesheet">
 				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
+        <script src="https://js.stripe.com/v3/"></script>
 	 </head>
 	 <body>
 				<br />
@@ -102,6 +104,85 @@ if(isset($_GET["action"]))
 									</table>
 						 </div>
 				</div>
+
 				<br />
-	 </body>
+
+
+
+        <section>
+
+          <div class="product">
+
+
+            <div class="description">
+
+              <h3></h3>
+
+              <h5>$20.00</h5>
+
+            </div>
+
+          </div>
+
+          <button id="checkout-button">Checkout</button>
+
+        </section>
+
+
+
+  <script type="text/javascript">
+
+    // Create an instance of the Stripe object with your publishable API key
+
+    var stripe = Stripe("pk_test_51HsnB4DY5IWlezcdkJZutTwqTjOo6djcvDWgjjsuaSw4FYL8XjIO7RrPaxdBfFRrCcfrQfz7HB6v8BUQDctR3QEo00jL0Ctxeu");
+
+    var checkoutButton = document.getElementById("checkout-button");
+
+    checkoutButton.addEventListener("click", function () {
+
+      fetch("create-session.php", {
+
+        method: "POST",
+
+      })
+
+        .then(function (response) {
+
+          return response.json();
+
+        })
+
+        .then(function (session) {
+
+          return stripe.redirectToCheckout({ sessionId: session.id });
+
+        })
+
+        .then(function (result) {
+
+          // If redirectToCheckout fails due to a browser or network
+
+          // error, you should display the localized error message to your
+
+          // customer using error.message.
+
+          if (result.error) {
+
+            alert(result.error.message);
+
+          }
+
+        })
+
+        .catch(function (error) {
+
+          console.error("Error:", error);
+
+        });
+
+    });
+
+  </script>
+
+</body>
 </html>

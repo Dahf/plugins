@@ -24,7 +24,7 @@ session_start();
            ?>
 
                <li>
-                 	<form method="post" action="shoppingcart.php?action=add&id=<?php echo $row["id"]; ?>">
+                 	<form method="post" action="stripe/checkout.php?action=add&id=<?php echo $row["id"]; ?>">
                    <img id="picture" src="upload/<?php echo $row["PICTURE"]?>">
                    <div id="header">
                      <a href="#" name="titel"><?php echo $row["TITEL"] ?></a>
