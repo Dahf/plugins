@@ -7,7 +7,7 @@ session_start();
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Spigot</title>
-    <link href="style/spigot.css" rel="stylesheet"> 
+    <link href="style/spigot.css" rel="stylesheet">
   </head>
   <body>
 <!---------------- JAVASCRIPT ---------------->
@@ -24,7 +24,6 @@ session_start();
         </div>
       </a>
     </div>
-<!---------------- FOOTER ---------------->
 <!---------------- FOOTER ---------------->
           <div id="footer">
               <div id="links_footer">
