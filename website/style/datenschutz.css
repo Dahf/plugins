@@ -122,18 +122,22 @@ a{
   width: 0px;
   font-weight: bold;
  }
-  /******************** NAVBAR ********************/
-#impressum{
+  /******************** TEXT ********************/
+#datenschutz{
   padding-top: 100px;
   text-align: left;
 }
-#impressum a{
-  color: blue;
-}
-#impressum{
+#datenschutz{
   width: 60%;
   margin-left: 20%;
   text-align: center;
+}
+/******************** LINKS ********************/
+.link{
+  color: blue;
+}
+.link:hover {
+  text-decoration:underline;
 }
 /******************** FOOTER ********************/
 #footer{
