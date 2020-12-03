@@ -34,7 +34,6 @@ if(isBanned($_SESSION["username"])){
     </a>
   </div>
 <!---------------- FOOTER ---------------->
-<!---------------- FOOTER ---------------->
           <div id="footer">
               <div id="links_footer">
                 <a class="footer" href="../impressum.php">Impressum</a>

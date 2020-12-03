@@ -22,7 +22,6 @@ session_start();
      <?php
        while($row = $stmt->fetch()){
            ?>
-
                <li>
                  	<form method="post" action="stripe/checkout.php?action=add&id=<?php echo $row["id"]; ?>">
                    <img id="picture" src="upload/<?php echo $row["PICTURE"]?>">

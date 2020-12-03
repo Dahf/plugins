@@ -126,7 +126,36 @@ a{
  .search-txt:focus{
    width:150px;
  }
+ #bungeecord {
+     width: 100%;
+     margin: 0 auto 0 auto;
+     padding-top: 150px;
+ }
 
+ #bungeecord ul {
+     list-style-type: none;
+ }
+
+ #bungeecord ul li {
+     height: 400px;
+     list-style: none;
+     width: 325px;
+     float: left;
+     margin-bottom: 30px;
+     margin-right: 25px;
+     border: solid 1px #dfe5e8;
+ }
+
+ #bungeecord img {
+     max-width:325px;
+     height:auto;
+ }
+
+ #bungeecord li:hover {
+   color: #3c3950;
+   border-color: #f4f6f7;
+   background: #f4f6f7;
+ }
  /******************** FOOTER ********************/
  #footer{
     width: 100%;
