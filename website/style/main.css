@@ -31,7 +31,7 @@ html{
    font-family: Montserrat;
    height: 50px;
    background:linear-gradient(10deg, #141839, #351439);
-   margin-top: 2400px;
+   margin-top: 2165px;
    margin-left: -8px;
    position: absolute;
 }
@@ -193,7 +193,7 @@ html{
     border:none;
     width: 60%;
     position: absolute;
-    height: 150%;
+    height: 141%;
     margin-left: 20%;
     margin-top: 800px;
 }
