@@ -30,7 +30,7 @@ session_start();
                   </div>
                    <p id="status" name="created_by"><?php echo $row["CREATED_BY"] ?></p>
                    <p><?php echo ($row["DESCRIPTION"]) ?></p>
-                   <p name="pricing"><?php echo ($row["PRICING"]) ?></p>
+                   <p name="pricing"><?php echo ($row["PRICING"]) ?>€</p>
                    <input type="hidden" name="titel" value="<?php echo $row["TITEL"]; ?>" />
                    <input type="hidden" name="pricing" value="<?php echo $row["PRICING"]; ?>" />
                    <input type="text" name="quantity" class="form-control" value="1" />
