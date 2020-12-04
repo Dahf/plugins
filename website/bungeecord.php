@@ -63,7 +63,7 @@ session_start();
        $stmt->execute();
        $count = $stmt->rowCount();
        if($count == 0){
-           echo "Es wurden keine News gefunden.";
+           echo "Kein Bungeecord-Plugin vorhanden.";
        } else {
          ?>
             <ul>
@@ -73,7 +73,7 @@ session_start();
                    <li>
                      	<form method="post" action="stripe/checkout.php?action=add&id=<?php echo $row["id"]; ?>">
                        <img id="picture" src="upload/<?php echo $row["PICTURE"]?>">
-                       <div id="header">
+                       <div id="Head">
                          <a href="#" name="titel"><?php echo $row["TITEL"] ?></a>
                       </div>
                        <p id="status" name="created_by"><?php echo $row["CREATED_BY"] ?></p>
