@@ -16,13 +16,13 @@ $checkout_session = \Stripe\Checkout\Session::create([
 
     'price_data' => [
 
-      'currency' => 'usd',
+      'currency' => 'eur',
 
       'unit_amount' => 2000,
 
       'product_data' => [
 
-        'name' => 'Stubborn Attachments',
+        'name' => 'Minecraft Plugins',
 
         'images' => ["https://i.imgur.com/EHyR2nP.png"],
 

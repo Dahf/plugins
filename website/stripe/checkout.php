@@ -43,7 +43,6 @@ if(isset($_GET["action"]))
 						 if($values["item_id"] == $_GET["id"])
 						 {
 									unset($_SESSION["shopping_cart"][$keys]);
-									echo '<script>window.location="index.php"</script>';
 						 }
 				}
 	 }
@@ -87,7 +86,7 @@ if(isset($_GET["action"]))
 														<td><?php echo $values["item_quantity"]; ?></td>
 														<td>€ <?php echo $values["item_price"]; ?></td>
 														<td>€ <?php echo number_format($values["item_quantity"] * $values["item_price"], 2); ?></td>
-														<td><a href="shoppingcart.php?action=delete&id=<?php echo $values["item_id"]; ?>"><span class="text-danger">Remove</span></a></td>
+														<td><a href="checkout.php?action=delete&id=<?php echo $values["item_id"]; ?>"><span class="text-danger">Remove</span></a></td>
 											 </tr>
 											 <?php
 																 $total = $total + ($values["item_quantity"] * $values["item_price"]);
@@ -118,7 +117,7 @@ if(isset($_GET["action"]))
 
               <h3></h3>
 
-              <h5>$20.00</h5>
+              <h5>€<?php echo number_format($total, 2); ?></h5>
 
             </div>
 
