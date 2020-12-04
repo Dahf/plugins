@@ -56,6 +56,9 @@ session_start();
           </a>
         </div>
     </div>
+
+    <!---------------- BUNGEECORD-LIST ---------------->
+
     <div id="bungeecord">
       <?php
        require("mysql.php");
@@ -73,7 +76,7 @@ session_start();
                    <li>
                      	<form method="post" action="stripe/checkout.php?action=add&id=<?php echo $row["id"]; ?>">
                        <img id="picture" src="upload/<?php echo $row["PICTURE"]?>">
-                       <div id="Head">
+                       <div class="title">
                          <a href="#" name="titel"><?php echo $row["TITEL"] ?></a>
                       </div>
                        <p id="status" name="created_by"><?php echo $row["CREATED_BY"] ?></p>

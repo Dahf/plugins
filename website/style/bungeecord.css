@@ -126,15 +126,28 @@ a{
  .search-txt:focus{
    width:150px;
  }
+
+   /******************** BUNGEECORD-LIST ********************/
+
+#bungeecord a {
+  color: black;
+}
  #bungeecord {
      width: 100%;
      margin: 0 auto 0 auto;
      padding-top: 150px;
  }
 
+ .title{
+   font-family: Montserrat;
+   font-weight: 400;
+
+   }
+
  #bungeecord ul {
      list-style-type: none;
  }
+
 
  #bungeecord ul li {
      height: 400px;
