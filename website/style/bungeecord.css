@@ -137,22 +137,15 @@ a{
      margin: 0 auto 0 auto;
      padding-top: 150px;
  }
-
- .title{
-   font-family: Montserrat;
-   font-weight: 400;
-
-   }
-
  #bungeecord ul {
      list-style-type: none;
  }
 
 
  #bungeecord ul li {
-     height: 400px;
+     min-height: 340px;
      list-style: none;
-     width: 325px;
+     width: 270px;
      float: left;
      margin-bottom: 30px;
      margin-right: 25px;
@@ -160,7 +153,7 @@ a{
  }
 
  #bungeecord img {
-     max-width:325px;
+     max-width:270px;
      height:auto;
  }
 
@@ -168,6 +161,41 @@ a{
    color: #3c3950;
    border-color: #f4f6f7;
    background: #f4f6f7;
+ }
+
+#title{
+    font-family: Montserrat;
+    font-weight: 400;
+    text-align: center;
+ }
+ #title a{
+    color: #428bca;
+ }
+ .pricing{
+     font-family: Montserrat;
+     font-weight: 400;
+     text-align: center;
+  }
+  .description{
+    font-family: Montserrat;
+    font-weight: 400;
+    text-align: center;
+  }
+  .status{
+    font-family: Montserrat;
+    font-weight: 400;
+    text-align: center;
+  }
+  .category{
+    font-family: Montserrat;
+    font-weight: 400;
+    text-align: center;
+  }
+ .fas fa-shopping-cart{
+   margin-top: 250px;
+ }
+ .form-control{
+   width: 3%;
  }
  /******************** FOOTER ********************/
  #footer{
