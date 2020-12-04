@@ -10,6 +10,17 @@ a{
     text-decoration: none;
     color: white;
 }
+/******************** IMPRESSUM ********************/
+#impressum{
+  padding-top: 100px;
+  text-align: left;
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+}
+#impressum a{
+  color: blue;
+}
  /******************** HEADER ********************/
 #header{
     width: 100%;
@@ -133,7 +144,7 @@ a{
     font-family: Montserrat;
     height: 50px;
     background:linear-gradient(10deg, #141839, #351439);
-    margin-top: 908px;
+    margin-top: 1030px;
     margin-left: -8px;
     position: absolute;
  }
