@@ -56,5 +56,50 @@ session_start();
           </a>
         </div>
     </div>
+  <!---------------- SPIGOT-LIST ---------------->
+
+    <div id="spigot">
+      <?php
+       require("mysql.php");
+       $stmt = $mysql->prepare("SELECT * FROM plugins WHERE CATEGORY='spigot' LIMIT 12");
+       $stmt->execute();
+       $count = $stmt->rowCount();
+       ?>
+       <div class="text">
+       <?php
+       if($count == 0){
+           echo "Kein Spigot-Plugin vorhanden.";
+       } else {
+         ?>
+       </div>
+         <ul>
+         <?php
+           while($row = $stmt->fetch()){
+               ?>
+                   <li>
+                     	<form method="post" action="stripe/checkout.php?action=add&id=<?php echo $row["id"]; ?>">
+                       <img id="picture" src="upload/<?php echo $row["PICTURE"]?>">
+                       <div id="title">
+                         <a href="#" name="title"><?php echo $row["TITEL"] ?></a>
+                      </div>
+                       <p class="status"><?php echo $row["CREATED_BY"] ?></p>
+                       <p class="description"><?php echo ($row["DESCRIPTION"]) ?></p>
+                       <p class="pricing"><?php echo ($row["PRICING"]) ?>€</p>
+                       <p class="category"><?php echo ($row["CATEGORY"]) ?></p>
+                       <input type="hidden" name="titel" value="<?php echo $row["TITEL"]; ?>" />
+                       <input type="hidden" name="pricing" value="<?php echo $row["PRICING"]; ?>" />
+                       <input type="text" name="quantity" class="form-control" value="1" />
+                       <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn btn-success" value="Add to Cart" />
+                       <i class="fas fa-shopping-cart"></i>
+                     </form>
+                   </li>
+               <?php
+           }
+           ?>
+           </ul>
+           <?php
+       }
+       ?>
+    </div>
   </body>
 </html>

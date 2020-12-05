@@ -18,7 +18,7 @@ session_start();
     </script>
 <!---------------- HEADER ---------------->
     <div id="header">
-      <a class="headerwri"href="../index.php">
+      <a class="headerwri"href="index.php">
         <div data-aos="zoom-in" aos-duration="500" id="animation">
           <b>PluginStore</b>
         </div>
@@ -62,13 +62,17 @@ session_start();
     <div id="bungeecord">
       <?php
        require("mysql.php");
-       $stmt = $mysql->prepare("SELECT * FROM plugins WHERE CATEGORY='bungeecord' LIMIT 10");
+       $stmt = $mysql->prepare("SELECT * FROM plugins WHERE CATEGORY='bungeecord' LIMIT 12");
        $stmt->execute();
        $count = $stmt->rowCount();
+       ?>
+       <div class="text">
+      <?php
        if($count == 0){
            echo "Kein Bungeecord-Plugin vorhanden.";
        } else {
          ?>
+       </div>
             <ul>
          <?php
            while($row = $stmt->fetch()){
