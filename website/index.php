@@ -51,7 +51,7 @@ session_start();
 
               </div>
               <div class="shopping-cart">
-                <a class="shopping-btn" href="checkout.php">
+                <a class="shopping-btn" href="stripe/checkout.php">
                   <i class="fas fa-shopping-cart"></i>
                 </a>
               </div>
