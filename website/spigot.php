@@ -7,7 +7,7 @@ session_start();
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Spigot</title>
-    <link href="style/bungeecord.css" rel="stylesheet">
+    <link href="style/spigot.css" rel="stylesheet">
   </head>
   <body>
 <!---------------- JAVASCRIPT ---------------->
@@ -59,14 +59,14 @@ session_start();
 
     <!---------------- BUNGEECORD-LIST ---------------->
 
-    <div id="bungeecord">
+    <div id="spigot">
       <?php
        require("mysql.php");
        $stmt = $mysql->prepare("SELECT * FROM plugins WHERE CATEGORY='spigot' LIMIT 10");
        $stmt->execute();
        $count = $stmt->rowCount();
        if($count == 0){
-           echo "Kein Spigot-Plugin vorhanden.";
+        echo "<p class='text'>Kein Spigot-Plugin vorhanden</p>";
        } else {
          ?>
             <ul>

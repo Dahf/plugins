@@ -66,13 +66,12 @@ session_start();
        $stmt->execute();
        $count = $stmt->rowCount();
        ?>
-       <div class="text">
+
       <?php
        if($count == 0){
-           echo "Kein Bungeecord-Plugin vorhanden.";
+           echo "<p class='text'>Kein Bungeecord-Plugin vorhanden</p>";
        } else {
          ?>
-       </div>
             <ul>
          <?php
            while($row = $stmt->fetch()){
