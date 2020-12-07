@@ -25,7 +25,7 @@ session_start();
        </div>
        <div class="form-group">
          <label for="message">Nachricht</label>
-         <textarea class="form-control" name="message" id="message" rows="3" required></textarea>
+         <textarea class="form-control" name="message" id="message" rows="3" placeholder="Der Prinz von Östreich" required></textarea>
        </div>
        <button type="submit" class="btn btn-primary">Senden</button>
        </form>
