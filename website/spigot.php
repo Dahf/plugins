@@ -7,7 +7,7 @@ session_start();
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Spigot</title>
-    <link href="style/spigot.css" rel="stylesheet">
+    <link href="style/bungeecord.css" rel="stylesheet">
   </head>
   <body>
 <!---------------- JAVASCRIPT ---------------->
@@ -18,20 +18,20 @@ session_start();
     </script>
 <!---------------- HEADER ---------------->
     <div id="header">
-      <a class="headerwri"href="index.php">
+      <a class="headerwri"href="../index.php">
         <div data-aos="zoom-in" aos-duration="500" id="animation">
           <b>PluginStore</b>
         </div>
       </a>
     </div>
-<!---------------- FOOTER ---------------->
-          <div id="footer">
-              <div id="links_footer">
-                <a class="footer" href="impressum.php">Impressum</a>
-                <a class="footer" href="datenschutz.php">Datenschutz</a>
-                <p class="copyright">© 2020 SilasBeckmann.de</a>
+    <!---------------- FOOTER ---------------->
+              <div id="footer">
+                  <div id="links_footer">
+                    <a class="footer" href="impressum.php">Impressum</a>
+                    <a class="footer" href="datenschutz.php">Datenschutz</a>
+                    <p class="copyright">© 2020 SilasBeckmann.de</a>
+                 </div>
              </div>
-         </div>
 <!---------------- NAVBAR ---------------->
     <div id="navbar">
       <div id="links_navbar">
@@ -55,6 +55,48 @@ session_start();
             <i class="fas fa-search"></i>
           </a>
         </div>
+    </div>
+
+    <!---------------- BUNGEECORD-LIST ---------------->
+
+    <div id="bungeecord">
+      <?php
+       require("mysql.php");
+       $stmt = $mysql->prepare("SELECT * FROM plugins WHERE CATEGORY='spigot' LIMIT 10");
+       $stmt->execute();
+       $count = $stmt->rowCount();
+       if($count == 0){
+           echo "Kein Spigot-Plugin vorhanden.";
+       } else {
+         ?>
+            <ul>
+         <?php
+           while($row = $stmt->fetch()){
+               ?>
+                   <li>
+                     	<form method="post" action="stripe/checkout.php?action=add&id=<?php echo $row["id"]; ?>">
+                       <img id="picture" src="upload/<?php echo $row["PICTURE"]?>">
+                       <div id="title">
+                         <a href="#" name="title"><?php echo $row["TITEL"] ?></a>
+                      </div>
+                       <p class="status"><?php echo $row["CREATED_BY"] ?></p>
+                       <p class="description"><?php echo ($row["DESCRIPTION"]) ?></p>
+                       <p class="pricing"><?php echo ($row["PRICING"]) ?>€</p>
+                       <p class="category"><?php echo ($row["CATEGORY"]) ?></p>
+                       <input type="hidden" name="titel" value="<?php echo $row["TITEL"]; ?>" />
+                       <input type="hidden" name="pricing" value="<?php echo $row["PRICING"]; ?>" />
+                       <input type="text" name="quantity" class="form-control" value="1" />
+                       <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn btn-success" value="Add to Cart" />
+                       <i class="fas fa-shopping-cart"></i>
+                     </form>
+                   </li>
+               <?php
+           }
+           ?>
+           </ul>
+           <?php
+       }
+       ?>
     </div>
   </body>
 </html>
