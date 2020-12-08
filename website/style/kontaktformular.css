@@ -1,0 +1,57 @@
+*{
+margin:0;
+padding:0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+.feedback-input{
+  line-height: 20px;
+  border-style:solid;
+  border-width:2px;
+  border-color:#222;
+  transition-duration:0.3s;
+  padding:13px;
+  margin-bottom:5px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+  font-size: 13px;
+  font-weight:light;
+  color:black;
+  text-transform:uppercase;
+  letter-spacing:0.05em;
+}
+
+.feedback-input:focus{
+  border-width:2px;
+  border-style:solid;
+  border-color:#333;
+
+ }
+
+
+[type="submit"] {
+  font-family: 'Source Sans Pro', sans-serif; font-weight:400; size:500px;
+  text-transform:uppercase;
+  width: 100%;
+  background:#222;
+  color:#fff;
+  border:0;
+  cursor:pointer;
+  font-size:15px;
+  transition: all 0.3s;
+  margin-top:5px;
+  letter-spacing:0.07em;
+  outline:white;
+
+}
+
+[type="submit"]:hover{
+   background:#fff;
+   color:#222;
+}
