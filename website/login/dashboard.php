@@ -38,6 +38,7 @@ if(isBanned($_SESSION["username"])){
               <div id="links_footer">
                 <a class="footer" href="../impressum.php">Impressum</a>
                 <a class="footer" href="../datenschutz.php">Datenschutz</a>
+                <a class="footer" href="kontaktformular.php">Kontaktformular</a>
                 <p class="copyright">© 2020 SilasBeckmann.de</a>
              </div>
          </div>

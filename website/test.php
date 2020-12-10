@@ -7,7 +7,7 @@ session_start();
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>test</title>                                   <!--immer abändern-->
-    <link href="style/testbereich.css" rel="stylesheet">  <!--immer abändern-->
+    <link href="style/test.css" rel="stylesheet">  <!--immer abändern-->
   </head>
   <body>
 <!---------------- JAVASCRIPT ---------------->
@@ -29,6 +29,7 @@ session_start();
               <div id="links_footer">
                 <a class="footer" href="impressum.php">Impressum</a>
                 <a class="footer" href="datenschutz.php">Datenschutz</a>
+                <a class="footer" href="kontaktformular.php">Kontaktformular</a>
                 <p class="copyright">© 2020 SilasBeckmann.de</a>
              </div>
          </div>

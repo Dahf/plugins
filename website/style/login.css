@@ -154,6 +154,10 @@ a{
     padding-right: 10px;
     padding-left: 10px;
     padding-top: 1px;
+    border-right: 1px solid #99a9b5;
+ }
+ .footer:last-of-type{
+   border: none;
  }
  .footer:hover{
   background-color: transparent;
