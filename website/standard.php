@@ -24,6 +24,43 @@ session_start();
         </div>
       </a>
     </div>
+    <!---------------- NAVBAR ---------------->
+        <div id="navbar">
+          <div id="links_navbar">
+            <a class="navlink" href="spigot.php"><b>SPIGOT</b></a>
+            <a class="navlink" href="bungeecord.php"><b>BUNGEECORD</b></a>
+            <?php if (!isset($_SESSION['username'])): ?>
+            <a class="navlink" href="login/login.php"><b>LOGIN</b></a>
+            <?php endif; ?>
+            <?php if (isset($_SESSION['username'])): ?>
+            <a class="navlink" href="login/dashboard.php"><b>ACCOUNT</b></a>
+            <?php endif; ?>
+          </div>
+          <div class="shopping-cart">
+            <a class="shopping-btn" href="stripe/checkout.php">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </div>
+          <div class="search-box">
+            <input type="text" name="" class="search-txt" placeholder="Type..."/>
+              <a class="search-btn">
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
+        </div>
+    <div id="content">
+      <div id="top">
+        <?php require 'pluginmanager.php'; ?>
+        <img src="upload/<?php echo getTitel($_GET["id"])?>/<?php echo getPicture($_GET["id"])?>" alt="">
+        <p><?php echo getTitel($_GET["id"]); ?></p>
+      </div>
+      <hr>
+      <p class="price"><?php echo getPrice($_GET["id"]); ?> €</p>
+      <p class="description"><?php echo getDescription($_GET["id"]);  ?></p>
+      <input type="text" name="quantity" class="txt-value" value="1" />
+      <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn-cart" value="Add to Cart" />
+    </div>
+
 <!---------------- FOOTER ---------------->
           <div id="footer">
               <div id="links_footer">
@@ -32,29 +69,5 @@ session_start();
                 <p class="copyright">© 2020 SilasBeckmann.de</a>
              </div>
          </div>
-<!---------------- NAVBAR ---------------->
-    <div id="navbar">
-      <div id="links_navbar">
-        <a class="navlink" href="spigot.php"><b>SPIGOT</b></a>
-        <a class="navlink" href="bungeecord.php"><b>BUNGEECORD</b></a>
-        <?php if (!isset($_SESSION['username'])): ?>
-        <a class="navlink" href="login/login.php"><b>LOGIN</b></a>
-        <?php endif; ?>
-        <?php if (isset($_SESSION['username'])): ?>
-        <a class="navlink" href="login/dashboard.php"><b>ACCOUNT</b></a>
-        <?php endif; ?>
-      </div>
-      <div class="shopping-cart">
-        <a class="shopping-btn" href="stripe/checkout.php">
-          <i class="fas fa-shopping-cart"></i>
-        </a>
-      </div>
-      <div class="search-box">
-        <input type="text" name="" class="search-txt" placeholder="Type..."/>
-          <a class="search-btn">
-            <i class="fas fa-search"></i>
-          </a>
-        </div>
-    </div>
   </body>
 </html>

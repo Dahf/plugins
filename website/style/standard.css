@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&family=Roboto&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&family=Montserrat:wght@300&family=Roboto&family=Share+Tech+Mono&display=swap');
 
 html{
   background-size: contain;
@@ -160,3 +160,72 @@ a{
   background-color: transparent;
   opacity: 50%;
  }
+#content{
+  padding-top: 200px;
+  width: 70%;
+  margin-left: 15%;
+}
+#top{
+}
+#top img{
+  float: left;
+  max-width: 400px;
+  height: auto;
+
+}
+#top p{
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 42px;
+ padding-left: 500px;
+}
+#content p {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 42px;
+ padding-left: 500px;
+}
+#content hr{
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  width: 50%;
+  margin-left: 100px;
+}
+
+ .txt-value{
+    border: none;
+    background: none;
+    outline: none;
+    background: #dfe5e8;
+    color: #3c3950;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0 5px;
+    width: 30px;
+    height: 40px;
+    border-radius: 3px;
+    margin-left: 100px;
+    font-family: Montserrat;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid #dfe5e8;
+ }
+.btn-cart{
+    position:relative;
+    overflow:hidden;
+    width:120px;
+    height: 40px;
+    color:white;
+    border:2px solid rgb(0, 188, 212);
+    background-color:rgb(0, 188, 212);
+    cursor:pointer;
+    margin-left: 30px;
+    line-height:2;
+    border-radius:4px;
+    font-size:16px;
+    outline:none;
+}

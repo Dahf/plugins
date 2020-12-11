@@ -78,7 +78,7 @@ session_start();
                ?>
                    <li>
                      	<form method="post" action="stripe/checkout.php?action=add&id=<?php echo $row["id"]; ?>">
-                       <img id="picture" src="upload/<?php echo $row["PICTURE"]?>">
+                       <img id="picture" src="upload/<?php echo $row["TITEL"] ?>/<?php echo $row["PICTURE"]?>">
                        <div id="title">
                          <a href="#" name="title"><?php echo $row["TITEL"] ?></a>
                       </div>
