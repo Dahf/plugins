@@ -5,6 +5,7 @@ session_start();
     <head>
         <meta charset="utf-8">
         <link href="style/news.css" rel="stylesheet">
+        <link rel="shortcut icon" href="upload/plug.png">
     </head>
     <body>
         <div class="separator">NEWEST PLUGINS</div>

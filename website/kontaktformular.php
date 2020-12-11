@@ -8,6 +8,7 @@ session_start();
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Kontaktformular</title>
     <link rel="stylesheet" href="style/kontaktformular.css">
+    <link rel="shortcut icon" href="upload/plug.png">
   </head>
   <body>
     <div id="contact">
