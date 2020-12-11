@@ -3,6 +3,10 @@ session_start();
 require("../mysql.php");
 if(isset($_POST["add_to_cart"]))
 {
+		$quantity = $_POST["quantity"];
+ 		if($quantity < 1){
+	 		$quantity = 1;
+ 		}
 	 if(isset($_SESSION["shopping_cart"]))
 	 {
 				$item_array_id = array_column($_SESSION["shopping_cart"], "item_id");
@@ -13,7 +17,7 @@ if(isset($_POST["add_to_cart"]))
 									'item_id'               =>     $_GET["id"],
 									'item_name'               =>     (isset($_POST["titel"]) ? $_POST["titel"] : null),
 									'item_price'          =>     (isset($_POST["pricing"]) ? $_POST["pricing"] : null),
-									'item_quantity'          =>     $_POST["quantity"]
+									'item_quantity'          =>     $quantity
 						 );
 						 $_SESSION["shopping_cart"][$count] = $item_array;
 						 header("Location: ../index.php");
@@ -24,13 +28,13 @@ if(isset($_POST["add_to_cart"]))
 								 'item_id'               =>     $_GET["id"],
 								 'item_name'               =>     (isset($_POST["titel"]) ? $_POST["titel"] : null),
 								 'item_price'          =>     (isset($_POST["pricing"]) ? $_POST["pricing"] : null),
-								 'item_quantity'          =>     $_POST["quantity"]
+								 'item_quantity'          =>    $quantity
 						);
 						foreach($_SESSION["shopping_cart"] as $keys => $values)
 						{
 								 if($values["item_id"] == $_GET["id"])
 								 {
-											$_SESSION["shopping_cart"][$keys]['item_quantity'] = $_SESSION["shopping_cart"][$keys]['item_quantity'] + $_POST["quantity"];
+											$_SESSION["shopping_cart"][$keys]['item_quantity'] = $_SESSION["shopping_cart"][$keys]['item_quantity'] + $quantity;
 
 								 }
 						}
@@ -44,7 +48,7 @@ if(isset($_POST["add_to_cart"]))
 						 'item_id'               =>     $_GET["id"],
 						 'item_name'               =>     (isset($_POST["titel"]) ? $_POST["titel"] : null),
 	 					'item_price'          =>     (isset($_POST["pricing"]) ? $_POST["pricing"] : null),
-						 'item_quantity'          =>     $_POST["quantity"]
+						 'item_quantity'          =>     $quantity
 				);
 				$_SESSION["shopping_cart"][0] = $item_array;
 				header("Location: ../index.php");
