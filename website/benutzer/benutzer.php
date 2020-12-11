@@ -50,9 +50,9 @@ if(getRank($_SESSION["username"]) == USER){
     while($row = $stmt->fetch()){ //Für jeder Benutzer wird jeweils das da unten gemacht
         ?>
         <tr>
-        <td><?php echo $row["id"] //Fragt die ID ab und gibt sie aus ?></td>
-        <td><?php echo $row["USERNAME"] //Fragt den Username ab und gibt sie aus?></td>
-        <td><?php echo $row["EMAIL"] //Fragt die EMAIL ab und gibt sie aus?></td>
+        <td><?php echo $row["id"] //Gibt ID aus ?></td>
+        <td><?php echo $row["USERNAME"] //Gibt Name aus?></td>
+        <td><?php echo $row["EMAIL"] //Gibt E-Mail aus?></td>
         <td><a href="edit.php?id=<?php echo $row["id"] ?>"><i class="fas fa-edit"></i></a><a href="benutzer.php?del=<?php echo $row["id"] ?>"><i class="fas fa-user-minus"></i></a></td>
 
         </tr>
