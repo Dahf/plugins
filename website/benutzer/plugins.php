@@ -4,13 +4,14 @@ session_start();
  <html>
     <head>
         <meta charset="utf-8">
-        <link href="../style/spigot.css" rel="stylesheet">
+        <link href="../style/plugins.css" rel="stylesheet">
         <link rel="shortcut icon" href="upload/plug.png">
     </head>
     <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
         <div class="separator">Deine Plugins</div>
           <div id="projects">
-  <?php
+  <div class="noplugins"><?php
    require("../mysql.php");
    require("../pluginmanager.php");
    $stmt = $mysql->prepare("SELECT * FROM orders WHERE BUYER=:user ");
@@ -21,18 +22,25 @@ session_start();
        echo "Es wurden keine Plugins gefunden.";
    } else {
      ?>
+   </div>
+
         <ul>
      <?php
        while($row = $stmt->fetch()){
            ?>
+              <div id="plugins">
                <li>
-                 <?php echo $row["ORDERNUMBER"] ?>
-                 <?php echo $row["PLUGINID"] ?>
-                 <?php echo getTitel($row["PLUGINID"])?>
+                <div class="ordernumber"> <?php echo $row["ORDERNUMBER"] ?></div>
+                 <div class="titel"><?php echo getTitel($row["PLUGINID"])?></div>
+                 <div class="download"><a href="../upload/<?php echo getTitel($row["PLUGINID"]) ?>/<?php echo getDownload($row["PLUGINID"]) ?>"download>
+                   <i class="fas fa-download"></i></div>
+                 </a>
+                 </form>
                </li>
-           <?php
+             </div>
+      <?php
        }
-       ?>
+      ?>
        </ul>
        <?php
    }
