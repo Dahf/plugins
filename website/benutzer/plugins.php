@@ -12,6 +12,7 @@ session_start();
           <div id="projects">
   <?php
    require("../mysql.php");
+   require("../pluginmanager.php");
    $stmt = $mysql->prepare("SELECT * FROM orders WHERE BUYER=:user ");
    $stmt->bindParam(":user", $_SESSION["username"], PDO::PARAM_STR);
    $stmt->execute();
@@ -27,6 +28,7 @@ session_start();
                <li>
                  <?php echo $row["ORDERNUMBER"] ?>
                  <?php echo $row["PLUGINID"] ?>
+                 <?php echo getTitel($row["PLUGINID"])?>
                </li>
            <?php
        }
