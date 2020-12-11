@@ -128,81 +128,76 @@ a{
  }
  /******************** SPIGOT-LIST ********************/
 
-.text {
-  margin-top: 55px;
-  text-align: center;
-  font-family: montserrat;
-  font-size: 20px;
-}
-
-#spigot a {
-color: black;
-}
-#spigot {
-   width: 100%;
-   margin: 0 auto 0 auto;
-   padding-top: 80px;
-}
-#spigot ul {
-   list-style-type: none;
-}
-
-
-#spigot ul li {
-   min-height: 340px;
-   list-style: none;
-   width: 270px;
-   float: left;
-   margin-top: 40px;
-   margin-right: 35px;
-   border: solid 1px #dfe5e8;
-}
-
-#spigot img {
-   max-width:270px;
-   height:auto;
-}
-
-#spigot li:hover {
- color: #3c3950;
- border-color: #f4f6f7;
- background: #f4f6f7;
-}
-
-#title{
-  font-family: Montserrat;
-  font-weight: 400;
-  text-align: center;
-}
-#title a{
-  color: #428bca;
-}
-.pricing{
-   font-family: Montserrat;
-   font-weight: 400;
+ .text{
+   margin-top: 55px;
    text-align: center;
-}
-.description{
-  font-family: Montserrat;
-  font-weight: 400;
-  text-align: center;
-}
-.status{
-  font-family: Montserrat;
-  font-weight: 400;
-  text-align: center;
-}
-.category{
-  font-family: Montserrat;
-  font-weight: 400;
-  text-align: center;
-}
-.fas fa-shopping-cart{
- margin-top: 250px;
-}
-.form-control{
- width: 3%;
-}
+   font-family: montserrat;
+   font-size: 20px;
+ }
+
+ #spigot a {
+   color: black;
+ }
+  #spigot {
+      width: 100%;
+      margin: 0 auto 0 auto;
+      padding-top: 80px;
+  }
+  #spigot ul {
+      list-style-type: none;
+  }
+
+
+  #spigot ul li {
+      min-height: 340px;
+      list-style: none;
+      width: 270px;
+      float: left;
+      margin-top: 40px;
+      margin-right: 35px;
+      border: solid 1px #dfe5e8;
+      padding-bottom: 10px;
+  }
+
+  #spigot img {
+      max-width:270px;
+      height:auto;
+  }
+
+  #spigot li:hover {
+    color: #3c3950;
+    border-color: #f4f6f7;
+    background: #f4f6f7;
+  }
+ 
+ #title{
+     font-family: Montserrat;
+     font-weight: 400;
+     text-align: center;
+  }
+  #title a{
+     color: #428bca;
+  }
+  .pricing{
+      font-family: Montserrat;
+      font-weight: 400;
+      text-align: center;
+   }
+   .description{
+     font-family: Montserrat;
+     font-weight: 400;
+     text-align: center;
+   }
+   .status{
+     font-family: Montserrat;
+     font-weight: 400;
+     text-align: center;
+   }
+   .category{
+     font-family: Montserrat;
+     font-weight: 400;
+     text-align: center;
+   }
  /******************** FOOTER ********************/
  #footer{
     width: 100%;
