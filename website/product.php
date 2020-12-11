@@ -7,7 +7,7 @@ session_start();
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>test</title>                                   <!--immer abändern-->
-    <link href="style/standard.css" rel="stylesheet">  <!--immer abändern-->
+    <link href="style/product.css" rel="stylesheet">  <!--immer abändern-->
     <link rel="shortcut icon" href="upload/plug.png">
   </head>
   <body>
@@ -51,20 +51,24 @@ session_start();
         </div>
     <div id="content">
       <?php require 'pluginmanager.php'; ?>
-      <form method="post" action="stripe/checkout.php?action=add&id=<?php echo $_GET["id"]; ?>">
-      <div id="top">
 
+      <div id="top">
         <img src="upload/<?php echo getTitel($_GET["id"])?>/<?php echo getPicture($_GET["id"])?>" alt="">
         <p><?php echo getTitel($_GET["id"]); ?></p>
       </div>
       <hr>
       <p class="price"><?php echo getPrice($_GET["id"]); ?> €</p>
-      <p class="description"><?php echo getDescription($_GET["id"]);  ?></p>
-      <input type="hidden" name="titel" value="<?php echo getTitel($_GET["id"]); ?>" />
-      <input type="hidden" name="pricing" value="<?php echo getPrice($_GET["id"]); ?>" />
-        <input type="text" name="quantity" class="txt-value" value="1" />
-        <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn-cart" value="Add to Cart" />
-      </form>
+      <div id="text">
+          <p class="description"><?php echo getDescription($_GET["id"]);?></p>
+      </div>
+      <div id="buttonlist">
+        <form method="post" action="stripe/checkout.php?action=add&id=<?php echo $_GET["id"]; ?>">
+          <input type="hidden" name="titel" value="<?php echo getTitel($_GET["id"]); ?>" />
+          <input type="hidden" name="pricing" value="<?php echo getPrice($_GET["id"]); ?>" />
+          <input type="text" name="quantity" class="txt-value" value="1" />
+          <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn-cart" value="Add to Cart" />
+        </form>
+      </div>
     </div>
 
 <!---------------- FOOTER ---------------->

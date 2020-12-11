@@ -189,7 +189,8 @@ a{
   font-weight: 300;
   font-size: 28px;
   line-height: 42px;
- padding-left: 500px;
+  padding-left: 500px;
+
 }
 #content hr{
   border: 0;
@@ -199,7 +200,9 @@ a{
   width: 50%;
   margin-left: 100px;
 }
-
+#text p{
+word-break: break-all;
+}
  .txt-value{
     border: none;
     background: none;
@@ -212,7 +215,7 @@ a{
     width: 30px;
     height: 40px;
     border-radius: 3px;
-    margin-left: 100px;
+    margin-left: 8%;
     font-family: Montserrat;
     font-weight: 400;
     text-align: center;
@@ -232,4 +235,7 @@ a{
     border-radius:4px;
     font-size:16px;
     outline:none;
+}
+#buttonlist{
+  
 }
