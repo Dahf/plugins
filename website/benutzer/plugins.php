@@ -12,7 +12,8 @@ session_start();
           <div id="projects">
   <?php
    require("../mysql.php");
-   $stmt = $mysql->prepare("SELECT * FROM orders WHERE BUYER="$_SESSION['username']" ");
+   $stmt = $mysql->prepare("SELECT * FROM orders WHERE BUYER=:user ");
+   $stmt->bindParam(":user", $_SESSION["username"], PDO::PARAM_STR);
    $stmt->execute();
    $count = $stmt->rowCount();
    if($count == 0){
@@ -20,24 +21,12 @@ session_start();
    } else {
      ?>
         <ul>
-          require(../pluginmanager.php)
      <?php
        while($row = $stmt->fetch()){
            ?>
                <li>
-                 	<form method="post" action="stripe/checkout.php?action=add&id=<?php echo $row["id"]; ?>" target="_parent">
-                   <img id="picture" src="upload/<?php echo $row["TITEL"] ?>/<?php echo $row["PICTURE"]?>">
-                   <div id="header">
-                     <a href="product.php?id=<?php echo $row["id"]; ?>" name="titel" target="_parent"><?php echo $row["TITEL"] ?></a>
-                  </div>
-                   <p id="status" name="created_by"><?php echo $row["CREATED_BY"] ?></p>
-                   <p><?php echo ($row["DESCRIPTION"]) ?></p>
-                   <p name="pricing"><?php echo ($row["PRICING"]) ?>€</p>
-                   <input type="hidden" name="titel" value="<?php echo $row["TITEL"]; ?>" />
-                   <input type="hidden" name="pricing" value="<?php echo $row["PRICING"]; ?>" />
-                   <input type="text" name="quantity" class="txt-value" value="1" />
-                   <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn-cart" value="Add to Cart" />
-                 </form>
+                 <?php echo $row["ORDERNUMBER"] ?>
+                 <?php echo $row["PLUGINID"] ?>
                </li>
            <?php
        }
