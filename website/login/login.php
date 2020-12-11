@@ -8,6 +8,7 @@ session_start();
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Login</title>
     <link href="../style/login.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../upload/plug.png">
   </head>
   <body>
 
@@ -32,6 +33,7 @@ session_start();
               <div id="links_footer">
                 <a class="footer" href="../impressum.php">Impressum</a>
                 <a class="footer" href="../datenschutz.php">Datenschutz</a>
+                <a class="footer" href="kontaktformular.php">Kontaktformular</a>
                 <p class="copyright">© 2020 SilasBeckmann.de</a>
              </div>
          </div>

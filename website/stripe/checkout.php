@@ -19,8 +19,21 @@ if(isset($_POST["add_to_cart"]))
 				}
 				else
 				{
-						 header("Location: checkout.php");
-						 exit;
+						$item_array = array(
+								 'item_id'               =>     $_GET["id"],
+								 'item_name'               =>     (isset($_POST["titel"]) ? $_POST["titel"] : null),
+								 'item_price'          =>     (isset($_POST["pricing"]) ? $_POST["pricing"] : null),
+								 'item_quantity'          =>     $_POST["quantity"]
+						);
+						foreach($_SESSION["shopping_cart"] as $keys => $values)
+						{
+								 if($values["item_id"] == $_GET["id"])
+								 {
+											$_SESSION["shopping_cart"][$keys]['item_quantity'] = $_SESSION["shopping_cart"][$keys]['item_quantity'] + $_POST["quantity"];
+
+								 }
+						}
+
 				}
 	 }
 	 else
@@ -58,6 +71,7 @@ if(isset($_GET["action"]))
 				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
         <script src="https://js.stripe.com/v3/"></script>
+				<link rel="shortcut icon" href="../upload/plug.png">
 	 </head>
 	 <body>
 				<br />
@@ -75,6 +89,7 @@ if(isset($_GET["action"]))
 														<th width="5%">Action</th>
 											 </tr>
 											 <?php
+											 $total = 0;
 											 if(!empty($_SESSION["shopping_cart"]))
 											 {
 														$total = 0;
@@ -117,7 +132,7 @@ if(isset($_GET["action"]))
 
               <h3></h3>
 
-              <h5>€<?php echo number_format($total, 2); ?></h5>
+              <h5>€<?php  echo number_format($total, 2); ?></h5>
 
             </div>
 

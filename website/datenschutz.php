@@ -8,6 +8,7 @@ session_start();
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Datenschutz</title>
     <link href="style/datenschutz.css" rel="stylesheet">
+    <link rel="shortcut icon" href="upload/plug.png">
   </head>
   <body>
 <!---------------- JAVASCRIPT ---------------->
@@ -88,6 +89,7 @@ E-Mail: silasbeckmann1508@gmail.com</p>
                   <div id="links_footer">
                     <a class="footer" href="impressum.php">Impressum</a>
                     <a class="footer" href="datenschutz.php">Datenschutz</a>
+                    <a class="footer" href="kontaktformular.php">Kontaktformular</a>
                     <p class="copyright">© 2020 SilasBeckmann.de</a>
                  </div>
              </div>

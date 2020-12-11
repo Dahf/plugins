@@ -9,6 +9,7 @@ session_start();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Bungeecord</title>
     <link href="style/bungeecord.css" rel="stylesheet">
+    <link rel="shortcut icon" href="upload/plug.png">
   </head>
   <body>
 <!---------------- JAVASCRIPT ---------------->
@@ -30,6 +31,7 @@ session_start();
                   <div id="links_footer">
                     <a class="footer" href="impressum.php">Impressum</a>
                     <a class="footer" href="datenschutz.php">Datenschutz</a>
+                    <a class="footer" href="kontaktformular.php">Kontaktformular</a>
                     <p class="copyright">© 2020 SilasBeckmann.de</a>
                  </div>
              </div>

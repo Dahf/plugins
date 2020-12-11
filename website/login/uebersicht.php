@@ -16,6 +16,7 @@ if(isBanned($_SESSION["username"])){
     <meta charset="utf-8">
     <title></title>
       <link href="../style/uebersicht.css" rel="stylesheet">
+      <link rel="shortcut icon" href="../upload/plug.png">
   </head>
   <body>
     <p>Hallo <b><?php echo $_SESSION["username"] ?></b></p>

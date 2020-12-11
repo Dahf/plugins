@@ -8,6 +8,7 @@ session_start();
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Spigot</title>
     <link href="style/spigot.css" rel="stylesheet">
+    <link rel="shortcut icon" href="upload/plug.png">
   </head>
   <body>
 <!---------------- JAVASCRIPT ---------------->
@@ -18,7 +19,7 @@ session_start();
     </script>
 <!---------------- HEADER ---------------->
     <div id="header">
-      <a class="headerwri"href="../index.php">
+      <a class="headerwri"href="index.php">
         <div data-aos="zoom-in" aos-duration="500" id="animation">
           <b>PluginStore</b>
         </div>
@@ -29,6 +30,7 @@ session_start();
                   <div id="links_footer">
                     <a class="footer" href="impressum.php">Impressum</a>
                     <a class="footer" href="datenschutz.php">Datenschutz</a>
+                    <a class="footer" href="kontaktformular.php">Kontaktformular</a>
                     <p class="copyright">© 2020 SilasBeckmann.de</a>
                  </div>
              </div>

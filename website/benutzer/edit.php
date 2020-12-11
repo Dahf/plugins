@@ -16,6 +16,7 @@ if(getRank($_SESSION["username"]) == USER){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benutzer bearbeiten</title>
+    <link rel="shortcut icon" href="../upload/plug.png">
 </head>
 <body>
     <?php
