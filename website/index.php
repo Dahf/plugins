@@ -23,7 +23,7 @@ session_start();
   </video>
 <!---------------- HEADER ---------------->
   <div id="header">
-    <a class="headerwri"href="news.php" target="mainframe">
+    <a class="headerwri"href="index.php" target="mainframe">
       <div data-aos="zoom-in" aos-duration="500" id="animation">
         <b>PluginStore</b>
       </div>
