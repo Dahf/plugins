@@ -11,11 +11,20 @@ session_start();
     <link rel="shortcut icon" href="upload/plug.png">
   </head>
   <body>
-    <div id="header">
-       <a class="headerwri" href="index.php">
-              <b>PluginStore</b>
-       </a>
-    </div>
+    <!---------------- JAVASCRIPT ---------------->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+     <script>
+       AOS.init();
+      </script>
+    <!---------------- HEADER ---------------->
+         <div id="header">
+            <a class="headerwri"href="news.php" target="mainframe">
+               <div data-aos="zoom-in" aos-duration="500" id="animation">
+                   <b>PluginStore</b>
+               </div>
+            </a>
+         </div>
 <!---------------- FOOTER ---------------->
         <div id="footer">
             <div id="links_footer">
