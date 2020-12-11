@@ -16,6 +16,7 @@ if(isset($_POST["add_to_cart"]))
 									'item_quantity'          =>     $_POST["quantity"]
 						 );
 						 $_SESSION["shopping_cart"][$count] = $item_array;
+						 header("Location: ../index.php");
 				}
 				else
 				{
@@ -33,6 +34,7 @@ if(isset($_POST["add_to_cart"]))
 
 								 }
 						}
+					  header("Location: ../index.php");
 
 				}
 	 }
@@ -45,6 +47,7 @@ if(isset($_POST["add_to_cart"]))
 						 'item_quantity'          =>     $_POST["quantity"]
 				);
 				$_SESSION["shopping_cart"][0] = $item_array;
+				header("Location: ../index.php");
 	 }
 }
 if(isset($_GET["action"]))
@@ -155,6 +158,8 @@ if(isset($_POST["checkout"])) {
 					$stmt->bindParam(":buyer", $_SESSION["username"],  PDO::PARAM_STR);
 					$stmt->bindParam(":pluginid", $values["item_id"],  PDO::PARAM_STR);
 					$stmt->execute();
+					unset($_SESSION["shopping_cart"]);
+					header("Location: ../index.php");
 				}
 }
 

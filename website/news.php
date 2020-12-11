@@ -24,7 +24,7 @@ session_start();
        while($row = $stmt->fetch()){
            ?>
                <li>
-                 	<form method="post" action="stripe/checkout.php?action=add&id=<?php echo $row["id"]; ?>">
+                 	<form method="post" action="stripe/checkout.php?action=add&id=<?php echo $row["id"]; ?>" target="_parent">
                    <img id="picture" src="upload/<?php echo $row["TITEL"] ?>/<?php echo $row["PICTURE"]?>">
                    <div id="header">
                      <a href="product.php?id=<?php echo $row["id"]; ?>" name="titel" target="_parent"><?php echo $row["TITEL"] ?></a>
