@@ -1,80 +1,171 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #242d60;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-  'Helvetica Neue', 'Ubuntu', sans-serif;
-  height: 100vh;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-section {
-  background: #ffffff;
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  height: 112px;
-  border-radius: 6px;
-  justify-content: space-between;
-}
-.product {
-  display: flex;
-}
-.description {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-p {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: -0.154px;
-  color: #242d60;
+
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&family=Roboto&family=Share+Tech+Mono&display=swap');
+/*
+html{
+  background-size: contain;
   height: 100%;
   width: 100%;
-  padding: 0 20px;
+  background-color: #f8f7f8;
+}
+*/
+a{
+    text-decoration: none;
+    color: white;
+}
+ /******************** HEADER ********************/
+#header{
+    width: 100%;
+    height: 113px;
+    background:linear-gradient(10deg, #351439, #141839);
+    margin-left:-8px;
+    margin-top:-21px;
+    position: absolute;
+}
+.headerwri{
+    color: white;
+    text-align: center;
+    font-family: Major Mono Display;
+    font-size: 30px;
+    margin-left: 300px;
+    margin-top: 48px;
+    position: absolute;
+    z-index: 1;
+  }
+  /******************** NAVBAR ********************/
+  #navbar{
+      width: 100%;
+      font-family: Montserrat;
+      margin-left:-350px;
+      margin-top: 35px;
+      position: absolute;
+      text-align: right;
+  }
+  #links_navbar{
+      margin-right: 300px;
+  }
+  .navlink{
+      padding-right:10px;
+      padding-left:10px;
+      background-color: transparent;
+      color: white;
+      font-size: 15px;
+  }
+  .navlink:hover{
+      background-color: transparent;
+      opacity: 50%;
+
+  }
+
+  li{
+      list-style: none;
+  }
+
+  a{
+      text-decoration: none;
+      color: white;
+  }
+
+  .currentli{
+     font-size: 25px;
+  }
+
+  .shopping-cart {
+  position: absolute;
+  margin-top: 10px;
+  left: 85%;
+  transform: translate(-0%, -100%);
+  background: transparent;
+  height: 20px;
+  border-radius: 20px;
+  padding: 10px;
+ }
+
+  .search-box {
+  position: absolute;
+  left: 88%;
+  margin-top: 10px;
+  transform: translate(-0%, -100%);
+  background: transparent;
+  height: 20px;
+  border-radius: 20px;
+  padding: 10px;
+ }
+
+ .search-box:hover > .search-txt {
+  width: 150px;
+ }
+
+ .search-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: transparent;
   display: flex;
-  align-items: center;
   justify-content: center;
-  box-sizing: border-box;
-}
-img {
-  border-radius: 6px;
-  margin: 10px;
-  width: 54px;
-  height: 57px;
-}
-h3,
-h5 {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: -0.154px;
-  color: #242d60;
-  margin: 0;
-}
-h5 {
-  opacity: 0.5;
-}
-#checkout-button {
-  height: 36px;
-  background: #556cd6;
+  align-items: center;
+  transition: 0.4s;
   color: white;
-  width: 100%;
-  font-size: 14px;
-  border: 0;
-  font-weight: 500;
   cursor: pointer;
-  letter-spacing: 0.6;
-  border-radius: 0 0 6px 6px;
-  transition: all 0.2s ease;
-  box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
-}
-#checkout-button:hover {
-  opacity: 0.8;
+ }
+
+ .search-btn > i {
+  font-size: 30px;
+ }
+
+ .search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  color: white;
+  font-size: 14px;
+  transition: 0.4s;
+  line-height: 20px;
+  width: 0px;
+  font-weight: bold;
+ }
+
+ .search-txt:focus{
+   width:150px;
+ }
+
+ /******************** FOOTER ********************/
+ #footer{
+    width: 100%;
+    font-family: Montserrat;
+    height: 50px;
+    background:linear-gradient(10deg, #141839, #351439);
+    margin-top: 388px;
+    margin-left: -8px;
+    position: absolute;
+ }
+ #links_footer{
+  margin-left: 10%;
+  padding-top: 15px;
+ }
+ .copyright{
+    color: white;
+    font-size: 15px;
+    background-color: transparent;
+    padding-left: 80%;
+    margin-top: -18px;
+ }
+ .footer{
+    color: white;
+    font-size: 15px;
+    background-color: transparent;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid #99a9b5;
+ }
+ .footer:last-of-type{
+   border: none;
+ }
+ .footer:hover{
+  background-color: transparent;
+  opacity: 50%;
+ }
+/******************** MAINBODY ********************/
+#checkout{
+  padding-top: 300px;
 }

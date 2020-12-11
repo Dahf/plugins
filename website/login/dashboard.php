@@ -70,6 +70,7 @@ if(isBanned($_SESSION["username"])){
       </a>
     </div>
   </div>
+<!---------------- MAINBODY ---------------->
     <div class="mainbody">
        <iframe name="mainframe" id="mainframe" src="uebersicht.php"></iframe>
     </div>
