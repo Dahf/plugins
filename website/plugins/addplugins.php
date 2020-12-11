@@ -66,7 +66,7 @@ if(getRank($_SESSION["username"]) == USER){
     ?>
     <form name="Plugin" action="?" method="post" enctype="multipart/form-data">
         <input type="text" name="titel" placeholder="Titel" required><br>
-        <textarea name="description" cols="30" rows="10"></textarea><br>
+        <textarea name="description" cols="30" rows="10" maxlength="49"></textarea><br>
         <input type="file" name="filepicture" placeholder="Picture"><br>
         <input type="file" name="filedownload" placeholder="Plugin"><br>
         <input type="text" name="pricing" placeholder="€" required><br>
