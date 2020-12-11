@@ -8,6 +8,7 @@ session_start();
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Datenschutz</title>
     <link href="style/datenschutz.css" rel="stylesheet">
+    <link rel="shortcut icon" href="upload/plug.png">
   </head>
   <body>
 <!---------------- JAVASCRIPT ---------------->

@@ -8,6 +8,7 @@ session_start();
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Impressum</title>
     <link href="style/impressum.css" rel="stylesheet">
+    <link rel="shortcut icon" href="upload/plug.png">
   </head>
   <body>
 <!---------------- JAVASCRIPT ---------------->

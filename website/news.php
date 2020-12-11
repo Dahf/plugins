@@ -7,7 +7,7 @@ session_start();
         <link href="style/news.css" rel="stylesheet">
     </head>
     <body>
-        <div class="separator">MOST POPULAR</div>
+        <div class="separator">NEWEST PLUGINS</div>
           <div id="projects">
   <?php
    require("mysql.php");
@@ -15,7 +15,7 @@ session_start();
    $stmt->execute();
    $count = $stmt->rowCount();
    if($count == 0){
-       echo "Es wurden keine News gefunden.";
+       echo "Es wurden keine Plugins gefunden.";
    } else {
      ?>
         <ul>
@@ -33,8 +33,8 @@ session_start();
                    <p name="pricing"><?php echo ($row["PRICING"]) ?>€</p>
                    <input type="hidden" name="titel" value="<?php echo $row["TITEL"]; ?>" />
                    <input type="hidden" name="pricing" value="<?php echo $row["PRICING"]; ?>" />
-                   <input type="text" name="quantity" class="form-control" value="1" />
-                   <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn btn-success" value="Add to Cart" />
+                   <input type="text" name="quantity" class="txt-value" value="1" />
+                   <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn-cart" value="Add to Cart" />
                  </form>
                </li>
            <?php

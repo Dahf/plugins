@@ -1,36 +1,71 @@
 <?php
 session_start();
-?>
-<!DOCTYPE html>
+ ?>
+ <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Kontaktformular</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/kontaktformular.css">
+    <link href="style/kontaktformular.css" rel="stylesheet">
   </head>
   <body>
-    <div class="row">
-      <div class="col-1 col-sm-1 col-md-2 col-lg-2 col-xl-2"></div>
-      <div class="col-10 col-sm-10 col-md-8 col-lg-8 col-xl-8">
-      <form id="contact-form" method="post" action="kontaktformular/contact.php" role="form">
-      <p class="lead">Kontaktformular</p>
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input class="form-control" name="name" type="text" id="name" placeholder="Canice Jaime Oestreich" required>
-      </div>
-      <div class="form-group">
-        <label for="email">E-Mail Adresse (optional)</label>
-        <input type="email" name="email" class="form-control" id="email" placeholder="canice@oestreich.com" required>
-       </div>
-       <div class="form-group">
-         <label for="message">Nachricht</label>
-         <textarea class="form-control" name="message" id="message" rows="3" placeholder="Der Prinz von Östreich" required></textarea>
-       </div>
-       <button type="submit" class="btn btn-primary">Senden</button>
-       </form>
+<!---------------- JAVASCRIPT ---------------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+<!---------------- HEADER ---------------->
+    <div id="header">
+      <a class="headerwri"href="index.php">
+        <div data-aos="zoom-in" aos-duration="500" id="animation">
+          <b>PluginStore</b>
+        </div>
+      </a>
     </div>
-    <div class="col-1 col-sm-1 col-md-2 col-lg-2 col-xl-2"></div>
+    <!---------------- FOOTER ---------------->
+              <div id="footer">
+                  <div id="links_footer">
+                    <a class="footer" href="impressum.php">Impressum</a>
+                    <a class="footer" href="datenschutz.php">Datenschutz</a>
+                    <a class="footer" href="kontaktformular.php">Kontaktformular</a>
+                    <p class="copyright">© 2020 SilasBeckmann.de</a>
+                 </div>
+             </div>
+<!---------------- NAVBAR ---------------->
+    <div id="navbar">
+      <div id="links_navbar">
+        <a class="navlink" href="spigot.php"><b>SPIGOT</b></a>
+        <a class="navlink" href="bungeecord.php"><b>BUNGEECORD</b></a>
+        <?php if (!isset($_SESSION['username'])): ?>
+        <a class="navlink" href="login/login.php"><b>LOGIN</b></a>
+        <?php endif; ?>
+        <?php if (isset($_SESSION['username'])): ?>
+        <a class="navlink" href="login/dashboard.php"><b>ACCOUNT</b></a>
+        <?php endif; ?>
+      </div>
+      <div class="shopping-cart">
+        <a class="shopping-btn" href="stripe/checkout.php">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+      </div>
+      <div class="search-box">
+        <input type="text" name="" class="search-txt" placeholder="Type..."/>
+          <a class="search-btn">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+    </div>
+<!---------------- KONTAKTFORMULAR ---------------->
+
+    <div id="contact">
+      <form>
+      <input name="name" type="text" class="feedback-input" placeholder="Name"/>
+      <input name="email" type="text" class="feedback-input" placeholder="email" />
+      <textarea name="text" class="feedback-input" placeholder="Nachricht" rows="20"></textarea>
+      <input type="submit" value="Senden"/>
+    </form>
     </div>
   </body>
 </html>

@@ -7,7 +7,8 @@ session_start();
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>test</title>                                   <!--immer abändern-->
-    <link href="style/testbereich.css" rel="stylesheet">  <!--immer abändern-->
+    <link href="style/test.css" rel="stylesheet">  <!--immer abändern-->
+    <link rel="shortcut icon" href="upload/plug.png">
   </head>
   <body>
 <!---------------- JAVASCRIPT ---------------->

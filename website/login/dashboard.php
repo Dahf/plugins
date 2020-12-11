@@ -17,6 +17,7 @@ if(isBanned($_SESSION["username"])){
     <title>Dashboard</title>
     <link href="../style/dashboard.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="shortcut icon" href="../upload/plug.png">
   </head>
   <body>
 <!---------------- JAVASCRIPT ---------------->

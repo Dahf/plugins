@@ -18,6 +18,7 @@ if(getRank($_SESSION["username"]) == USER){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Plugin hinzufügen</title>
+    <link rel="shortcut icon" href="../upload/plug.png">
 </head>
 <body>
   <script>

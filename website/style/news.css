@@ -68,3 +68,21 @@ html{
 .separator::after {
     margin-left: 25px;
 }
+.txt-value{
+   border: none;
+   background: none;
+   outline: none;
+   float: left;
+   background: #f4f6f7;
+   color: #3c3950;
+   font-size: 16px;
+   line-height: 28px;
+   padding: 0 5px;
+   width: 30px;
+   height: 30px;
+   border-radius: 3px;
+   font-family: Montserrat;
+   font-weight: 400;
+   text-align: center;
+   border: 1px solid #dfe5e8;
+}

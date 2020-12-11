@@ -6,8 +6,10 @@ session_start();
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Bungeecord</title>
     <link href="style/bungeecord.css" rel="stylesheet">
+    <link rel="shortcut icon" href="upload/plug.png">
   </head>
   <body>
 <!---------------- JAVASCRIPT ---------------->
@@ -56,7 +58,6 @@ session_start();
           </a>
         </div>
     </div>
-
     <!---------------- BUNGEECORD-LIST ---------------->
 
     <div id="bungeecord">
@@ -88,9 +89,8 @@ session_start();
                        <p class="category"><?php echo ($row["CATEGORY"]) ?></p>
                        <input type="hidden" name="titel" value="<?php echo $row["TITEL"]; ?>" />
                        <input type="hidden" name="pricing" value="<?php echo $row["PRICING"]; ?>" />
-                       <input type="text" name="quantity" class="form-control" value="1" />
-                       <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn btn-success" value="Add to Cart" />
-                       <i class="fas fa-shopping-cart"></i>
+                       <input type="text" name="quantity" class="txt-value" value="1">
+                       <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn-cart" value="Add to Cart">
                      </form>
                    </li>
                <?php
