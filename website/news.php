@@ -27,7 +27,7 @@ session_start();
                  	<form method="post" action="stripe/checkout.php?action=add&id=<?php echo $row["id"]; ?>">
                    <img id="picture" src="upload/<?php echo $row["TITEL"] ?>/<?php echo $row["PICTURE"]?>">
                    <div id="header">
-                     <a href="standard.php?id=<?php echo $row["id"]; ?>" name="titel" target="_parent"><?php echo $row["TITEL"] ?></a>
+                     <a href="product.php?id=<?php echo $row["id"]; ?>" name="titel" target="_parent"><?php echo $row["TITEL"] ?></a>
                   </div>
                    <p id="status" name="created_by"><?php echo $row["CREATED_BY"] ?></p>
                    <p><?php echo ($row["DESCRIPTION"]) ?></p>

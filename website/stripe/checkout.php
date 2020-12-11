@@ -138,11 +138,26 @@ if(isset($_GET["action"]))
 
           </div>
 
-          <button id="checkout-button">Checkout</button>
+          <button name="checkout" id="checkout-button">Checkout</button>
 
         </section>
 
+<?php
+// TODO: foreach methode funktioniert nicht lol
+if(isset($_POST["checkout"])) {
+	foreach($_SESSION["shopping_cart"] as $values)
+	{
+					require("../mysql.php");
+					$stmt = $mysql->prepare("INSERT INTO orders (id, ORDERNUMBER, BUYER, PLUGINID) VALUES (0, :ordernumber, :buyer, :pluginid)");
+					$stmt->bindParam(":ordernumber", "lol", PDO::PARAM_STR);
+					$stmt->bindParam(":buyer", $_SESSION["username"],  PDO::PARAM_STR);
+					$stmt->bindParam(":pluginid", $values["item_id"],  PDO::PARAM_STR);
+					$stmt->execute();
 
+				}
+}
+
+ ?>
 
   <script type="text/javascript">
 
@@ -153,6 +168,8 @@ if(isset($_GET["action"]))
     var checkoutButton = document.getElementById("checkout-button");
 
     checkoutButton.addEventListener("click", function () {
+
+
 
       fetch("create-session.php", {
 
