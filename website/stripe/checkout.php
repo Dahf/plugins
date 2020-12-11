@@ -67,7 +67,7 @@ if(isset($_GET["action"]))
 
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
-    		<link href="style/shoppingcart.css" rel="stylesheet">
+    		<link href="../style/shoppingcart.css" rel="stylesheet">
 				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
         <script src="https://js.stripe.com/v3/"></script>
