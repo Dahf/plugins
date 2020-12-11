@@ -137,23 +137,24 @@ if(isset($_GET["action"]))
             </div>
 
           </div>
-
-          <button name="checkout" id="checkout-button">Checkout</button>
-
+ 					<form method="post">
+          	<button name="checkout" id="checkout-button">Checkout</button>
+					</form>
         </section>
 
 <?php
-// TODO: foreach methode funktioniert nicht lol
 if(isset($_POST["checkout"])) {
 	foreach($_SESSION["shopping_cart"] as $values)
 	{
 					require("../mysql.php");
 					$stmt = $mysql->prepare("INSERT INTO orders (id, ORDERNUMBER, BUYER, PLUGINID) VALUES (0, :ordernumber, :buyer, :pluginid)");
-					$stmt->bindParam(":ordernumber", "lol", PDO::PARAM_STR);
+					$today = date("Ymd");
+					$rand = strtoupper(substr(uniqid(sha1(time())),0,4));
+   				$unique = $today . $rand;
+					$stmt->bindParam(":ordernumber", $unique, PDO::PARAM_STR);
 					$stmt->bindParam(":buyer", $_SESSION["username"],  PDO::PARAM_STR);
 					$stmt->bindParam(":pluginid", $values["item_id"],  PDO::PARAM_STR);
 					$stmt->execute();
-
 				}
 }
 
