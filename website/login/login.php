@@ -46,7 +46,7 @@ session_start();
          <a class="navlink" href="login.php"><b>LOGIN</b></a>
          <?php endif; ?>
          <?php if (isset($_SESSION['username'])): ?>
-         <a class="navlink" href="login/dashboard.php"><b>ACCOUNT</b></a>
+         <a class="navlink" href="dashboard.php"><b>ACCOUNT</b></a>
          <?php endif; ?>
 
      </div>
