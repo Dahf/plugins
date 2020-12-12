@@ -169,7 +169,7 @@ a{
     border-color: #f4f6f7;
     background: #f4f6f7;
   }
- 
+
  #title{
      font-family: Montserrat;
      font-weight: 400;
@@ -198,6 +198,40 @@ a{
      font-weight: 400;
      text-align: center;
    }
+
+    .txt-value{
+       border: none;
+       background: none;
+       outline: none;
+       background: #dfe5e8;
+       color: #3c3950;
+       font-size: 16px;
+       line-height: 28px;
+       padding: 0 5px;
+       width: 20px;
+       height: 30px;
+       border-radius: 3px;
+       margin-left: 50px;
+       font-family: Montserrat;
+       font-weight: 400;
+       text-align: center;
+       border: 1px solid #dfe5e8;
+    }
+   .btn-cart{
+       position:relative;
+       overflow:hidden;
+       width:120px;
+       color:white;
+       border:2px solid rgb(0, 188, 212);
+       background-color:rgb(0, 188, 212);
+       cursor:pointer;
+       margin-left: 20px;
+       line-height:2;
+       border-radius:4px;
+       font-size:16px;
+       outline:none;
+   }
+
  /******************** FOOTER ********************/
  #footer{
     width: 100%;
