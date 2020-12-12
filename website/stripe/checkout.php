@@ -20,7 +20,7 @@ if(isset($_POST["add_to_cart"]))
 									'item_quantity'          =>     $quantity
 						 );
 						 $_SESSION["shopping_cart"][$count] = $item_array;
-						 header("Location: ../index.php");
+						 header('Location:'.$_SERVER['HTTP_REFERER']);
 				}
 				else
 				{
@@ -38,7 +38,7 @@ if(isset($_POST["add_to_cart"]))
 
 								 }
 						}
-					  header("Location: ../index.php");
+					  header('Location:'.$_SERVER['HTTP_REFERER']);
 
 				}
 	 }
@@ -51,7 +51,7 @@ if(isset($_POST["add_to_cart"]))
 						 'item_quantity'          =>     $quantity
 				);
 				$_SESSION["shopping_cart"][0] = $item_array;
-				header("Location: ../index.php");
+				header('Location:'.$_SERVER['HTTP_REFERER']);
 	 }
 }
 if(isset($_GET["action"]))
@@ -89,7 +89,7 @@ if(isset($_GET["action"]))
   </script>
 <!---------------- HEADER ---------------->
   <div id="header">
-    <a class="headerwri"href="../index.php" target="mainframe">
+    <a class="headerwri"href="../index.php">
       <div data-aos="zoom-in" aos-duration="500" id="animation">
         <b>PluginStore</b>
       </div>

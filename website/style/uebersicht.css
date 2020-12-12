@@ -9,4 +9,12 @@ b{
   font-family: Montserrat;
   font-size: 15px;
   color: black;
+  text-transform: uppercase;
+}
+#content{
+  margin-left: 50px;
+}
+a{
+  text-decoration: none;
+  color: #00bcd4;
 }

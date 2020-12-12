@@ -13,7 +13,7 @@ ul{
   font-size: 30px;
   font-family: Montserrat;
   font-weight: 400;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .noplugins{
@@ -24,12 +24,12 @@ ul{
 }
 
 #plugins{
-  margin-left: -20px;
   margin-top: 20px;
-  padding: 10px;
+  padding: 2px;
   border: 1px solid black;
   background:linear-gradient(10deg, #351439, #141839);
   color: white;
+  border-radius: 3px;
 }
 
 .ordernumber{
@@ -39,7 +39,7 @@ ul{
 .titel{
 font-family: Montserrat;
 font-weight: 400;
-font-size:25px;
+font-size:20px;
 }
 
 .download{

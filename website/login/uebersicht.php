@@ -19,15 +19,18 @@ if(isBanned($_SESSION["username"])){
       <link rel="shortcut icon" href="../upload/plug.png">
   </head>
   <body>
-    <p>Hallo <b><?php echo $_SESSION["username"] ?></b></p>
-      <?php if (getRank($_SESSION["username"]) == ADMIN){?>
-    <p>Rank: <b>ADMIN</b></p>
-  <?php } ?>
-      <?php if (getRank($_SESSION["username"]) == MOD){?>
-    <p>Rank: <b>MOD</b></p>
-  <?php }?>
-      <?php if (getRank($_SESSION["username"]) == USER){?>
-    <p>Rank: <b>USER</b></p>
-  <?php } ?>
+    <div id="content">
+      <p>Hallo <b><?php echo $_SESSION["username"] ?></b></p>
+        <?php if (getRank($_SESSION["username"]) == ADMIN){?>
+      <p>Rank: <b>ADMIN</b></p>
+    <?php } ?>
+        <?php if (getRank($_SESSION["username"]) == MOD){?>
+      <p>Rank: <b>MOD</b></p>
+    <?php }?>
+        <?php if (getRank($_SESSION["username"]) == USER){?>
+      <p>Rank: <b>USER</b></p>
+    <?php } ?>
+    <p>In deiner Konto-Übersicht kannst du deine <a href="../benutzer/plugins.php">letzten Bestellungen</a> ansehen.</p>
+    </div>
   </body>
 </html>
