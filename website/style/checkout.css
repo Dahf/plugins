@@ -1,13 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&family=Roboto&family=Share+Tech+Mono&display=swap');
-/*
+
 html{
   background-size: contain;
   height: 100%;
   width: 100%;
   background-color: #f8f7f8;
 }
-*/
+
 a{
     text-decoration: none;
     color: white;
@@ -166,6 +166,23 @@ a{
   opacity: 50%;
  }
 /******************** MAINBODY ********************/
+table, td, th{
+  border-collapse: collapse;
+  border: 1px solid black;
+  font-family: Montserrat;
+}
+
 #checkout{
-  padding-top: 300px;
+  padding-top: 50px;
+  margin-left: 30px;
+}
+
+#checkout h3{
+  font-family: Montserrat;
+  font-size: 30px;
+}
+
+h5{
+  font-family: Montserrat;
+  font-size: 15px;
 }

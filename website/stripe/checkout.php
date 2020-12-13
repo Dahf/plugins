@@ -128,11 +128,13 @@ if(isset($_GET["action"]))
 			 <div class="table-responsive">
 						<table class="table table-bordered">
 								 <tr>
+									  <div id="headrow">
 											<th width="40%">Item Name</th>
 											<th width="10%">Quantity</th>
 											<th width="20%">Price</th>
 											<th width="15%">Total</th>
 											<th width="5%">Action</th>
+									 	</div>
 								 </tr>
 								 <?php
 								 $total = 0;
@@ -178,13 +180,14 @@ if(isset($_GET["action"]))
 
 				<h3></h3>
 
-				<h5>€<?php  echo number_format($total, 2); ?></h5>
+				<h5>Pay €<?php  echo number_format($total, 2); ?>?</h5>
 
 			</div>
 
 		</div>
 		<form method="post">
-			<button name="checkout" id="checkout-button">Checkout</button>
+			<button name="checkout" id="checkout-button">Yes!</button>
+			<button name="checkout" id="checkout-button">Yes!</button>
 		</form>
 	</section>
 
