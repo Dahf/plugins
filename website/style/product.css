@@ -133,7 +133,7 @@ a{
     font-family: Montserrat;
     height: 50px;
     background:linear-gradient(10deg, #141839, #351439);
-    margin-top: 394px;
+    bottom: 0;
     margin-left: -8px;
     position: absolute;
  }
@@ -237,5 +237,5 @@ word-break: break-all;
     outline:none;
 }
 #buttonlist{
-  
+
 }

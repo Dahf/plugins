@@ -36,9 +36,9 @@ $checkout_session = \Stripe\Checkout\Session::create([
 
   'mode' => 'payment',
 
-  'success_url' => $YOUR_DOMAIN . '/stripe/success.html',
+  'success_url' => $YOUR_DOMAIN . '../index.php',
 
-  'cancel_url' => $YOUR_DOMAIN . '/stripe/cancel.html',
+  'cancel_url' => $YOUR_DOMAIN . '../index.php',
 
 ]);
 

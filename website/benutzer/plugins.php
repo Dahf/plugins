@@ -11,7 +11,7 @@ session_start();
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
         <div class="separator">Deine Plugins</div>
           <div id="projects">
-  <div class="noplugins"><?php
+  <?php
    require("../mysql.php");
    require("../pluginmanager.php");
    $stmt = $mysql->prepare("SELECT * FROM orders WHERE BUYER=:user ");
@@ -19,10 +19,14 @@ session_start();
    $stmt->execute();
    $count = $stmt->rowCount();
    if($count == 0){
-       echo "Es wurden keine Plugins gefunden.";
+     ?>
+     <div class="noplugins">
+       <?php echo "Es wurden keine Bestellungen gefunden."; ?>
+      </div>
+      <?php
    } else {
      ?>
-   </div>
+
 
         <ul>
      <?php

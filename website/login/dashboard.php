@@ -70,6 +70,7 @@ if(isBanned($_SESSION["username"])){
       </a>
     </div>
   </div>
+<!---------------- MAINBODY ---------------->
     <div class="mainbody">
        <iframe name="mainframe" id="mainframe" src="uebersicht.php"></iframe>
     </div>
@@ -86,7 +87,7 @@ if(isBanned($_SESSION["username"])){
         <?php
       }
        ?>
-       <li><a href="../benutzer/plugins.php" class="button" target="mainframe">PRODUKTE</a></li>
+       <li><a href="../benutzer/plugins.php" class="button" target="mainframe">BESTELLUNGEN</a></li>
       <li><a href="logout.php" class="button">ABMELDEN</a></li>
     </ul>
   </div>
