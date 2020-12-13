@@ -2,12 +2,13 @@
 
 th{
   font-family: montserrat;
-  border: 1px solid;
-  border-spacing: 0px;
-  padding-right: 10px
+  width: 100px;
 }
 td{
   padding: 5px;
   font-family: montserrat;
-  border: 1px solid;
+}
+#head{
+  width: 50px
+  padding
 }

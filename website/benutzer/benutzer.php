@@ -21,6 +21,7 @@ if(getRank($_SESSION["username"]) == USER){
     <link href="../style/benutzer.css" rel="stylesheet">
 </head>
 <body>
+  <div id="head">
     <table>
         <tr>
           <th>ID</th>
@@ -60,5 +61,6 @@ if(getRank($_SESSION["username"]) == USER){
     }
     ?>
     </table>
+  </div>
 </body>
 </html>
