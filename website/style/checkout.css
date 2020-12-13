@@ -182,6 +182,9 @@ table, td, th{
   font-size: 30px;
 }
 
+#checkout a{
+  color: purple;
+}
 h5{
   font-family: Montserrat;
   font-size: 15px;
