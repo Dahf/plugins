@@ -34,16 +34,20 @@ ul{
 
 .ordernumber{
   text-align: right;
+  margin-right: 3px;
 }
 
 .titel{
 font-family: Montserrat;
 font-weight: 400;
 font-size:20px;
+margin-left: 5px;
 }
 
 .download{
   text-align: right;
   font-size: 20px;
+  margin-right: 3px;
+  margin-bottom: 3px;
 
 }
