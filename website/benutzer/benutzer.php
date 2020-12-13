@@ -18,17 +18,18 @@ if(getRank($_SESSION["username"]) == USER){
     <title>Benutzerverwaltung</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
     <link rel="shortcut icon" href="../upload/plug.png">
+    <link href="../style/benutzer.css" rel="stylesheet">
 </head>
 <body>
+  <div id="head">
     <table>
-    <tr>
-    <th>ID</th>
-    <th>Username</th>
-    <th>Email</th>
-    <th>Aktionen</th>
-    </tr>
-
-    <?php
+        <tr>
+          <th>ID</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Aktionen</th>
+        </tr>
+  <?php
     require("../mysql.php"); //MySQL wird importiert
 
     if(isset($_GET["del"])){ //Wenn er auf Delete drückt
@@ -60,5 +61,6 @@ if(getRank($_SESSION["username"]) == USER){
     }
     ?>
     </table>
+  </div>
 </body>
 </html>
