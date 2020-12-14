@@ -17,6 +17,7 @@ if(getRank($_SESSION["username"]) == USER){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../style/addplugins.css" rel="stylesheet">
     <title>Plugin hinzufügen</title>
     <link rel="shortcut icon" href="../upload/plug.png">
 </head>
@@ -64,6 +65,7 @@ if(getRank($_SESSION["username"]) == USER){
 
     }
     ?>
+  <div id="table">
     <form name="Plugin" action="?" method="post" enctype="multipart/form-data">
         <input type="text" name="titel" placeholder="Titel" required><br>
         <textarea name="description" cols="30" rows="10" maxlength="49"></textarea><br>
@@ -78,5 +80,6 @@ if(getRank($_SESSION["username"]) == USER){
         </label>
         <button type="submit" name="submit">Hinzufügen</button><br>
     </form>
+  </div>
 </body>
 </html>
