@@ -64,7 +64,7 @@ session_start();
     <div id="bungeecord">
       <?php
        require("mysql.php");
-       $stmt = $mysql->prepare("SELECT * FROM plugins WHERE CATEGORY='bungeecord' LIMIT 12");
+       $stmt = $mysql->prepare("SELECT * FROM plugins WHERE CATEGORY='bungeecord' LIMIT 6");
        $stmt->execute();
        $count = $stmt->rowCount();
        ?>

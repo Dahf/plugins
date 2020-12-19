@@ -64,7 +64,7 @@ session_start();
     <div id="spigot">
       <?php
        require("mysql.php");
-       $stmt = $mysql->prepare("SELECT * FROM plugins WHERE CATEGORY='spigot' LIMIT 10");
+       $stmt = $mysql->prepare("SELECT * FROM plugins WHERE CATEGORY='spigot' LIMIT 6");
        $stmt->execute();
        $count = $stmt->rowCount();
        if($count == 0){
