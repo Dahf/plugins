@@ -121,7 +121,7 @@ session_start();
               return $randomString;
           }
 
-          $stmt->bindParam(":token", getRandomString($n));
+          $stmt->bindParam(":token", getRandomString($n), PDO::PARAM_STR);
           $stmt->bindParam(":user", $_POST["username_register"]);
           $hash = password_hash($_POST["pw_register"], PASSWORD_BCRYPT);
           $stmt->bindParam(":pw", $hash);

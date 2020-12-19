@@ -12,7 +12,7 @@ session_start();
           <div id="projects">
   <?php
    require("mysql.php");
-   $stmt = $mysql->prepare("SELECT * FROM plugins ORDER BY id DESC LIMIT 9");
+   $stmt = $mysql->prepare("SELECT * FROM plugins ORDER BY id DESC LIMIT 6");
    $stmt->execute();
    $count = $stmt->rowCount();
    if($count == 0){
