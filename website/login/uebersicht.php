@@ -5,6 +5,7 @@ if(!isset($_SESSION["username"])){
   exit;
 }
 require("../rankmanager.php");
+require("../minecraftmanager.php");
 if(isBanned($_SESSION["username"])){
   header("Location: logout.php");
   exit;
@@ -30,6 +31,7 @@ if(isBanned($_SESSION["username"])){
         <?php if (getRank($_SESSION["username"]) == USER){?>
       <p>Rank: <b>USER</b></p>
     <?php } ?>
+    <p>Minecraft Account: <b><?php echo getMinecraft($_SESSION["username"]) ? getMinecraft($_SESSION["username"]) : "NICHT VERKNÜPFT";?></b></p>
     <p>In deiner Konto-Übersicht kannst du deine <a href="../benutzer/plugins.php">letzten Bestellungen</a> ansehen.</p>
     </div>
   </body>

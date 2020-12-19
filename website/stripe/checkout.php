@@ -193,6 +193,8 @@ if(isset($_GET["action"]))
 
 <?php
 if(isset($_POST["checkout"])) {
+	if(!empty($_SESSION["shopping_cart"]))
+	{
 foreach($_SESSION["shopping_cart"] as $values)
 {
 		require("../mysql.php");
@@ -208,7 +210,7 @@ foreach($_SESSION["shopping_cart"] as $values)
 		header("Location: ../index.php");
 	}
 }
-
+}
 ?>
 
 <script type="text/javascript">
