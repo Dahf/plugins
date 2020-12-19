@@ -12,6 +12,7 @@ if(isset($_POST["submit"])){
     $stmt->execute(array(":mc" => $_POST["minecraftname"], ":name" => $_SESSION["username"])); //Führt die Aktion aus und senden es an die Datenbank
     header("Location: ../login/uebersicht.php");
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">

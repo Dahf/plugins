@@ -107,7 +107,7 @@ session_start();
       if($count == 0){
         if($_POST["pw_register"] == $_POST["pw_register2"]){
           //User anlegen
-          $stmt = $mysql->prepare("INSERT INTO accounts (id, USERNAME, PASSWORD, EMAIL, SERVERRANK, MINECRAFT, VERIFIED) VALUES (0, :user, :pw, :email, 0, null, false)");
+          $stmt = $mysql->prepare("INSERT INTO accounts (id, USERNAME, PASSWORD, EMAIL, SERVERRANK, MINECRAFT) VALUES (0, :user, :pw, :email, 0, null)");
           $stmt->bindParam(":user", $_POST["username_register"]);
           $hash = password_hash($_POST["pw_register"], PASSWORD_BCRYPT);
           $stmt->bindParam(":pw", $hash);
