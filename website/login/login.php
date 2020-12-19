@@ -107,7 +107,21 @@ session_start();
       if($count == 0){
         if($_POST["pw_register"] == $_POST["pw_register2"]){
           //User anlegen
-          $stmt = $mysql->prepare("INSERT INTO accounts (id, USERNAME, PASSWORD, EMAIL, SERVERRANK, MINECRAFT) VALUES (0, :user, :pw, :email, 0, null)");
+          $stmt = $mysql->prepare("INSERT INTO accounts (id, USERNAME, PASSWORD, EMAIL, SERVERRANK, MINECRAFT, TOKEN) VALUES (0, :user, :pw, :email, 0, null, :token)");
+          $n=10;
+          function getRandomString($n) {
+              $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+              $randomString = '';
+
+              for ($i = 0; $i < $n; $i++) {
+                  $index = rand(0, strlen($characters) - 1);
+                  $randomString .= $characters[$index];
+              }
+
+              return $randomString;
+          }
+
+          $stmt->bindParam(":token", getRandomString($n));
           $stmt->bindParam(":user", $_POST["username_register"]);
           $hash = password_hash($_POST["pw_register"], PASSWORD_BCRYPT);
           $stmt->bindParam(":pw", $hash);
