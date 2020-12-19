@@ -16,7 +16,7 @@ session_start();
    $stmt->execute();
    $count = $stmt->rowCount();
    if($count == 0){
-       echo "Es wurden keine Plugins gefunden.";
+       echo "<p class='text'>Es wurden keine Plugins gefunden.</p>";
    } else {
      ?>
         <ul>
