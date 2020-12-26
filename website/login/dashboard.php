@@ -88,6 +88,7 @@ if(isBanned($_SESSION["username"])){
       }
        ?>
        <li><a href="../benutzer/plugins.php" class="button" target="mainframe">BESTELLUNGEN</a></li>
+       <li><a href="token.php" class="button" target="mainframe">VERIFY</a></li>
       <li><a href="logout.php" class="button">ABMELDEN</a></li>
     </ul>
   </div>
