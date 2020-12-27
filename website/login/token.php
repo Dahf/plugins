@@ -21,9 +21,9 @@ if(isBanned($_SESSION["username"])){
   </head>
   <body>
     <div id="content">
-    <p>Token: <?php echo getToken($_SESSION["username"]) ? getToken($_SESSION["username"]) : "NICHT VERKNÜPFT";?></b></p>
-    <p>Man muss auf seinen Server joinen und "/verify [Token]" schreiben, <br> damit überprüft wird, ob sie eine Lizenz haben. </p>
-    <a href="../upload/beispiel.txt"download>VerifyManager</a>
+    <h1>Verify-Manager</h1>
+    <p>Du hast ein Plugin gekauft?<br>Lade dier hier noch den <a href="../upload/VerifyManager.jar"download>VerifyManager</a> herunter und lade diesen auf den Server hoch. <br> Schreibe danach im Chat <a>/verify <?php echo getToken($_SESSION["username"]) ? getToken($_SESSION["username"]) : "NICHT VERKNÜPFT";?></a> <br> damit überprüft wird, ob sie eine gültige Lizenz haben. </p>
+
     </div>
   </body>
 </html>
