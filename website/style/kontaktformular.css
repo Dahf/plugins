@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&family=Roboto&family=Share+Tech+Mono&display=swap');
 
 html{
@@ -31,6 +30,13 @@ a{
   z-index: 1;
 }
 /******************** NAVBAR ********************/
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
 #navbar{
   width: 100%;
   font-family: Montserrat;
@@ -52,22 +58,10 @@ a{
 .navlink:hover{
   background-color: transparent;
   opacity: 50%;
-
 }
-
-li{
-  list-style: none;
-}
-
-a{
-  text-decoration: none;
-  color: white;
-}
-
 .currentli{
   font-size: 25px;
 }
-
 .shopping-cart {
   position: absolute;
   margin-top: 10px;
@@ -78,7 +72,6 @@ a{
   border-radius: 20px;
   padding: 10px;
 }
-
 .search-box {
   position: absolute;
   left: 88%;
@@ -89,11 +82,9 @@ a{
   border-radius: 20px;
   padding: 10px;
 }
-
 .search-box:hover > .search-txt {
   width: 150px;
 }
-
 .search-btn {
   width: 20px;
   height: 20px;
@@ -106,11 +97,9 @@ a{
   color: white;
   cursor: pointer;
 }
-
 .search-btn > i {
   font-size: 30px;
 }
-
 .search-txt {
   border: none;
   background: none;
@@ -123,11 +112,9 @@ a{
   width: 0px;
   font-weight: bold;
 }
-
 .search-txt:focus{
   width:150px;
 }
-
 /******************** FOOTER ********************/
 #footer{
   width: 100%;
@@ -164,19 +151,15 @@ a{
   background-color: transparent;
   opacity: 50%;
 }
-
 /******************** KONTAKTFORMULAR ********************/
-
 textarea{
   resize:none;
 }
-
 #contact{
   padding-top: 120px;
   width: 80%;
   margin-left: 10%;
 }
-
 .feedback-input{
   line-height: 20px;
   border-style:solid;
@@ -195,15 +178,11 @@ textarea{
   letter-spacing:0.05em;+
   resize:none;
 }
-
 .feedback-input:focus{
   border-width:2px;
   border-style:solid;
   border-color:#141839;
-
 }
-
-
 [type="submit"] {
   font-family: 'Source Sans Pro', sans-serif; font-weight:400; size:500px;
   text-transform:uppercase;
@@ -217,11 +196,8 @@ textarea{
   margin-top:5px;
   letter-spacing:0.07em;
   outline:white;
-
 }
-
 [type="submit"]:hover{
   background:#f8f7f8;
   color:#222;
-
 }

@@ -30,6 +30,13 @@ a{
   z-index: 1;
 }
 /******************** NAVBAR ********************/
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
 #navbar{
   width: 100%;
   font-family: Montserrat;
@@ -51,22 +58,10 @@ a{
 .navlink:hover{
   background-color: transparent;
   opacity: 50%;
-
 }
-
-li{
-  list-style: none;
-}
-
-a{
-  text-decoration: none;
-  color: white;
-}
-
 .currentli{
   font-size: 25px;
 }
-
 .shopping-cart {
   position: absolute;
   margin-top: 10px;
@@ -77,7 +72,6 @@ a{
   border-radius: 20px;
   padding: 10px;
 }
-
 .search-box {
   position: absolute;
   left: 88%;
@@ -88,11 +82,9 @@ a{
   border-radius: 20px;
   padding: 10px;
 }
-
 .search-box:hover > .search-txt {
   width: 150px;
 }
-
 .search-btn {
   width: 20px;
   height: 20px;
@@ -105,11 +97,9 @@ a{
   color: white;
   cursor: pointer;
 }
-
 .search-btn > i {
   font-size: 30px;
 }
-
 .search-txt {
   border: none;
   background: none;
@@ -122,82 +112,8 @@ a{
   width: 0px;
   font-weight: bold;
 }
-
 .search-txt:focus{
   width:150px;
-}
-
-/******************** BUNGEECORD-LIST ********************/
-
-.text{
-  margin-top: 55px;
-  text-align: center;
-  font-family: montserrat;
-  font-size: 20px;
-}
-
-#bungeecord a {
-  color: black;
-}
-#bungeecord {
-  width: 100%;
-  margin: 0 auto 0 auto;
-  padding-top: 200px;
-}
-#bungeecord ul {
-  list-style-type: none;
-}
-
-
-#bungeecord ul li {
-  min-height: 340px;
-  list-style: none;
-  width: 270px;
-  float: left;
-  margin-top: 40px;
-  margin-right: 35px;
-  border: solid 1px #dfe5e8;
-  padding-bottom: 10px;
-}
-
-#bungeecord img {
-  max-width:270px;
-  height:auto;
-}
-
-#bungeecord li:hover {
-  color: #3c3950;
-  border-color: #f4f6f7;
-  background: #f4f6f7;
-}
-
-#title{
-  font-family: Montserrat;
-  font-weight: 400;
-  text-align: center;
-}
-#title a{
-  color: #428bca;
-}
-.pricing{
-  font-family: Montserrat;
-  font-weight: 400;
-  text-align: center;
-}
-.description{
-  font-family: Montserrat;
-  font-weight: 400;
-  text-align: center;
-}
-.status{
-  font-family: Montserrat;
-  font-weight: 400;
-  text-align: center;
-}
-.category{
-  font-family: Montserrat;
-  font-weight: 400;
-  text-align: center;
 }
 /******************** FOOTER ********************/
 #footer{
@@ -226,7 +142,6 @@ a{
   background-color: transparent;
   padding-right: 10px;
   padding-left: 10px;
-  padding-top: 1px;
   border-right: 1px solid #99a9b5;
 }
 .footer:last-of-type{
@@ -236,7 +151,71 @@ a{
   background-color: transparent;
   opacity: 50%;
 }
-
+/******************** BUNGEECORD-LIST ********************/
+#bungeecord {
+  width: 100%;
+  margin: 0 auto 0 auto;
+  padding-top: 200px;
+}
+#bungeecord a {
+  color: black;
+}
+#bungeecord ul {
+  list-style-type: none;
+}
+#bungeecord ul li {
+  min-height: 340px;
+  list-style: none;
+  width: 270px;
+  float: left;
+  margin-top: 40px;
+  margin-right: 35px;
+  border: solid 1px #dfe5e8;
+  padding-bottom: 10px;
+}
+#bungeecord li:hover {
+  color: #3c3950;
+  border-color: #f4f6f7;
+  background: #f4f6f7;
+}
+#bungeecord img {
+  max-width:270px;
+  height:auto;
+}
+#title{
+  font-family: Montserrat;
+  font-weight: 400;
+  text-align: center;
+}
+#title a{
+  color: #428bca;
+}
+.text{
+  margin-top: 55px;
+  text-align: center;
+  font-family: montserrat;
+  font-size: 20px;
+}
+.pricing{
+  font-family: Montserrat;
+  font-weight: 400;
+  text-align: center;
+}
+.description{
+  font-family: Montserrat;
+  font-weight: 400;
+  text-align: center;
+}
+.status{
+  font-family: Montserrat;
+  font-weight: 400;
+  text-align: center;
+}
+.category{
+  font-family: Montserrat;
+  font-weight: 400;
+  text-align: center;
+}
 .txt-value{
   border: none;
   background: none;

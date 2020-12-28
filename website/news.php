@@ -2,26 +2,26 @@
 session_start();
 ?>
 <html>
-<head>
-  <meta charset="utf-8">
-  <link href="style/news.css" rel="stylesheet">
-  <link rel="shortcut icon" href="upload/plug.png">
-</head>
-<body>
-  <div class="separator">NEWEST PLUGINS</div>
-  <div id="projects">
-    <?php
-    require("mysql.php");
-    $stmt = $mysql->prepare("SELECT * FROM plugins ORDER BY id DESC LIMIT 6");
-    $stmt->execute();
-    $count = $stmt->rowCount();
-    if($count == 0){
-      echo "<p class='text'>Es wurden keine Plugins gefunden.</p>";
-    } else {
+  <head>
+    <meta charset="utf-8">
+    <link href="style/news.css" rel="stylesheet">
+    <link rel="shortcut icon" href="upload/plug.png">
+  </head>
+  <body>
+    <div class="separator">NEWEST PLUGINS</div>
+    <div id="projects">
+      <?php
+      require("mysql.php");
+      $stmt = $mysql->prepare("SELECT * FROM plugins ORDER BY id DESC LIMIT 6");
+      $stmt->execute();
+      $count = $stmt->rowCount();
+      if($count == 0){
+        echo "<p class='text'>Es wurden keine Plugins gefunden.</p>";
+      } else {
       ?>
-      <ul>
-        <?php
-        while($row = $stmt->fetch()){
+        <ul>
+          <?php
+          while($row = $stmt->fetch()){
           ?>
           <li>
             <form method="post" action="stripe/checkout.php?action=add&id=<?php echo $row["id"]; ?>">
@@ -40,12 +40,12 @@ session_start();
             </form>
           </li>
           <?php
-        }
-        ?>
-      </ul>
+          }
+          ?>
+        </ul>
       <?php
-    }
-    ?>
-  </div>
-</body>
+      }
+      ?>
+    </div>
+  </body>
 </html>

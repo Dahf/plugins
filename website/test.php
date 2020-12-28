@@ -3,35 +3,35 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <title>test</title>                                   <!--immer abändern-->
-  <link href="style/test.css" rel="stylesheet">  <!--immer abändern-->
-  <link rel="shortcut icon" href="upload/plug.png">
-</head>
-<body>
-  <!---------------- JAVASCRIPT ---------------->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
-  <script>
-  AOS.init();
-  </script>
-  <!---------------- HEADER ---------------->
-  <div id="header">
-    <a class="headerwri"href="index.php">
-      <div data-aos="zoom-in" aos-duration="500" id="animation">
-        <b>PluginStore</b>
-      </div>
-    </a>
-  </div>
-  <!---------------- FOOTER ---------------->
-  <div id="footer">
-    <div id="links_footer">
-      <a class="footer" href="impressum.php">Impressum</a>
-      <a class="footer" href="datenschutz.php">Datenschutz</a>
-      <a class="footer" href="kontaktformular.php">Kontaktformular</a>
-      <p class="copyright">© 2020 SilasBeckmann.de</a>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>test</title>                                   <!--immer abändern-->
+    <link href="style/test.css" rel="stylesheet">  <!--immer abändern-->
+    <link rel="shortcut icon" href="upload/plug.png">
+  </head>
+  <body>
+    <!---------------- JAVASCRIPT ---------------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!---------------- HEADER ---------------->
+    <div id="header">
+      <a class="headerwri"href="index.php">
+        <div data-aos="zoom-in" aos-duration="500" id="animation">
+          <b>PluginStore</b>
+        </div>
+      </a>
+    </div>
+    <!---------------- FOOTER ---------------->
+    <div id="footer">
+      <div id="links_footer">
+        <a class="footer" href="impressum.php">Impressum</a>
+        <a class="footer" href="datenschutz.php">Datenschutz</a>
+        <a class="footer" href="kontaktformular.php">Kontaktformular</a>
+        <p class="copyright">© 2020 SilasBeckmann.de</a>
       </div>
     </div>
     <!---------------- NAVBAR ---------------->
@@ -59,4 +59,4 @@ session_start();
       </div>
     </div>
   </body>
-  </html>
+</html>

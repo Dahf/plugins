@@ -3,36 +3,36 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Bungeecord</title>
-  <link href="style/bungeecord.css" rel="stylesheet">
-  <link rel="shortcut icon" href="upload/plug.png">
-</head>
-<body>
-  <!---------------- JAVASCRIPT ---------------->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
-  <script>
-  AOS.init();
-  </script>
-  <!---------------- HEADER ---------------->
-  <div id="header">
-    <a class="headerwri"href="index.php">
-      <div data-aos="zoom-in" aos-duration="500" id="animation">
-        <b>PluginStore</b>
-      </div>
-    </a>
-  </div>
-  <!---------------- FOOTER ---------------->
-  <div id="footer">
-    <div id="links_footer">
-      <a class="footer" href="impressum.php">Impressum</a>
-      <a class="footer" href="datenschutz.php">Datenschutz</a>
-      <a class="footer" href="kontaktformular.php">Kontaktformular</a>
-      <p class="copyright">© 2020 SilasBeckmann.de</a>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Bungeecord</title>
+    <link href="style/bungeecord.css" rel="stylesheet">
+    <link rel="shortcut icon" href="upload/plug.png">
+  </head>
+  <body>
+    <!---------------- JAVASCRIPT ---------------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!---------------- HEADER ---------------->
+    <div id="header">
+      <a class="headerwri"href="index.php">
+        <div data-aos="zoom-in" aos-duration="500" id="animation">
+          <b>PluginStore</b>
+        </div>
+      </a>
+    </div>
+    <!---------------- FOOTER ---------------->
+    <div id="footer">
+      <div id="links_footer">
+        <a class="footer" href="impressum.php">Impressum</a>
+        <a class="footer" href="datenschutz.php">Datenschutz</a>
+        <a class="footer" href="kontaktformular.php">Kontaktformular</a>
+        <p class="copyright">© 2020 SilasBeckmann.de</a>
       </div>
     </div>
     <!---------------- NAVBAR ---------------->
@@ -60,16 +60,12 @@ session_start();
       </div>
     </div>
     <!---------------- BUNGEECORD-LIST ---------------->
-
     <div id="bungeecord">
       <?php
       require("mysql.php");
       $stmt = $mysql->prepare("SELECT * FROM plugins WHERE CATEGORY='bungeecord' LIMIT 6");
       $stmt->execute();
       $count = $stmt->rowCount();
-      ?>
-
-      <?php
       if($count == 0){
         echo "<p class='text'>Kein Bungeecord-Plugin vorhanden.</p>";
       } else {
@@ -77,7 +73,7 @@ session_start();
         <ul>
           <?php
           while($row = $stmt->fetch()){
-            ?>
+          ?>
             <li>
               <form method="post" action="stripe/checkout.php?action=add&id=<?php echo $row["id"]; ?>">
                 <img id="picture" src="upload/<?php echo $row["TITEL"] ?>/<?php echo $row["PICTURE"]?>">
@@ -94,13 +90,13 @@ session_start();
                 <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn-cart" value="Add to Cart">
               </form>
             </li>
-            <?php
+          <?php
           }
           ?>
         </ul>
-        <?php
+      <?php
       }
       ?>
     </div>
   </body>
-  </html>
+</html>

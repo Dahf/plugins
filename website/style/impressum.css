@@ -10,17 +10,6 @@ a{
   text-decoration: none;
   color: white;
 }
-/******************** IMPRESSUM ********************/
-#impressum{
-  padding-top: 100px;
-  text-align: left;
-  width: 60%;
-  margin-left: 20%;
-  text-align: center;
-}
-#impressum a{
-  color: blue;
-}
 /******************** HEADER ********************/
 #header{
   width: 100%;
@@ -41,6 +30,13 @@ a{
   z-index: 1;
 }
 /******************** NAVBAR ********************/
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
 #navbar{
   width: 100%;
   font-family: Montserrat;
@@ -62,22 +58,10 @@ a{
 .navlink:hover{
   background-color: transparent;
   opacity: 50%;
-
 }
-
-li{
-  list-style: none;
-}
-
-a{
-  text-decoration: none;
-  color: white;
-}
-
 .currentli{
   font-size: 25px;
 }
-
 .shopping-cart {
   position: absolute;
   margin-top: 10px;
@@ -88,7 +72,6 @@ a{
   border-radius: 20px;
   padding: 10px;
 }
-
 .search-box {
   position: absolute;
   left: 88%;
@@ -99,11 +82,9 @@ a{
   border-radius: 20px;
   padding: 10px;
 }
-
 .search-box:hover > .search-txt {
   width: 150px;
 }
-
 .search-btn {
   width: 20px;
   height: 20px;
@@ -116,11 +97,9 @@ a{
   color: white;
   cursor: pointer;
 }
-
 .search-btn > i {
   font-size: 30px;
 }
-
 .search-txt {
   border: none;
   background: none;
@@ -133,11 +112,9 @@ a{
   width: 0px;
   font-weight: bold;
 }
-
 .search-txt:focus{
   width:150px;
 }
-
 /******************** FOOTER ********************/
 #footer{
   width: 100%;
@@ -165,7 +142,6 @@ a{
   background-color: transparent;
   padding-right: 10px;
   padding-left: 10px;
-  padding-top: 1px;
   border-right: 1px solid #99a9b5;
 }
 .footer:last-of-type{
@@ -174,4 +150,15 @@ a{
 .footer:hover{
   background-color: transparent;
   opacity: 50%;
+}
+/******************** IMPRESSUM ********************/
+#impressum{
+  padding-top: 100px;
+  text-align: left;
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+}
+#impressum a{
+  color: blue;
 }

@@ -63,7 +63,7 @@ session_start();
       </div>
     </div>
 
-    <!---------------- LOGIN ---------------->
+    <!---------------- LOGIN/REGISTER ---------------->
 
     <div id="login">
       <div class="login-picture">
@@ -76,7 +76,6 @@ session_start();
         <button type="submit" name="submit_login" class="loggin-btn">Einloggen</button>
       </form>
     </div>
-    <!--register-->
     <div id="register">
       <div class="register-picture">
         <i class="fas fa-user-plus fa-3x"></i>
@@ -100,7 +99,7 @@ session_start();
         $count = $stmt->rowCount();
         if($count == 0){
           //Username ist frei
-          $stmt = $mysql->prepare("SELECT * FROM accounts WHERE EMAIL = :email"); //Username überprüfen
+          $stmt = $mysql->prepare("SELECT * FROM accounts WHERE EMAIL = :email"); //Email überprüfen
           $stmt->bindParam(":email", $_POST["email_register"]);
           $stmt->execute();
           $count = $stmt->rowCount();

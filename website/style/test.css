@@ -30,6 +30,13 @@ a{
   z-index: 1;
 }
 /******************** NAVBAR ********************/
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
 #navbar{
   width: 100%;
   font-family: Montserrat;
@@ -51,22 +58,10 @@ a{
 .navlink:hover{
   background-color: transparent;
   opacity: 50%;
-
 }
-
-li{
-  list-style: none;
-}
-
-a{
-  text-decoration: none;
-  color: white;
-}
-
 .currentli{
   font-size: 25px;
 }
-
 .shopping-cart {
   position: absolute;
   margin-top: 10px;
@@ -77,7 +72,6 @@ a{
   border-radius: 20px;
   padding: 10px;
 }
-
 .search-box {
   position: absolute;
   left: 88%;
@@ -88,11 +82,9 @@ a{
   border-radius: 20px;
   padding: 10px;
 }
-
 .search-box:hover > .search-txt {
   width: 150px;
 }
-
 .search-btn {
   width: 20px;
   height: 20px;
@@ -105,11 +97,9 @@ a{
   color: white;
   cursor: pointer;
 }
-
 .search-btn > i {
   font-size: 30px;
 }
-
 .search-txt {
   border: none;
   background: none;
@@ -122,11 +112,9 @@ a{
   width: 0px;
   font-weight: bold;
 }
-
 .search-txt:focus{
   width:150px;
 }
-
 /******************** FOOTER ********************/
 #footer{
   width: 100%;

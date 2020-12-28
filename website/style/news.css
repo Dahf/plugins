@@ -1,35 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&family=Roboto&family=Share+Tech+Mono&display=swap');
 
-
-li{
-  list-style: none;
+html{
+  background-color: 	#f8f7f8;
 }
-
 a{
   text-decoration: none;
   color: white;
 }
-
-.text{
-  margin-top: 55px;
-  text-align: center;
-  font-family: montserrat;
-  font-size: 20px;
+li{
+  list-style: none;
 }
-
-#projects a {
-  color: black;
-}
+/******************** PROJECTS-LIST ********************/
 #projects {
   width: 100%;
   margin: 0 auto 0 auto;
   padding-top: 80px;
 }
+#projects a {
+  color: black;
+}
 #projects ul {
   list-style-type: none;
 }
-
-
 #projects ul li {
   min-height: 340px;
   list-style: none;
@@ -40,18 +32,15 @@ a{
   border: solid 1px #dfe5e8;
   padding-bottom: 10px;
 }
-
-#projects img {
-  max-width:270px;
-  height:auto;
-}
-
 #projects li:hover {
   color: #3c3950;
   border-color: #f4f6f7;
   background: #f4f6f7;
 }
-
+#projects img {
+  max-width:270px;
+  height:auto;
+}
 #title{
   font-family: Montserrat;
   font-weight: 400;
@@ -59,6 +48,12 @@ a{
 }
 #title a{
   color: #428bca;
+}
+.text{
+  margin-top: 55px;
+  text-align: center;
+  font-family: montserrat;
+  font-size: 20px;
 }
 .pricing{
   font-family: Montserrat;
@@ -80,7 +75,6 @@ a{
   font-weight: 400;
   text-align: center;
 }
-
 .txt-value{
   border: none;
   background: none;
@@ -113,6 +107,29 @@ a{
   font-size:16px;
   outline:none;
 }
+/******************** SEPARATOR ********************/
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  color: #141839;
+  font-family: Montserrat;
+}
+.separator::before, .separator::after {
+  content: '';
+  flex: 1;
+  width: 1%;
+  border-bottom: 1px solid grey;
+}
+.separator::before {
+  margin-right: 25px;
+}
+.separator::after {
+  margin-left: 25px;
+}
+
+
 
 #header {
   width: 50%;
@@ -126,36 +143,4 @@ a{
   font-family: Montserrat;
   font-weight: 200px;
   left: 50%;
-}
-html{
-  background-color: 	#f8f7f8;
-}
-.separator {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-size: 30px;
-  color: #141839;
-  font-family: Montserrat;
-
-}
-.separator::before, .separator::after {
-  content: '';
-  flex: 1;
-  width: 1%;
-  border-bottom: 1px solid grey;
-
-}
-.separator::before {
-  margin-right: 25px;
-
-}
-.separator::after {
-  margin-left: 25px;
-}
-.text{
-  margin-top: 55px;
-  text-align: center;
-  font-family: montserrat;
-  font-size: 20px;
 }

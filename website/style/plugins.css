@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat&family=Roboto&family=Share+Tech+Mono&display=swap');
 
-
 a{
   text-decoration: none;
   color: white;
@@ -8,21 +7,6 @@ a{
 ul{
   list-style: none;
 }
-
-.separator{
-  font-size: 30px;
-  font-family: Montserrat;
-  font-weight: 400;
-  margin-left: 40px;
-}
-
-.noplugins{
-  font-family: Montserrat;
-  margin-top: 10px;
-  margin-left: 22px;
-  font-weight: 400;
-}
-
 #plugins{
   margin-top: 20px;
   padding: 2px;
@@ -31,23 +15,31 @@ ul{
   color: white;
   border-radius: 3px;
 }
-
+.separator{
+  font-size: 30px;
+  font-family: Montserrat;
+  font-weight: 400;
+  margin-left: 40px;
+}
+.noplugins{
+  font-family: Montserrat;
+  margin-top: 10px;
+  margin-left: 22px;
+  font-weight: 400;
+}
 .ordernumber{
   text-align: right;
   margin-right: 3px;
 }
-
 .titel{
   font-family: Montserrat;
   font-weight: 400;
   font-size:20px;
   margin-left: 5px;
 }
-
 .download{
   text-align: right;
   font-size: 20px;
   margin-right: 3px;
   margin-bottom: 3px;
-
 }

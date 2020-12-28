@@ -9,7 +9,7 @@ if(isBanned($_SESSION["username"])){
   header("Location: logout.php");
   exit;
 }
- ?>
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -20,78 +20,72 @@ if(isBanned($_SESSION["username"])){
     <link rel="shortcut icon" href="../upload/plug.png">
   </head>
   <body>
-<!---------------- JAVASCRIPT ---------------->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!---------------- JAVASCRIPT ---------------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
-  <script>
-    AOS.init();
-  </script>
-<!---------------- HEADER ---------------->
-  <div id="header">
-    <a class="headerwri"href="../index.php">
-      <div data-aos="zoom-in" aos-duration="500" id="animation">
-        <b>PluginStore</b>
+    <script>
+      AOS.init();
+    </script>
+    <!---------------- HEADER ---------------->
+    <div id="header">
+      <a class="headerwri"href="../index.php">
+        <div data-aos="zoom-in" aos-duration="500" id="animation">
+          <b>PluginStore</b>
+        </div>
+      </a>
+    </div>
+    <!---------------- FOOTER ---------------->
+    <div id="footer">
+      <div id="links_footer">
+        <a class="footer" href="../impressum.php">Impressum</a>
+        <a class="footer" href="../datenschutz.php">Datenschutz</a>
+        <a class="footer" href="../kontaktformular.php">Kontaktformular</a>
+        <p class="copyright">© 2020 SilasBeckmann.de</a>
       </div>
-    </a>
-  </div>
-<!---------------- FOOTER ---------------->
-          <div id="footer">
-              <div id="links_footer">
-                <a class="footer" href="../impressum.php">Impressum</a>
-                <a class="footer" href="../datenschutz.php">Datenschutz</a>
-                <a class="footer" href="../kontaktformular.php">Kontaktformular</a>
-                <p class="copyright">© 2020 SilasBeckmann.de</a>
-             </div>
-         </div>
-
-
-
-<!---------------- NAVBAR ---------------->
-  <div id="navbar">
-    <div id="links_navbar">
-      <a class="navlink" href="../spigot.php"><b>SPIGOT</b></a>
-      <a class="navlink" href="../bungeecord.php"><b>BUNGEECORD</b></a>
-      <?php if (!isset($_SESSION['username'])): ?>
-      <a class="navlink" href="login.php"><b>LOGIN</b></a>
-      <?php endif; ?>
-      <?php if (isset($_SESSION['username'])): ?>
-      <a class="navlink" href="dashboard.php"><b>ACCOUNT</b></a>
-      <?php endif; ?>
     </div>
-    <div class="shopping-cart">
-      <a class="shopping-btn" href="../stripe/checkout.php">
-        <i class="fas fa-shopping-cart"></i>
-      </a>
+    <!---------------- NAVBAR ---------------->
+    <div id="navbar">
+      <div id="links_navbar">
+        <a class="navlink" href="../spigot.php"><b>SPIGOT</b></a>
+        <a class="navlink" href="../bungeecord.php"><b>BUNGEECORD</b></a>
+        <?php if (!isset($_SESSION['username'])): ?>
+          <a class="navlink" href="login.php"><b>LOGIN</b></a>
+        <?php endif; ?>
+        <?php if (isset($_SESSION['username'])): ?>
+          <a class="navlink" href="dashboard.php"><b>ACCOUNT</b></a>
+        <?php endif; ?>
+      </div>
+      <div class="shopping-cart">
+        <a class="shopping-btn" href="../stripe/checkout.php">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+      </div>
+      <div class="search-box">
+        <input type="text" name="" class="search-txt" placeholder="Type..."/>
+        <a class="search-btn">
+          <i class="fas fa-search"></i>
+        </a>
+      </div>
     </div>
-    <div class="search-box">
-      <input type="text" name="" class="search-txt" placeholder="Type..."/>
-      <a class="search-btn">
-        <i class="fas fa-search"></i>
-      </a>
-    </div>
-  </div>
-<!---------------- MAINBODY ---------------->
+    <!---------------- MAINBODY ---------------->
     <div class="mainbody">
-       <iframe name="mainframe" id="mainframe" src="uebersicht.php"></iframe>
+      <iframe name="mainframe" id="mainframe" src="uebersicht.php"></iframe>
     </div>
-  <div class="buttonlist">
-    <ul>
-      <li><a href="uebersicht.php" class="button" target="mainframe">DASHBOARD</a></li>
-
-      <?php
-      if(getRank($_SESSION["username"]) != USER){
-        ?>
-        <li><a href="../plugins/addplugins.php" class="button" target="mainframe">PLUGINS</a></li>
-        <li><a href="../benutzer/benutzer.php" class="button" target="mainframe">BENUTZER</a></li>
-
+    <div class="buttonlist">
+      <ul>
+        <li><a href="uebersicht.php" class="button" target="mainframe">DASHBOARD</a></li>
         <?php
-      }
-       ?>
-       <li><a href="../benutzer/plugins.php" class="button" target="mainframe">BESTELLUNGEN</a></li>
-       <li><a href="token.php" class="button" target="mainframe">VERIFY</a></li>
-      <li><a href="logout.php" class="button">ABMELDEN</a></li>
-    </ul>
-  </div>
-
+        if(getRank($_SESSION["username"]) != USER){
+        ?>
+          <li><a href="../plugins/addplugins.php" class="button" target="mainframe">PLUGINS</a></li>
+          <li><a href="../benutzer/benutzer.php" class="button" target="mainframe">BENUTZER</a></li>
+        <?php
+        }
+        ?>
+        <li><a href="../benutzer/plugins.php" class="button" target="mainframe">BESTELLUNGEN</a></li>
+        <li><a href="token.php" class="button" target="mainframe">VERIFY</a></li>
+        <li><a href="logout.php" class="button">ABMELDEN</a></li>
+      </ul>
+    </div>
   </body>
 </html>
