@@ -21,7 +21,7 @@ $checkout_session = \Stripe\Checkout\Session::create([
       'unit_amount' => 2000,
 
       'product_data' => [
-
+        
         'name' => 'Minecraft Plugins',
 
         'images' => ["https://i.imgur.com/EHyR2nP.png"],
@@ -32,14 +32,14 @@ $checkout_session = \Stripe\Checkout\Session::create([
 
     'quantity' => 1,
 
-  ]],
+    ]],
 
-  'mode' => 'payment',
+    'mode' => 'payment',
 
-  'success_url' => $YOUR_DOMAIN . '../index.php',
+    'success_url' => $YOUR_DOMAIN . '../index.php',
 
-  'cancel_url' => $YOUR_DOMAIN . '../index.php',
+    'cancel_url' => $YOUR_DOMAIN . '../index.php',
 
-]);
+  ]);
 
-echo json_encode(['id' => $checkout_session->id]);
+  echo json_encode(['id' => $checkout_session->id]);
