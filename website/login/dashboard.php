@@ -71,6 +71,7 @@ if(isBanned($_SESSION["username"])){
     <div class="mainbody">
       <iframe name="mainframe" id="mainframe" src="uebersicht.php"></iframe>
     </div>
+    <!---------------- BUTTONLIST ---------------->
     <div class="buttonlist">
       <ul>
         <li><a href="uebersicht.php" class="button" target="mainframe">DASHBOARD</a></li>
