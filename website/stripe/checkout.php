@@ -154,7 +154,6 @@ if(isset($_GET["action"])){
 					<tr>
 						<td colspan="3" align="right">Total</td>
 						<td align="right">€ <?php echo number_format($total, 2); ?></td>
-						<td></td>
 					</tr>
 					<?php
 					}
@@ -166,7 +165,6 @@ if(isset($_GET["action"])){
 		<section>
 			<div class="product">
 				<div class="description">
-					<h3></h3>
 					<h5>Pay €<?php  echo number_format($total, 2); ?>?</h5>
 				</div>
 			</div>

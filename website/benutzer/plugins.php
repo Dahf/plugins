@@ -43,8 +43,8 @@ if(isBanned($_SESSION["username"])){
                 <div class="download">
                   <a href="../upload/<?php echo getTitel($row["PLUGINID"]) ?>/<?php echo getDownload($row["PLUGINID"]) ?>"download>
                     <i class="fas fa-download"></i>
-                </div>
                   </a>
+                </div>
                 </form>
               </li>
             </div>

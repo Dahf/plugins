@@ -29,15 +29,6 @@ session_start();
         </div>
       </a>
     </div>
-    <!---------------- FOOTER ---------------->
-    <div id="footer">
-      <div id="links_footer">
-        <a class="footer" href="impressum.php">Impressum</a>
-        <a class="footer" href="datenschutz.php">Datenschutz</a>
-        <a class="footer" href="kontaktformular.php">Kontaktformular</a>
-        <p class="copyright">© 2020 SilasBeckmann.de</a>
-      </div>
-    </div>
     <!---------------- NAVBAR ---------------->
     <div id="navbar">
       <div id="links_navbar">
@@ -60,6 +51,15 @@ session_start();
         <a class="search-btn">
           <i class="fas fa-search"></i>
         </a>
+      </div>
+    </div>
+    <!---------------- FOOTER ---------------->
+    <div id="footer">
+      <div id="links_footer">
+        <a class="footer" href="impressum.php">Impressum</a>
+        <a class="footer" href="datenschutz.php">Datenschutz</a>
+        <a class="footer" href="kontaktformular.php">Kontaktformular</a>
+        <p class="copyright">© 2020 SilasBeckmann.de</a>
       </div>
     </div>
     <!---------------- PRODUCT ---------------->
