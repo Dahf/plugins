@@ -58,6 +58,7 @@ session_start();
         </a>
       </div>
     </div>
+    <!---------------- CONTACT ---------------->
     <div id="contact">
       <form>
         <input name="name" type="text" class="feedback-input" placeholder="Name"/>

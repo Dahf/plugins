@@ -63,4 +63,12 @@ function getDownload($id){
   return $row["DOWNLOAD"];
 }
 
+function getId($id){
+  require("mysql.php");
+  $stmt = $mysql->prepare("SELECT * FROM plugins WHERE id = :id");
+  $stmt->bindParam(":id", $id, PDO::PARAM_STR);
+  $stmt->execute();
+  $row = $stmt->fetch();
+  return $row["id"];
+}
 ?>

@@ -6,7 +6,11 @@ session_start();
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Product</title>
+    <title>
+      Product Id
+      <?php require 'pluginmanager.php'; ?>
+      <?php echo getId($_GET["id"]);?>
+    </title>
     <link href="style/product.css" rel="stylesheet">
     <link rel="shortcut icon" href="upload/plug.png">
   </head>
@@ -58,8 +62,8 @@ session_start();
         </a>
       </div>
     </div>
+    <!---------------- PRODUCT ---------------->
     <div id="content">
-      <?php require 'pluginmanager.php'; ?>
       <div id="top">
         <img src="upload/<?php echo getTitel($_GET["id"])?>/<?php echo getPicture($_GET["id"])?>" alt="">
         <p><?php echo getTitel($_GET["id"]); ?></p>
