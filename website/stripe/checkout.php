@@ -3,12 +3,12 @@ session_start();
 require("../mysql.php");
 if(isset($_POST["add_to_cart"])){
 	$quantity = $_POST["quantity"];
- 	if($quantity < 1){
+ 	if($quantity < 1){ 																														// Falls die Menge negativ oder 0 ist wird sie 1 gesetzt
 		$quantity = 1;
  	}
-	if(isset($_SESSION["shopping_cart"])){
-		$item_array_id = array_column($_SESSION["shopping_cart"], "item_id");
-		if(!in_array($_GET["id"], $item_array_id)){
+	if(isset($_SESSION["shopping_cart"])){ 																				// Falls es eine Session shopping_cart existiert
+		$item_array_id = array_column($_SESSION["shopping_cart"], "item_id"); 			// Array Nutzer --> IDs
+		if(!in_array($_GET["id"], $item_array_id)){ 																// Wenn Nutzer nicht in $item_array_id ist
 			$count = count($_SESSION["shopping_cart"]);
 			$item_array = array(
 			'item_id'       =>     $_GET["id"],
@@ -16,20 +16,20 @@ if(isset($_POST["add_to_cart"])){
 			'item_price'    =>     (isset($_POST["pricing"]) ? $_POST["pricing"] : null),
 			'item_quantity' =>     $quantity
 			);
-			$_SESSION["shopping_cart"][$count] = $item_array;
-			header('Location:'.$_SERVER['HTTP_REFERER']);
+			$_SESSION["shopping_cart"][$count] = $item_array; 												// Warenkorb wird aktualisiert mit dem oberen Array
+			header('Location:'.$_SERVER['HTTP_REFERER']); 														// Wird zu der vorherigen Seite gesendet
 		}
-		else{
+		else{																																				// Wenn Nutzer im $item_array_id ist
 			$item_array = array(
 			'item_id'       =>     $_GET["id"],
 			'item_name'     =>     (isset($_POST["titel"]) ? $_POST["titel"] : null),
 			'item_price'    =>     (isset($_POST["pricing"]) ? $_POST["pricing"] : null),
 			'item_quantity' =>    $quantity
 			);
-			foreach($_SESSION["shopping_cart"] as $keys => $values){
+			foreach($_SESSION["shopping_cart"] as $keys => $values){									// Falls gleiche Items im Warenkorb hinzugefügt werden
 				if($values["item_id"] == $_GET["id"]){
 					$_SESSION["shopping_cart"][$keys]['item_quantity'] = $_SESSION["shopping_cart"][$keys]['item_quantity'] + $quantity;
-				}
+				}																																				// Quantity wird zu der vorherigen addiert
 			}
 			header('Location:'.$_SERVER['HTTP_REFERER']);
 		}
@@ -47,9 +47,9 @@ if(isset($_POST["add_to_cart"])){
 }
 if(isset($_GET["action"])){
 	if($_GET["action"] == "delete"){
-		foreach($_SESSION["shopping_cart"] as $keys => $values){
+		foreach($_SESSION["shopping_cart"] as $keys => $values){										// Für alles was im Warenkorb ist
 			if($values["item_id"] == $_GET["id"]){
-				unset($_SESSION["shopping_cart"][$keys]);
+				unset($_SESSION["shopping_cart"][$keys]);																// wird gelöscht
 			}
 		}
 	}
@@ -154,7 +154,7 @@ if(isset($_GET["action"])){
 					<tr>
 						<td colspan="3" align="right">Total</td>
 						<td align="right">€ <?php echo number_format($total, 2); ?></td>
-						<td></td>
+
 					</tr>
 					<?php
 					}
@@ -193,8 +193,16 @@ if(isset($_GET["action"])){
 				}
 			}
 		}
+
 		?>
-		<script type="text/javascript"> // Create an instance of the Stripe object with your publishable API key
+		<?php
+		/*
+		* @author Stripe Documentation
+		*
+		* Offezielle Documentation von Stripe kopiert
+		*/
+		 ?>
+		<script type="text/javascript"> 																					
 			var stripe = Stripe("pk_test_51HsnB4DY5IWlezcdkJZutTwqTjOo6djcvDWgjjsuaSw4FYL8XjIO7RrPaxdBfFRrCcfrQfz7HB6v8BUQDctR3QEo00jL0Ctxeu");
 			var checkoutButton = document.getElementById("checkout-button");
 			checkoutButton.addEventListener("click", function () {
@@ -208,13 +216,6 @@ if(isset($_GET["action"])){
 					return stripe.redirectToCheckout({ sessionId: session.id });
 				})
 				.then(function (result) {
-
-					// If redirectToCheckout fails due to a browser or network
-
-					// error, you should display the localized error message to your
-
-					// customer using error.message.
-
 					if (result.error) {
 						alert(result.error.message);
 					}

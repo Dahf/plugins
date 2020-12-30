@@ -1,4 +1,10 @@
 <?php
+/*
+* @author Silas Beckmann
+*
+* Connection zur Datenbank
+*/
+
 $host = "localhost";
 $name = "test";
 $user = "root";

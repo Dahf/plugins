@@ -1,12 +1,12 @@
 <?php
 session_start();
-require("../rankmanager.php"); //Rankmanager importiert
+require("../rankmanager.php");
 if(isBanned($_SESSION["username"])){
-  header("Location: ../login/logout.php"); //Falls er gebannt ist wird er ausgeloggt
+  header("Location: ../login/logout.php");
   exit;
 }
 if(getRank($_SESSION["username"]) == USER){
-  header("Location: ../login/dashboard.php"); //Wenn man USER ist wird man zurück geschickt
+  header("Location: ../login/dashboard.php");
   exit;
 }
 ?>
@@ -30,29 +30,29 @@ if(getRank($_SESSION["username"]) == USER){
           <th>Aktionen</th>
         </tr>
         <?php
-        require("../mysql.php"); //MySQL wird importiert
-        if(isset($_GET["del"])){ //Wenn er auf Delete drückt
-          if(!empty($_GET["del"])){ //Wenn die Anfrage nicht leer ist/ Wenn es den Benutzer gibt
-            $stmt = $mysql->prepare("DELETE FROM accounts WHERE ID = :id"); //Aus MySQL wird der Benutzer mit der ID :id gesucht
-            $stmt->execute(array(":id" => $_GET["del"])); //Benutzer wird gelöscht
+        require("../mysql.php");
+        if(isset($_GET["del"])){
+          if(!empty($_GET["del"])){
+            $stmt = $mysql->prepare("DELETE FROM accounts WHERE ID = :id");     // stmt wird vorbereitet um Benutzer mit der :id zu löschen
+            $stmt->execute(array(":id" => $_GET["del"]));
           }
         ?>
           <p>Der Benutzer wurde gelöscht</p>
         <?php
         }
         if(getRank($_SESSION["username"]) == ADMIN){
-          $stmt = $mysql->prepare("SELECT * FROM accounts WHERE SERVERRANK != 2"); //Jeder Account wird ausgewählt der keine Admin-Rechte hat
+          $stmt = $mysql->prepare("SELECT * FROM accounts WHERE SERVERRANK != 2");// Jeder Account wird ausgewählt der keine Admin-Rechte hat
         }
         if(getRank($_SESSION["username"]) == MOD){
-          $stmt = $mysql->prepare("SELECT * FROM accounts WHERE SERVERRANK = 0"); //Jeder Account wird ausgewählt der User-Rechte
+          $stmt = $mysql->prepare("SELECT * FROM accounts WHERE SERVERRANK = 0");// Jeder Account wird ausgewählt der User-Rechte
         }
-        $stmt->execute(); //Das obere $stmt wird ausgeführt
-        while($row = $stmt->fetch()){ //Für jeder Benutzer wird jeweils das da unten gemacht
+        $stmt->execute();
+        while($row = $stmt->fetch()){                                           // Für jeden ausgewählten Nutzer
         ?>
           <tr>
-            <td><?php echo $row["id"] //Gibt ID aus ?></td>
-            <td><?php echo $row["USERNAME"] //Gibt Name aus?></td>
-            <td><?php echo $row["EMAIL"] //Gibt E-Mail aus?></td>
+            <td><?php echo $row["id"] ?></td>
+            <td><?php echo $row["USERNAME"]?></td>
+            <td><?php echo $row["EMAIL"]?></td>
             <td><a href="edit.php?id=<?php echo $row["id"] ?>"><i class="fas fa-edit"></i></a><a href="benutzer.php?del=<?php echo $row["id"] ?>"><i class="fas fa-user-minus"></i></a></td>
           </tr>
         <?php

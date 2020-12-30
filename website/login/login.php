@@ -1,5 +1,26 @@
 <?php
 session_start();
+
+/*
+* @author Philipp Semmel
+* @return String mit random characters
+*
+* Funktion für das erstellen eines zufälligen Tokens
+*/
+
+function getRandomString($n) {
+  $n=10;
+  $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  $randomString = '';
+
+  for ($i = 0; $i < $n; $i++) {
+    $index = rand(0, strlen($characters) - 1);
+    $randomString .= $characters[$index];
+  }
+
+  return $randomString;
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -93,43 +114,28 @@ session_start();
       <?php
       if(isset($_POST["submit_register"])){
         require("../mysql.php");
-        $stmt = $mysql->prepare("SELECT * FROM accounts WHERE USERNAME = :user"); //Username überprüfen
+        $stmt = $mysql->prepare("SELECT * FROM accounts WHERE USERNAME = :user");// Username überprüfen
         $stmt->bindParam(":user", $_POST["username_register"]);
         $stmt->execute();
         $count = $stmt->rowCount();
-        if($count == 0){
-          //Username ist frei
-          $stmt = $mysql->prepare("SELECT * FROM accounts WHERE EMAIL = :email"); //Email überprüfen
+        if($count == 0){                                                        // Username ist frei
+          $stmt = $mysql->prepare("SELECT * FROM accounts WHERE EMAIL = :email");// Email überprüfen
           $stmt->bindParam(":email", $_POST["email_register"]);
           $stmt->execute();
           $count = $stmt->rowCount();
           if($count == 0){
-            if($_POST["pw_register"] == $_POST["pw_register2"]){
-              //User anlegen
+            if($_POST["pw_register"] == $_POST["pw_register2"]){                // Passwörter stimmen übereinander ein
               $stmt = $mysql->prepare("INSERT INTO accounts (id, USERNAME, PASSWORD, EMAIL, SERVERRANK, MINECRAFT, TOKEN) VALUES (0, :user, :pw, :email, 0, null, :token)");
-              $n=10;
-              function getRandomString($n) {
-                $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-                $randomString = '';
-
-                for ($i = 0; $i < $n; $i++) {
-                  $index = rand(0, strlen($characters) - 1);
-                  $randomString .= $characters[$index];
-                }
-
-                return $randomString;
-              }
-
               $stmt->bindParam(":token", getRandomString($n), PDO::PARAM_STR);
               $stmt->bindParam(":user", $_POST["username_register"]);
               $hash = password_hash($_POST["pw_register"], PASSWORD_BCRYPT);
               $stmt->bindParam(":pw", $hash);
               $stmt->bindParam(":email", $_POST["email_register"]);
-              $stmt->execute();
+              $stmt->execute();                                                 // Nutzer mit den Daten wird erstellt
               echo '<p id="commentaryregister"> Kundenkonto angelegt</p>';
               ?>
               <script>
-              setTimeout(function(){document.getElementById('commentaryregister').remove();},10000);
+              setTimeout(function(){document.getElementById('commentaryregister').remove();},10000); // Element wird nach 10000 Millisekunden gelöscht
               </script>
               <?php
             } else {
@@ -163,12 +169,12 @@ session_start();
       <?php
       if(isset($_POST["submit_login"])){
         require("../mysql.php");
-        $stmt = $mysql->prepare("SELECT * FROM accounts WHERE USERNAME = :user"); //Username überprüfen
+        $stmt = $mysql->prepare("SELECT * FROM accounts WHERE USERNAME = :user"); // Username überprüfen
         $stmt->bindParam(":user", $_POST["username_login"]);
         $stmt->execute();
         $count = $stmt->rowCount();
-        if($count == 1){
-          //Username ist frei
+        if($count == 1){                                                        // Username existiert
+
           $row = $stmt->fetch();
           if(password_verify($_POST["pw_login"], $row["PASSWORD"])){
             $_SESSION["username"] = $row["USERNAME"];

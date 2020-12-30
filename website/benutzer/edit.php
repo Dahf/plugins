@@ -21,18 +21,18 @@ if(getRank($_SESSION["username"]) == USER){
   <body>
     <?php
     if(isset($_GET["id"])){
-      if(!empty($_GET["id"])){ //Wenn es die ID gibt
-        require("../mysql.php"); //MySQL importieren
-        if(isset($_POST["submit"])){ //Wenn er auf Submit drückt
-          $stmt = $mysql->prepare("UPDATE accounts SET USERNAME = :user, EMAIL = :email WHERE ID = :id"); //Erstellt den Account mit den Information die man ausgefüllt hat
-          $stmt->execute(array(":user" => $_POST["username"], ":email" => $_POST["email"], ":id" => $_GET["id"])); //Führt die Aktion aus und senden es an die Datenbank
+      if(!empty($_GET["id"])){                                                  // Wenn es die ID gibt
+        require("../mysql.php");
+        if(isset($_POST["submit"])){                                            // Wenn er auf Submit drückt
+          $stmt = $mysql->prepare("UPDATE accounts SET USERNAME = :user, EMAIL = :email WHERE ID = :id"); // Erstellt den Account mit den Information die man ausgefüllt hat
+          $stmt->execute(array(":user" => $_POST["username"], ":email" => $_POST["email"], ":id" => $_GET["id"])); // Führt die Aktion aus und ordnet den Variablen Werte zu
           header("Location: benutzer.php");
           ?>
           <p>Der Benutzer wurde gespeichert.</p>
         <?php
         }
-        $stmt = $mysql->prepare("SELECT * FROM users WHERE ID = :id"); //Sucht nach den Benutzer mit der ID :id
-        $stmt->execute(array(":id" => $_GET["id"])); //Variable :id wird vom Benutzer oben gesetzt
+        $stmt = $mysql->prepare("SELECT * FROM users WHERE ID = :id");          // Sucht nach den Benutzer mit der ID :id
+        $stmt->execute(array(":id" => $_GET["id"]));                            // Variable :id wird vom Benutzer oben zugeordnet
         $row = $stmt->fetch();
         ?>
         <form action="edit.php?id=<?php echo $_GET["id"] ?>" method="post">
