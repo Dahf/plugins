@@ -34,15 +34,6 @@ if(isBanned($_SESSION["username"])){
         </div>
       </a>
     </div>
-    <!---------------- FOOTER ---------------->
-    <div id="footer">
-      <div id="links_footer">
-        <a class="footer" href="../impressum.php">Impressum</a>
-        <a class="footer" href="../datenschutz.php">Datenschutz</a>
-        <a class="footer" href="../kontaktformular.php">Kontaktformular</a>
-        <p class="copyright">© 2020 SilasBeckmann.de</a>
-      </div>
-    </div>
     <!---------------- NAVBAR ---------------->
     <div id="navbar">
       <div id="links_navbar">
@@ -67,10 +58,20 @@ if(isBanned($_SESSION["username"])){
         </a>
       </div>
     </div>
+    <!---------------- FOOTER ---------------->
+    <div id="footer">
+      <div id="links_footer">
+        <a class="footer" href="../impressum.php">Impressum</a>
+        <a class="footer" href="../datenschutz.php">Datenschutz</a>
+        <a class="footer" href="../kontaktformular.php">Kontaktformular</a>
+        <p class="copyright">© 2020 SilasBeckmann.de</a>
+      </div>
+    </div>
     <!---------------- MAINBODY ---------------->
     <div class="mainbody">
       <iframe name="mainframe" id="mainframe" src="uebersicht.php"></iframe>
     </div>
+    <!---------------- BUTTONLIST ---------------->
     <div class="buttonlist">
       <ul>
         <li><a href="uebersicht.php" class="button" target="mainframe">DASHBOARD</a></li>

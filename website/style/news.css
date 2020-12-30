@@ -10,6 +10,27 @@ a{
 li{
   list-style: none;
 }
+/******************** SEPARATOR ********************/
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  color: #141839;
+  font-family: Montserrat;
+}
+.separator::before, .separator::after {
+  content: '';
+  flex: 1;
+  width: 1%;
+  border-bottom: 1px solid grey;
+}
+.separator::before {
+  margin-right: 25px;
+}
+.separator::after {
+  margin-left: 25px;
+}
 /******************** PROJECTS-LIST ********************/
 #projects {
   width: 100%;
@@ -106,41 +127,4 @@ li{
   border-radius:4px;
   font-size:16px;
   outline:none;
-}
-/******************** SEPARATOR ********************/
-.separator {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-size: 30px;
-  color: #141839;
-  font-family: Montserrat;
-}
-.separator::before, .separator::after {
-  content: '';
-  flex: 1;
-  width: 1%;
-  border-bottom: 1px solid grey;
-}
-.separator::before {
-  margin-right: 25px;
-}
-.separator::after {
-  margin-left: 25px;
-}
-
-
-
-#header {
-  width: 50%;
-  text-align: center;
-  margin: 0 auto;
-}
-#header a{
-  color: #5f727f;
-  text-decoration: none;
-  font-size: 16px;
-  font-family: Montserrat;
-  font-weight: 200px;
-  left: 50%;
 }

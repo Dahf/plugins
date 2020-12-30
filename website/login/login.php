@@ -24,39 +24,27 @@ function getRandomString($n) {
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <title>Login</title>
-  <link href="../style/login.css" rel="stylesheet">
-  <link rel="shortcut icon" href="../upload/plug.png">
-</head>
-<body>
-
-  <!---------------- JAVASCRIPT ---------------->
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
-  <script>
-  AOS.init();
-  </script>
-  <!---------------- HEADER ---------------->
-  <div id="header">
-    <a class="headerwri"href="../index.php">
-      <div data-aos="zoom-in" aos-duration="500" id="animation">
-        <b>PluginStore</b>
-      </div>
-    </a>
-  </div>
-
-  <!---------------- FOOTER ---------------->
-  <div id="footer">
-    <div id="links_footer">
-      <a class="footer" href="../impressum.php">Impressum</a>
-      <a class="footer" href="../datenschutz.php">Datenschutz</a>
-      <a class="footer" href="../kontaktformular.php">Kontaktformular</a>
-      <p class="copyright">© 2020 SilasBeckmann.de</a>
-      </div>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Login</title>
+    <link href="../style/login.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../upload/plug.png">
+  </head>
+  <body>
+    <!---------------- JAVASCRIPT ---------------->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!---------------- HEADER ---------------->
+    <div id="header">
+      <a class="headerwri"href="../index.php">
+        <div data-aos="zoom-in" aos-duration="500" id="animation">
+          <b>PluginStore</b>
+        </div>
+      </a>
     </div>
     <!---------------- NAVBAR ---------------->
     <div id="navbar">
@@ -69,7 +57,6 @@ function getRandomString($n) {
         <?php if (isset($_SESSION['username'])): ?>
           <a class="navlink" href="dashboard.php"><b>ACCOUNT</b></a>
         <?php endif; ?>
-
       </div>
       <div class="shopping-cart">
         <a class="shopping-btn" href="../stripe/checkout.php">
@@ -83,9 +70,16 @@ function getRandomString($n) {
         </a>
       </div>
     </div>
-
+    <!---------------- FOOTER ---------------->
+    <div id="footer">
+      <div id="links_footer">
+        <a class="footer" href="../impressum.php">Impressum</a>
+        <a class="footer" href="../datenschutz.php">Datenschutz</a>
+        <a class="footer" href="../kontaktformular.php">Kontaktformular</a>
+        <p class="copyright">© 2020 SilasBeckmann.de</a>
+      </div>
+    </div>
     <!---------------- LOGIN/REGISTER ---------------->
-
     <div id="login">
       <div class="login-picture">
         <i class="fas fa-sign-in-alt fa-3x"></i>
@@ -199,4 +193,4 @@ function getRandomString($n) {
       ?>
     </div>
   </body>
-  </html>
+</html>
