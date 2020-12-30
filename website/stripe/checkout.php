@@ -154,7 +154,6 @@ if(isset($_GET["action"])){
 					<tr>
 						<td colspan="3" align="right">Total</td>
 						<td align="right">€ <?php echo number_format($total, 2); ?></td>
-
 					</tr>
 					<?php
 					}
@@ -166,7 +165,6 @@ if(isset($_GET["action"])){
 		<section>
 			<div class="product">
 				<div class="description">
-					<h3></h3>
 					<h5>Pay €<?php  echo number_format($total, 2); ?>?</h5>
 				</div>
 			</div>
@@ -196,13 +194,13 @@ if(isset($_GET["action"])){
 
 		?>
 		<?php
-		/*
+		/**
 		* @author Stripe Documentation
 		*
 		* Offezielle Documentation von Stripe kopiert
 		*/
 		 ?>
-		<script type="text/javascript"> 																					
+		<script type="text/javascript">
 			var stripe = Stripe("pk_test_51HsnB4DY5IWlezcdkJZutTwqTjOo6djcvDWgjjsuaSw4FYL8XjIO7RrPaxdBfFRrCcfrQfz7HB6v8BUQDctR3QEo00jL0Ctxeu");
 			var checkoutButton = document.getElementById("checkout-button");
 			checkoutButton.addEventListener("click", function () {

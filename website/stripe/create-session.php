@@ -1,5 +1,5 @@
 <?php
-/*
+/**
 * @author Stripe Documentation
 *
 * Offezielle Documentation von Stripe kopiert

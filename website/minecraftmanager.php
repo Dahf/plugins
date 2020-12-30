@@ -1,7 +1,7 @@
 <?php
-/*
+/**
 * @author Silas Beckmann
-* @return Gibt gibt den Minecraft-Namen vom Nutzer $mc zurück
+* @return String: Gibt gibt den Minecraft-Namen vom Nutzer $mc zurück
 *
 * Erhalte den Minecraft-Namen
 */
@@ -12,9 +12,9 @@ function getMinecraft($mc){
   $row = $stmt->fetch();
   return $row["MINECRAFT"];
 }
-/*
+/**
 * @author Silas Beckmann
-* @return Gibt gibt den Token vom Nutzer $mc zurück
+* @return String: Gibt gibt den Token vom Nutzer $mc zurück
 *
 * Erhalte den Token
 */

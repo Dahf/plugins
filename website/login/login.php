@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-/*
+/**
 * @author Philipp Semmel
-* @return String mit random characters
+* @return String: mit random characters
 *
 * Funktion für das erstellen eines zufälligen Tokens
 */

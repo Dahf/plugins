@@ -13,9 +13,9 @@ if(isBanned($_SESSION["username"])){
   header("Location: logout.php");
   exit;
 }
-/*
+/**
 * @author Silas Beckmann
-* @return Download File von id
+* @return File: Datei von id
 *
 * Das Lizenzsystem versucht auf dieser Seite alle Plugins zu downloaden
 * falls der Nutzer das Plugin hat wird die Datei automatisch auf den Server geladen

@@ -1,5 +1,5 @@
 <?php
-/*
+/**
 * @author Silas Beckmann
 *
 * Connection zur Datenbank

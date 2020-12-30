@@ -1,8 +1,8 @@
 <?php
 
-/*
+/**
 * @author Silas Beckmann
-* @return Gibt den Titel vom Plugin von der ID $id zurück
+* @return String: Gibt den Titel vom Plugin von der ID $id zurück
 *
 * Erhalte den Titel vom Plugin
 */
@@ -15,9 +15,9 @@ function getTitel($id){
   return $row["TITEL"];
 }
 
-/*
+/**
 * @author Silas Beckmann
-* @return Gibt die Description vom Plugin von der ID $id zurück
+* @return String: Gibt die Description vom Plugin von der ID $id zurück
 *
 * Erhalte die Description vom Plugin
 */
@@ -30,9 +30,9 @@ function getDescription($id){
   return $row["DESCRIPTION"];
 }
 
-/*
+/**
 * @author Silas Beckmann
-* @return Gibt den Ersteller vom Plugin von der ID $id zurück
+* @return String: Gibt den Ersteller vom Plugin von der ID $id zurück
 *
 * Erhalte den Ersteller vom Plugin
 */
@@ -45,9 +45,9 @@ function getCreatedBy($id){
   return $row["CREATED_BY"];
 }
 
-/*
+/**
 * @author Silas Beckmann
-* @return Gibt den Dateien Name vom Bild von der ID $id zurück
+* @return String: Gibt den Dateien Name vom Bild von der ID $id zurück
 *
 * Erhalte den Dateien Name vom Bild des Plugin
 */
@@ -59,9 +59,9 @@ function getPicture($id){
   $row = $stmt->fetch();
   return $row["PICTURE"];
 }
-/*
+/**
 * @author Silas Beckmann
-* @return Gibt den Preis von der ID $id zurück
+* @return String: Gibt den Preis von der ID $id zurück
 *
 * Erhalte den Preis vom Bild des Plugin
 */
@@ -73,9 +73,9 @@ function getPrice($id){
   $row = $stmt->fetch();
   return $row["PRICING"];
 }
-/*
+/**
 * @author Silas Beckmann
-* @return Gibt gibt die Category von der ID $id zurück
+* @return String: Gibt gibt die Category von der ID $id zurück
 *
 * Erhalte die Category des Plugin
 */
@@ -87,9 +87,9 @@ function getCategory($id){
   $row = $stmt->fetch();
   return $row["CATEGORY"];
 }
-/*
+/**
 * @author Silas Beckmann
-* @return Gibt den Dateien Name vom Download von der ID $id zurück
+* @return String: Gibt den Dateien Name vom Download von der ID $id zurück
 *
 * Erhalte den Dateien Name vom Download des Plugin
 */
